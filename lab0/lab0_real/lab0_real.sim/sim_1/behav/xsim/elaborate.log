@@ -1,0 +1,18 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 715680a9cde944fd95f278f6e8e0edbd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ShiftRegister_v2_behav xil_defaultlib.tb_ShiftRegister_v2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister_v0 [shiftregister_v0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister_v1 [shiftregister_v1_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister_v2 [\ShiftRegister_v2(sr_depth=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.tb_shiftregister_v2
+Built simulation snapshot tb_ShiftRegister_v2_behav
