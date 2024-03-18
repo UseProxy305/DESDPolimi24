@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../Downloads/KittCar_entity.vhd" \
+"../../../../../lab0_real/lab0_real.srcs/sources_1/new/ShiftRegister_v0.vhd" \
+"../../../../LAB1.srcs/sim_1/new/tb_KittyCar.vhd" \
+
+# Do not sort compile order
+nosort
