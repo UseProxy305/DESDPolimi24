@@ -11,7 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister_v0 [shiftregister_v0_default]
 Compiling architecture behavioral of entity xil_defaultlib.KittCar [kittcar_default]
 Compiling architecture behavioral of entity xil_defaultlib.tb_kittcar
 Built simulation snapshot tb_KittCar_behav

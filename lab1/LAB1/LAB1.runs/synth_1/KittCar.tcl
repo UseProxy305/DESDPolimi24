@@ -70,7 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Users/euzun/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13292-7R74KS3-A081/incrSyn
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -89,10 +91,7 @@ set_property ip_output_repo c:/Users/euzun/Desktop/DESD/LAB1/LAB1.cache/ip [curr
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  C:/Users/euzun/Desktop/DESD/lab0_real/lab0_real.srcs/sources_1/new/ShiftRegister_v0.vhd
-  C:/Users/euzun/Downloads/KittCar_entity.vhd
-}
+read_vhdl -library xil_defaultlib C:/Users/euzun/Downloads/KittCar_entity.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -102,6 +101,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/euzun/Downloads/basys3_master_xdc.xdc
+set_property used_in_implementation false [get_files C:/Users/euzun/Downloads/basys3_master_xdc.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
