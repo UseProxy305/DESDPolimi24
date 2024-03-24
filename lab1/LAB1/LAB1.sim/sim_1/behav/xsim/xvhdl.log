@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Downloads/KittCar_entity.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Desktop/DESD/LAB1/LAB1.srcs/sim_1/new/tb_KittCar_v2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCar_v2'

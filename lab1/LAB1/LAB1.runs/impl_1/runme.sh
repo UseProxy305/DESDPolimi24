@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log KittCar.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source KittCar.tcl -notrace
+EAStep vivado -log KittCar_v2.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source KittCar_v2.tcl -notrace
 
 

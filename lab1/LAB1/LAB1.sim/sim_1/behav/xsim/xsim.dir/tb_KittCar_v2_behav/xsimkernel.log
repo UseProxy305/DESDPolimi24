@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_KittCar_v2_behav/xsimk.exe -simmode gui -wdb tb_KittCar_v2_behav.wdb -simrunnum 0 -socket 60648
+Design successfully loaded
+Design Loading Memory Usage: 6784 KB (Peak: 6784 KB)
+Design Loading CPU Usage: 0 ms

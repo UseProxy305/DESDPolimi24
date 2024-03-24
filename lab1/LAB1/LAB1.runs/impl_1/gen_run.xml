@@ -1,91 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1710805828">
-  <File Type="BITSTR-BMM" Name="KittCar_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="KittCar_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="KittCar_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="KittCar_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="KittCar.tcl"/>
-  <File Type="OPT-TIMING" Name="KittCar_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="KittCar_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="KittCar_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="KittCar_reports.tcl"/>
-  <File Type="OPT-DRC" Name="KittCar_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="KittCar.hwdef"/>
-  <File Type="PWROPT-DCP" Name="KittCar_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="KittCar_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="KittCar_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="KittCar_placed.dcp"/>
-  <File Type="PLACE-IO" Name="KittCar_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="KittCar_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="KittCar_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="KittCar_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="KittCar_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="KittCar_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="KittCar_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="KittCar_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="KittCar_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="KittCar.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="KittCar_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="KittCar_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="KittCar_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="KittCar.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="KittCar_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="KittCar_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="KittCar_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="KittCar_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="KittCar_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="KittCar_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="KittCar_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="KittCar.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="KittCar_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="KittCar_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="KittCar_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="KittCar_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="KittCar_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="KittCar_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="KittCar_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="KittCar_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="KittCar_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="KittCar_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="KittCar_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="KittCar_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="KittCar_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="KittCar_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="KittCar_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="KittCar_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="KittCar_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="KittCar_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="KittCar_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="KittCar_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="KittCar_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="KittCar.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="KittCar_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="KittCar.rbt"/>
-  <File Type="BITSTR-NKY" Name="KittCar.nky"/>
-  <File Type="PDI-FILE" Name="KittCar.pdi"/>
-  <File Type="RCFI_FILE" Name="KittCar.rcfi"/>
-  <File Type="CFI_FILE" Name="KittCar.cfi"/>
-  <File Type="RNPI_FILE" Name="KittCar.rnpi"/>
-  <File Type="NPI_FILE" Name="KittCar.npi"/>
-  <File Type="RBD_FILE" Name="KittCar.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1711318581">
+  <File Type="BITSTR-BMM" Name="KittCar_v2_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="KittCar_v2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="KittCar_v2_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="KittCar_v2_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="KittCar_v2.tcl"/>
+  <File Type="OPT-TIMING" Name="KittCar_v2_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="KittCar_v2_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="KittCar_v2_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="KittCar_v2_reports.tcl"/>
+  <File Type="OPT-DRC" Name="KittCar_v2_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="KittCar_v2.hwdef"/>
+  <File Type="PWROPT-DCP" Name="KittCar_v2_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="KittCar_v2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="KittCar_v2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="KittCar_v2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="KittCar_v2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="KittCar_v2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="KittCar_v2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="KittCar_v2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="KittCar_v2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="KittCar_v2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="KittCar_v2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="KittCar_v2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="KittCar_v2_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="KittCar_v2.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="KittCar_v2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="KittCar_v2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="KittCar_v2_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="KittCar_v2.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="KittCar_v2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="KittCar_v2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="KittCar_v2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="KittCar_v2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="KittCar_v2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="KittCar_v2_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="KittCar_v2_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="KittCar_v2.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="KittCar_v2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="KittCar_v2_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="KittCar_v2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="KittCar_v2_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="KittCar_v2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="KittCar_v2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="KittCar_v2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="KittCar_v2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="KittCar_v2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="KittCar_v2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="KittCar_v2_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="KittCar_v2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="KittCar_v2_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="KittCar_v2_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="KittCar_v2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="KittCar_v2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="KittCar_v2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="KittCar_v2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="KittCar_v2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="KittCar_v2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="KittCar_v2_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="KittCar_v2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="KittCar_v2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="KittCar_v2.rbt"/>
+  <File Type="BITSTR-NKY" Name="KittCar_v2.nky"/>
+  <File Type="PDI-FILE" Name="KittCar_v2.pdi"/>
+  <File Type="RCFI_FILE" Name="KittCar_v2.rcfi"/>
+  <File Type="CFI_FILE" Name="KittCar_v2.cfi"/>
+  <File Type="RNPI_FILE" Name="KittCar_v2.rnpi"/>
+  <File Type="NPI_FILE" Name="KittCar_v2.npi"/>
+  <File Type="RBD_FILE" Name="KittCar_v2.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="KittCar.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="KittCar.sysdef"/>
-  <File Type="BG-BGN" Name="KittCar.bgn"/>
-  <File Type="BG-DRC" Name="KittCar.drc"/>
-  <File Type="RDI-RDI" Name="KittCar.vdi"/>
+  <File Type="BITSTR-LTX" Name="KittCar_v2.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="KittCar_v2.sysdef"/>
+  <File Type="BG-BGN" Name="KittCar_v2.bgn"/>
+  <File Type="BG-DRC" Name="KittCar_v2.drc"/>
+  <File Type="RDI-RDI" Name="KittCar_v2.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../lab0_real/lab0_real.srcs/sources_1/new/ShiftRegister_v0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/KittCar_v2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../../Downloads/KittCar_entity.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="KittCar"/>
+      <Option Name="TopModule" Val="KittCar_v2"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

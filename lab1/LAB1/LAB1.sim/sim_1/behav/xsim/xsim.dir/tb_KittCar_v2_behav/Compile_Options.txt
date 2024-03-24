@@ -1,0 +1,1 @@
+-wto "5afc41589aaf485487cb7406f71053f4" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_KittCar_v2_behav" "xil_defaultlib.tb_KittCar_v2" -log "elaborate.log" 
