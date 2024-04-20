@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Apr 20 17:54:07 2024" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="btn_jstk_0" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_jstk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="digilent_jstk2_0" PORT="btn_jstk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="btn_trigger_0" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_trigger">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="digilent_jstk2_0" PORT="btn_trigger"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_sck_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="sclk_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_io1_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="miso_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_ss_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="cs_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_io0_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="mosi_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI_M_0_sck_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="sclk_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_ss_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="cs_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_io0_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="mosi_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_io1_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="miso_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI_M_0_sck_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="sclk_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI_M_0_ss_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="cs_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI_M_0_io1_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="miso_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI_M_0_io0_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="mosi_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="ext_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="axi4stream_spi_master_0_SPI_M" NAME="SPI_M_0" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SCK_T" PHYSICAL="SPI_M_0_sck_t"/>
+        <PORTMAP LOGICAL="IO1_O" PHYSICAL="SPI_M_0_io1_o"/>
+        <PORTMAP LOGICAL="SS_T" PHYSICAL="SPI_M_0_ss_t"/>
+        <PORTMAP LOGICAL="IO0_O" PHYSICAL="SPI_M_0_io0_o"/>
+        <PORTMAP LOGICAL="SCK_I" PHYSICAL="SPI_M_0_sck_i"/>
+        <PORTMAP LOGICAL="SS_O" PHYSICAL="SPI_M_0_ss_o"/>
+        <PORTMAP LOGICAL="IO0_T" PHYSICAL="SPI_M_0_io0_t"/>
+        <PORTMAP LOGICAL="IO1_T" PHYSICAL="SPI_M_0_io1_t"/>
+        <PORTMAP LOGICAL="SCK_O" PHYSICAL="SPI_M_0_sck_o"/>
+        <PORTMAP LOGICAL="SS_I" PHYSICAL="SPI_M_0_ss_i"/>
+        <PORTMAP LOGICAL="IO1_I" PHYSICAL="SPI_M_0_io1_i"/>
+        <PORTMAP LOGICAL="IO0_I" PHYSICAL="SPI_M_0_io0_i"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/axi4stream_spi_master_0" HWVERSION="1.0" INSTANCE="axi4stream_spi_master_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi4stream_spi_master" VLNV="DigiLAB:ip:axi4stream_spi_master:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="c_clkfreq" VALUE="100000000"/>
+        <PARAMETER NAME="c_sclkfreq" VALUE="1000000"/>
+        <PARAMETER NAME="c_cpol" VALUE="0"/>
+        <PARAMETER NAME="c_cpha" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axi4stream_spi_master_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="m_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cs_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_ss_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cs_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_ss_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cs_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_cs_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_ss_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sclk_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_sck_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sclk_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_sck_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sclk_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_sck_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mosi_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io0_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mosi_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io0_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mosi_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="miso_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io1_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="miso_o" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="miso_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_miso_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="SPI_M_0_io1_t"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="axi4stream_spi_master_0_SPI_M" NAME="SPI_M" TYPE="INITIATOR" VLNV="xilinx.com:interface:spi:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SCK_T" PHYSICAL="sclk_t"/>
+            <PORTMAP LOGICAL="IO1_O" PHYSICAL="miso_o"/>
+            <PORTMAP LOGICAL="SS_T" PHYSICAL="cs_t"/>
+            <PORTMAP LOGICAL="IO0_O" PHYSICAL="mosi_o"/>
+            <PORTMAP LOGICAL="SCK_I" PHYSICAL="sclk_i"/>
+            <PORTMAP LOGICAL="SS_O" PHYSICAL="cs_o"/>
+            <PORTMAP LOGICAL="IO0_T" PHYSICAL="mosi_t"/>
+            <PORTMAP LOGICAL="IO1_T" PHYSICAL="miso_t"/>
+            <PORTMAP LOGICAL="SCK_O" PHYSICAL="sclk_o"/>
+            <PORTMAP LOGICAL="SS_I" PHYSICAL="cs_i"/>
+            <PORTMAP LOGICAL="IO1_I" PHYSICAL="miso_i"/>
+            <PORTMAP LOGICAL="IO0_I" PHYSICAL="mosi_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="digilent_jstk2_0_m_axis" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_sys_clock"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axi4stream_spi_master_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_sys_clock"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/digilent_jstk2_0" HWVERSION="1.0" INSTANCE="digilent_jstk2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="digilent_jstk2" VLNV="xilinx.com:module_ref:digilent_jstk2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY_US" VALUE="25"/>
+        <PARAMETER NAME="CLKFREQ" VALUE="100000000"/>
+        <PARAMETER NAME="SPI_SCLKFREQ" VALUE="66666"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_digilent_jstk2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="btn_jstk" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_jstk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn_jstk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="btn_trigger" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_trigger">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn_trigger_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="digilent_jstk2_0_m_axis" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_sys_clock"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axi4stream_spi_master_0_M_AXIS" NAME="s_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_sys_clock"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="13" FULLNAME="/proc_sys_reset_0" HWVERSION="5.0" INSTANCE="proc_sys_reset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset" VLNV="xilinx.com:ip:proc_sys_reset:5.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v5_0;d=pg164-proc-sys-reset.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_EXT_RST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_AUX_RST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="1"/>
+        <PARAMETER NAME="C_AUX_RESET_HIGH" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_BUS_RST" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_PERP_RST" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_INTERCONNECT_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_PERP_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_proc_sys_reset_0_0"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="true"/>
+        <PARAMETER NAME="RESET_BOARD_INTERFACE" VALUE="reset"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ext_reset_in" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aux_reset_in" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" NAME="mb_debug_sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="I" NAME="dcm_locked" SIGIS="undef"/>
+        <PORT DIR="O" NAME="mb_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

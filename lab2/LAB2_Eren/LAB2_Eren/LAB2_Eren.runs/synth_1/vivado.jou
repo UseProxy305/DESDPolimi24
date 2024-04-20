@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 20 13:39:01 2024
+# Process ID: 15456
+# Current directory: C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Eren/LAB2_Eren.runs/synth_1
+# Command line: vivado.exe -log digilent_jstk2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source digilent_jstk2.tcl
+# Log file: C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Eren/LAB2_Eren.runs/synth_1/digilent_jstk2.vds
+# Journal file: C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Eren/LAB2_Eren.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source digilent_jstk2.tcl -notrace
