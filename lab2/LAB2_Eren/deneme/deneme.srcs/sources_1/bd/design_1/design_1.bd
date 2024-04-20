@@ -12,8 +12,8 @@
     },
     "design_tree": {
       "axi4stream_spi_master_0": "",
-      "digilent_jstk2_0": "",
-      "proc_sys_reset_0": ""
+      "proc_sys_reset_0": "",
+      "digilent_jstk2_0": ""
     },
     "interface_ports": {
       "SPI_M_0": {
@@ -76,6 +76,20 @@
         "xci_name": "design_1_axi4stream_spi_master_0_0",
         "xci_path": "ip\\design_1_axi4stream_spi_master_0_0\\design_1_axi4stream_spi_master_0_0.xci",
         "inst_hier_path": "axi4stream_spi_master_0"
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_proc_sys_reset_0_0",
+        "xci_path": "ip\\design_1_proc_sys_reset_0_0\\design_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       },
       "digilent_jstk2_0": {
         "vlnv": "xilinx.com:module_ref:digilent_jstk2:1.0",
@@ -261,20 +275,6 @@
             "direction": "O"
           }
         }
-      },
-      "proc_sys_reset_0": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_proc_sys_reset_0_0",
-        "xci_path": "ip\\design_1_proc_sys_reset_0_0\\design_1_proc_sys_reset_0_0.xci",
-        "inst_hier_path": "proc_sys_reset_0",
-        "parameters": {
-          "RESET_BOARD_INTERFACE": {
-            "value": "reset"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -302,8 +302,8 @@
         "ports": [
           "sys_clock",
           "axi4stream_spi_master_0/aclk",
-          "digilent_jstk2_0/aclk",
-          "proc_sys_reset_0/slowest_sync_clk"
+          "proc_sys_reset_0/slowest_sync_clk",
+          "digilent_jstk2_0/aclk"
         ]
       },
       "rst_clk_wiz_100M_peripheral_aresetn": {

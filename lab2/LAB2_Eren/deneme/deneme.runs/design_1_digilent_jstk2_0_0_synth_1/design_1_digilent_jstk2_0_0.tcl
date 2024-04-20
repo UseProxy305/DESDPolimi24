@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_digilent_jstk2_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -92,7 +91,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {{C:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/digilent_jstk2.vhd}}
-read_ip -quiet c:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.srcs/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0.xci
+read_ip -quiet C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.srcs/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

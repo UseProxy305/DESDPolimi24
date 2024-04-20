@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Apr 20 17:54:07 2024" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 01:50:05 2024" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -7,8 +7,8 @@
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aclk"/>
-        <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aclk"/>
         <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
+        <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aclk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="btn_jstk_0" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_jstk">
@@ -19,6 +19,11 @@
     <PORT DIR="O" NAME="btn_trigger_0" SIGIS="undef" SIGNAME="digilent_jstk2_0_btn_trigger">
       <CONNECTIONS>
         <CONNECTION INSTANCE="digilent_jstk2_0" PORT="btn_trigger"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="SPI_M_0_sck_t" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_sclk_t">
@@ -79,11 +84,6 @@
     <PORT DIR="I" NAME="SPI_M_0_io0_i" SIGIS="undef" SIGNAME="axi4stream_spi_master_0_mosi_i">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="mosi_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

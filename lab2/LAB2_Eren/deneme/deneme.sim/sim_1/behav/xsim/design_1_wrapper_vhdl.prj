@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Piazza files/digilent_jstk2.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/axis_lw_spi_master.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/spi_master_lightweight/rtl/lw_spi_master.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/ipi_axis_lw_spi_master.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ip/design_1_axi4stream_spi_master_0_0/sim/design_1_axi4stream_spi_master_0_0.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ip/design_1_digilent_jstk2_0_0/sim/design_1_digilent_jstk2_0_0.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../../deneme.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../deneme.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

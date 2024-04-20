@@ -1,0 +1,42 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1f62dd65b4c54c0fbb4f5a3ea3b1827c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(1,7)(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.lw_spi_master [\lw_spi_master(c_clkfreq=1000000...]
+Compiling architecture behavioral of entity xil_defaultlib.axis_lw_spi_master [axis_lw_spi_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.ipi_axis_lw_spi_master [ipi_axis_lw_spi_master_default]
+Compiling architecture design_1_axi4stream_spi_master_0_0_arch of entity xil_defaultlib.design_1_axi4stream_spi_master_0_0 [design_1_axi4stream_spi_master_0...]
+Compiling architecture behavioral of entity xil_defaultlib.digilent_jstk2 [digilent_jstk2_default]
+Compiling architecture design_1_digilent_jstk2_0_0_arch of entity xil_defaultlib.design_1_digilent_jstk2_0_0 [design_1_digilent_jstk2_0_0_defa...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

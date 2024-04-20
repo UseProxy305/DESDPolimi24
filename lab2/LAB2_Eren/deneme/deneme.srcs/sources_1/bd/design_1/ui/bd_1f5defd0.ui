@@ -3,7 +3,7 @@
    "Color Coded_ScaleFactor":"1.0",
    "Color Coded_TopLeft":"-337,-104",
    "Default View_ScaleFactor":"0.972549",
-   "Default View_TopLeft":"-505,-400",
+   "Default View_TopLeft":"-505,-404",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -13,16 +13,16 @@ preplace port btn_jstk_0 -pg 1 -lvl 3 -x 480 -y -120 -defaultsOSRD
 preplace port btn_trigger_0 -pg 1 -lvl 3 -x 480 -y -100 -defaultsOSRD
 preplace port reset -pg 1 -lvl 0 -x -250 -y -320 -defaultsOSRD
 preplace inst axi4stream_spi_master_0 -pg 1 -lvl 2 -x 337 -y 20 -defaultsOSRD
-preplace inst digilent_jstk2_0 -pg 1 -lvl 1 -x -40 -y -120 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x -40 -y -300 -defaultsOSRD
+preplace inst digilent_jstk2_0 -pg 1 -lvl 1 -x -40 -y -120 -defaultsOSRD
 preplace netloc Net 1 0 2 -230 -200 140J
 preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 2 -220 -400 150
 preplace netloc digilent_jstk2_0_btn_jstk 1 1 2 NJ -120 NJ
 preplace netloc digilent_jstk2_0_btn_trigger 1 1 2 NJ -100 NJ
 preplace netloc reset_1 1 0 1 NJ -320
-preplace netloc axi4stream_spi_master_0_SPI_M 1 2 1 450 -60n
 preplace netloc digilent_jstk2_0_m_axis 1 1 1 130 -140n
 preplace netloc axi4stream_spi_master_0_M_AXIS 1 0 3 -210 100 NJ 100 450
+preplace netloc axi4stream_spi_master_0_SPI_M 1 2 1 450 -60n
 levelinfo -pg 1 -250 -40 337 480
 pagesize -pg 1 -db -bbox -sgen -370 -410 620 320
 "

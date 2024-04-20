@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/digilent_jstk2.vhd,1713656991,vhdl,,,,digilent_jstk2,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1713657005,vhdl,,,,design_1_wrapper,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ip/design_1_axi4stream_spi_master_0_0/sim/design_1_axi4stream_spi_master_0_0.vhd,1713627041,vhdl,,,,design_1_axi4stream_spi_master_0_0,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ip/design_1_digilent_jstk2_0_0/sim/design_1_digilent_jstk2_0_0.vhd,1713657005,vhdl,,,,design_1_digilent_jstk2_0_0,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd,1713628447,vhdl,,,,design_1_proc_sys_reset_0_0,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/axis_lw_spi_master.vhd,1713627041,vhdl,,,,axis_lw_spi_master,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/ipi_axis_lw_spi_master.vhd,1713627041,vhdl,,,,ipi_axis_lw_spi_master,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ipshared/ead8/hdl/spi_master_lightweight/rtl/lw_spi_master.vhd,1713627041,vhdl,,,,lw_spi_master,,,,,,,,
+C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/sim/design_1.vhd,1713657005,vhdl,,,,design_1,,,,,,,,

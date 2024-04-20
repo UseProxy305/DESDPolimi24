@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/digilent_jstk2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'digilent_jstk2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/ip/design_1_digilent_jstk2_0_0/sim/design_1_digilent_jstk2_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_digilent_jstk2_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Sat Apr 20 17:54:07 2024
+--Date        : Sun Apr 21 01:50:05 2024
 --Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -60,19 +60,6 @@ architecture STRUCTURE of design_1 is
     miso_t : out STD_LOGIC
   );
   end component design_1_axi4stream_spi_master_0_0;
-  component design_1_digilent_jstk2_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tready : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    btn_jstk : out STD_LOGIC;
-    btn_trigger : out STD_LOGIC
-  );
-  end component design_1_digilent_jstk2_0_0;
   component design_1_proc_sys_reset_0_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -87,6 +74,19 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_proc_sys_reset_0_0;
+  component design_1_digilent_jstk2_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axis_tready : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    btn_jstk : out STD_LOGIC;
+    btn_trigger : out STD_LOGIC
+  );
+  end component design_1_digilent_jstk2_0_0;
   signal Net : STD_LOGIC;
   signal axi4stream_spi_master_0_M_AXIS_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi4stream_spi_master_0_M_AXIS_TVALID : STD_LOGIC;
