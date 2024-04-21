@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sun Apr 21 01:52:26 2024
+-- Date        : Sun Apr 21 12:50:34 2024
 -- Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0_sim_netlist.vhdl
@@ -20,9 +20,9 @@ entity design_1_digilent_jstk2_0_0_digilent_jstk2 is
     btn_trigger : out STD_LOGIC;
     btn_jstk : out STD_LOGIC;
     aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
     aclk : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -31,7 +31,6 @@ end design_1_digilent_jstk2_0_0_digilent_jstk2;
 
 architecture STRUCTURE of design_1_digilent_jstk2_0_0_digilent_jstk2 is
   signal \^btn_jstk\ : STD_LOGIC;
-  signal btn_jstk_i_10_n_0 : STD_LOGIC;
   signal btn_jstk_i_1_n_0 : STD_LOGIC;
   signal btn_jstk_i_2_n_0 : STD_LOGIC;
   signal btn_jstk_i_3_n_0 : STD_LOGIC;
@@ -111,60 +110,61 @@ architecture STRUCTURE of design_1_digilent_jstk2_0_0_digilent_jstk2 is
   signal data0 : STD_LOGIC_VECTOR ( 31 downto 1 );
   signal delay_count : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal delay_count0 : STD_LOGIC;
+  signal \delay_count0_carry__0_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__0_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__0_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__0_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__1_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__1_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__1_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__1_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__2_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__2_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__2_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__2_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__3_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__3_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__3_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__3_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__4_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__4_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__4_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__4_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__5_n_0\ : STD_LOGIC;
+  signal \delay_count0_carry__5_n_1\ : STD_LOGIC;
+  signal \delay_count0_carry__5_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__5_n_3\ : STD_LOGIC;
+  signal \delay_count0_carry__6_n_2\ : STD_LOGIC;
+  signal \delay_count0_carry__6_n_3\ : STD_LOGIC;
+  signal delay_count0_carry_n_0 : STD_LOGIC;
+  signal delay_count0_carry_n_1 : STD_LOGIC;
+  signal delay_count0_carry_n_2 : STD_LOGIC;
+  signal delay_count0_carry_n_3 : STD_LOGIC;
   signal \delay_count[0]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_10_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_11_n_0\ : STD_LOGIC;
   signal \delay_count[31]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_4_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_5_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_6_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_7_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_8_n_0\ : STD_LOGIC;
-  signal \delay_count[31]_i_9_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[12]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[12]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[12]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[12]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[16]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[16]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[16]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[16]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[20]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[20]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[20]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[20]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[24]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[24]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[24]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[24]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[28]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[28]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[28]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[28]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[31]_i_3_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[31]_i_3_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[4]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[4]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[4]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[4]_i_1_n_3\ : STD_LOGIC;
-  signal \delay_count_reg[8]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_count_reg[8]_i_1_n_1\ : STD_LOGIC;
-  signal \delay_count_reg[8]_i_1_n_2\ : STD_LOGIC;
-  signal \delay_count_reg[8]_i_1_n_3\ : STD_LOGIC;
   signal \dummy[0]_i_1_n_0\ : STD_LOGIC;
   signal \dummy[1]_i_1_n_0\ : STD_LOGIC;
   signal \dummy[1]_i_2_n_0\ : STD_LOGIC;
   signal \dummy_reg_n_0_[0]\ : STD_LOGIC;
   signal \^m_axis_tvalid\ : STD_LOGIC;
+  signal m_axis_tvalid_i_10_n_0 : STD_LOGIC;
   signal m_axis_tvalid_i_1_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_2_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_3_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_4_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_5_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_6_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_7_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_8_n_0 : STD_LOGIC;
+  signal m_axis_tvalid_i_9_n_0 : STD_LOGIC;
   signal p_0_in : STD_LOGIC;
   signal p_0_in0 : STD_LOGIC;
   signal \NLW_count0_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_count0_carry__6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_delay_count_reg[31]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_delay_count_reg[31]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_delay_count0_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_delay_count0_carry__6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of btn_jstk_i_2 : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of btn_jstk_i_4 : label is "soft_lutpair0";
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of count0_carry : label is 35;
   attribute ADDER_THRESHOLD of \count0_carry__0\ : label is 35;
@@ -174,132 +174,123 @@ architecture STRUCTURE of design_1_digilent_jstk2_0_0_digilent_jstk2 is
   attribute ADDER_THRESHOLD of \count0_carry__4\ : label is 35;
   attribute ADDER_THRESHOLD of \count0_carry__5\ : label is 35;
   attribute ADDER_THRESHOLD of \count0_carry__6\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[12]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[16]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[20]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[24]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[28]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[31]_i_3\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[4]_i_1\ : label is 35;
-  attribute ADDER_THRESHOLD of \delay_count_reg[8]_i_1\ : label is 35;
+  attribute ADDER_THRESHOLD of delay_count0_carry : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__0\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__1\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__2\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__3\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__4\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__5\ : label is 35;
+  attribute ADDER_THRESHOLD of \delay_count0_carry__6\ : label is 35;
   attribute SOFT_HLUTNM of \dummy[1]_i_2\ : label is "soft_lutpair0";
 begin
   btn_jstk <= \^btn_jstk\;
   btn_trigger <= \^btn_trigger\;
   m_axis_tvalid <= \^m_axis_tvalid\;
-btn_jstk_i_1: unisim.vcomponents.LUT4
+btn_jstk_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"BF80"
+      INIT => X"FFFFFEFF00000200"
     )
         port map (
       I0 => \dummy_reg_n_0_[0]\,
       I1 => btn_jstk_i_2_n_0,
       I2 => btn_jstk_i_3_n_0,
-      I3 => \^btn_jstk\,
+      I3 => count0_0,
+      I4 => btn_jstk_i_4_n_0,
+      I5 => \^btn_jstk\,
       O => btn_jstk_i_1_n_0
     );
-btn_jstk_i_10: unisim.vcomponents.LUT4
+btn_jstk_i_2: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0001"
+      INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => \count_reg_n_0_[26]\,
-      I1 => \count_reg_n_0_[25]\,
-      I2 => \count_reg_n_0_[24]\,
-      I3 => \count_reg_n_0_[23]\,
-      O => btn_jstk_i_10_n_0
-    );
-btn_jstk_i_2: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"04000000"
-    )
-        port map (
-      I0 => \count_reg_n_0_[0]\,
-      I1 => \count_reg_n_0_[2]\,
-      I2 => \count_reg_n_0_[1]\,
-      I3 => aresetn,
-      I4 => s_axis_tvalid,
+      I0 => btn_jstk_i_5_n_0,
+      I1 => btn_jstk_i_6_n_0,
+      I2 => btn_jstk_i_7_n_0,
+      I3 => \count_reg_n_0_[5]\,
+      I4 => \count_reg_n_0_[19]\,
+      I5 => \count_reg_n_0_[12]\,
       O => btn_jstk_i_2_n_0
     );
-btn_jstk_i_3: unisim.vcomponents.LUT3
+btn_jstk_i_3: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"80"
+      INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => btn_jstk_i_4_n_0,
-      I1 => btn_jstk_i_5_n_0,
-      I2 => btn_jstk_i_6_n_0,
+      I0 => btn_jstk_i_8_n_0,
+      I1 => btn_jstk_i_9_n_0,
+      I2 => \count_reg_n_0_[25]\,
+      I3 => \count_reg_n_0_[22]\,
+      I4 => \count_reg_n_0_[11]\,
+      I5 => \count_reg_n_0_[8]\,
       O => btn_jstk_i_3_n_0
     );
-btn_jstk_i_4: unisim.vcomponents.LUT5
+btn_jstk_i_4: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"00010000"
+      INIT => X"FD"
     )
         port map (
-      I0 => p_0_in0,
-      I1 => \count_reg_n_0_[4]\,
-      I2 => \count_reg_n_0_[5]\,
-      I3 => \count_reg_n_0_[6]\,
-      I4 => btn_jstk_i_7_n_0,
+      I0 => \count_reg_n_0_[2]\,
+      I1 => \count_reg_n_0_[1]\,
+      I2 => \count_reg_n_0_[0]\,
       O => btn_jstk_i_4_n_0
     );
-btn_jstk_i_5: unisim.vcomponents.LUT5
+btn_jstk_i_5: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00010000"
-    )
-        port map (
-      I0 => \count_reg_n_0_[11]\,
-      I1 => \count_reg_n_0_[12]\,
-      I2 => \count_reg_n_0_[13]\,
-      I3 => \count_reg_n_0_[14]\,
-      I4 => btn_jstk_i_8_n_0,
-      O => btn_jstk_i_5_n_0
-    );
-btn_jstk_i_6: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000008"
-    )
-        port map (
-      I0 => btn_jstk_i_9_n_0,
-      I1 => btn_jstk_i_10_n_0,
-      I2 => \count_reg_n_0_[22]\,
-      I3 => \count_reg_n_0_[21]\,
-      I4 => \count_reg_n_0_[20]\,
-      I5 => \count_reg_n_0_[19]\,
-      O => btn_jstk_i_6_n_0
-    );
-btn_jstk_i_7: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0001"
-    )
-        port map (
-      I0 => \count_reg_n_0_[10]\,
-      I1 => \count_reg_n_0_[9]\,
-      I2 => \count_reg_n_0_[8]\,
-      I3 => \count_reg_n_0_[7]\,
-      O => btn_jstk_i_7_n_0
-    );
-btn_jstk_i_8: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0001"
+      INIT => X"FFFE"
     )
         port map (
       I0 => \count_reg_n_0_[18]\,
       I1 => \count_reg_n_0_[17]\,
-      I2 => \count_reg_n_0_[16]\,
-      I3 => \count_reg_n_0_[15]\,
-      O => btn_jstk_i_8_n_0
+      I2 => \count_reg_n_0_[21]\,
+      I3 => \count_reg_n_0_[16]\,
+      O => btn_jstk_i_5_n_0
     );
-btn_jstk_i_9: unisim.vcomponents.LUT5
+btn_jstk_i_6: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000001"
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => \count_reg_n_0_[28]\,
+      I1 => \count_reg_n_0_[24]\,
+      I2 => \count_reg_n_0_[20]\,
+      I3 => \count_reg_n_0_[9]\,
+      O => btn_jstk_i_6_n_0
+    );
+btn_jstk_i_7: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
     )
         port map (
       I0 => \count_reg_n_0_[27]\,
-      I1 => \count_reg_n_0_[28]\,
-      I2 => \count_reg_n_0_[29]\,
-      I3 => \count_reg_n_0_[30]\,
-      I4 => \count_reg_n_0_[31]\,
+      I1 => p_0_in0,
+      I2 => \count_reg_n_0_[31]\,
+      I3 => \count_reg_n_0_[10]\,
+      O => btn_jstk_i_7_n_0
+    );
+btn_jstk_i_8: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => \count_reg_n_0_[13]\,
+      I1 => \count_reg_n_0_[6]\,
+      I2 => \count_reg_n_0_[4]\,
+      I3 => \count_reg_n_0_[14]\,
+      I4 => \count_reg_n_0_[29]\,
+      I5 => \count_reg_n_0_[30]\,
+      O => btn_jstk_i_8_n_0
+    );
+btn_jstk_i_9: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => \count_reg_n_0_[26]\,
+      I1 => \count_reg_n_0_[7]\,
+      I2 => \count_reg_n_0_[23]\,
+      I3 => \count_reg_n_0_[15]\,
       O => btn_jstk_i_9_n_0
     );
 btn_jstk_reg: unisim.vcomponents.FDRE
@@ -310,15 +301,17 @@ btn_jstk_reg: unisim.vcomponents.FDRE
       Q => \^btn_jstk\,
       R => '0'
     );
-btn_trigger_i_1: unisim.vcomponents.LUT4
+btn_trigger_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"BF80"
+      INIT => X"FFFFFEFF00000200"
     )
         port map (
       I0 => p_0_in,
       I1 => btn_jstk_i_2_n_0,
       I2 => btn_jstk_i_3_n_0,
-      I3 => \^btn_trigger\,
+      I3 => count0_0,
+      I4 => btn_jstk_i_4_n_0,
+      I5 => \^btn_trigger\,
       O => btn_trigger_i_1_n_0
     );
 btn_trigger_reg: unisim.vcomponents.FDRE
@@ -457,15 +450,16 @@ count0_carry: unisim.vcomponents.CARRY4
       I0 => \count_reg_n_0_[0]\,
       O => \count[0]_i_1_n_0\
     );
-\count[31]_i_1\: unisim.vcomponents.LUT4
+\count[31]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"8088"
+      INIT => X"FE000000"
     )
         port map (
-      I0 => aresetn,
-      I1 => s_axis_tvalid,
+      I0 => btn_jstk_i_2_n_0,
+      I1 => btn_jstk_i_3_n_0,
       I2 => \count_reg_n_0_[2]\,
-      I3 => btn_jstk_i_3_n_0,
+      I3 => s_axis_tvalid,
+      I4 => aresetn,
       O => \count[31]_i_1_n_0\
     );
 \count[31]_i_2\: unisim.vcomponents.LUT2
@@ -473,8 +467,8 @@ count0_carry: unisim.vcomponents.CARRY4
       INIT => X"8"
     )
         port map (
-      I0 => s_axis_tvalid,
-      I1 => aresetn,
+      I0 => aresetn,
+      I1 => s_axis_tvalid,
       O => count0_0
     );
 \count_reg[0]\: unisim.vcomponents.FDRE
@@ -829,53 +823,123 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => \count_reg_n_0_[9]\,
       R => \count[31]_i_1_n_0\
     );
-\delay_count[0]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"01FFFFFFFF000000"
-    )
-        port map (
-      I0 => \delay_count[31]_i_6_n_0\,
-      I1 => \delay_count[31]_i_5_n_0\,
-      I2 => \delay_count[31]_i_4_n_0\,
-      I3 => aresetn,
-      I4 => m_axis_tready,
-      I5 => delay_count(0),
-      O => \delay_count[0]_i_1_n_0\
+delay_count0_carry: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => delay_count0_carry_n_0,
+      CO(2) => delay_count0_carry_n_1,
+      CO(1) => delay_count0_carry_n_2,
+      CO(0) => delay_count0_carry_n_3,
+      CYINIT => delay_count(0),
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(4 downto 1),
+      S(3 downto 0) => delay_count(4 downto 1)
     );
-\delay_count[31]_i_1\: unisim.vcomponents.LUT6
+\delay_count0_carry__0\: unisim.vcomponents.CARRY4
+     port map (
+      CI => delay_count0_carry_n_0,
+      CO(3) => \delay_count0_carry__0_n_0\,
+      CO(2) => \delay_count0_carry__0_n_1\,
+      CO(1) => \delay_count0_carry__0_n_2\,
+      CO(0) => \delay_count0_carry__0_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(8 downto 5),
+      S(3 downto 0) => delay_count(8 downto 5)
+    );
+\delay_count0_carry__1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__0_n_0\,
+      CO(3) => \delay_count0_carry__1_n_0\,
+      CO(2) => \delay_count0_carry__1_n_1\,
+      CO(1) => \delay_count0_carry__1_n_2\,
+      CO(0) => \delay_count0_carry__1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(12 downto 9),
+      S(3 downto 0) => delay_count(12 downto 9)
+    );
+\delay_count0_carry__2\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__1_n_0\,
+      CO(3) => \delay_count0_carry__2_n_0\,
+      CO(2) => \delay_count0_carry__2_n_1\,
+      CO(1) => \delay_count0_carry__2_n_2\,
+      CO(0) => \delay_count0_carry__2_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(16 downto 13),
+      S(3 downto 0) => delay_count(16 downto 13)
+    );
+\delay_count0_carry__3\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__2_n_0\,
+      CO(3) => \delay_count0_carry__3_n_0\,
+      CO(2) => \delay_count0_carry__3_n_1\,
+      CO(1) => \delay_count0_carry__3_n_2\,
+      CO(0) => \delay_count0_carry__3_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(20 downto 17),
+      S(3 downto 0) => delay_count(20 downto 17)
+    );
+\delay_count0_carry__4\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__3_n_0\,
+      CO(3) => \delay_count0_carry__4_n_0\,
+      CO(2) => \delay_count0_carry__4_n_1\,
+      CO(1) => \delay_count0_carry__4_n_2\,
+      CO(0) => \delay_count0_carry__4_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(24 downto 21),
+      S(3 downto 0) => delay_count(24 downto 21)
+    );
+\delay_count0_carry__5\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__4_n_0\,
+      CO(3) => \delay_count0_carry__5_n_0\,
+      CO(2) => \delay_count0_carry__5_n_1\,
+      CO(1) => \delay_count0_carry__5_n_2\,
+      CO(0) => \delay_count0_carry__5_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => data0(28 downto 25),
+      S(3 downto 0) => delay_count(28 downto 25)
+    );
+\delay_count0_carry__6\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \delay_count0_carry__5_n_0\,
+      CO(3 downto 2) => \NLW_delay_count0_carry__6_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \delay_count0_carry__6_n_2\,
+      CO(0) => \delay_count0_carry__6_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \NLW_delay_count0_carry__6_O_UNCONNECTED\(3),
+      O(2 downto 0) => data0(31 downto 29),
+      S(3) => '0',
+      S(2 downto 0) => delay_count(31 downto 29)
+    );
+\delay_count[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0000000000000080"
+      INIT => X"78"
     )
         port map (
       I0 => m_axis_tready,
       I1 => aresetn,
       I2 => delay_count(0),
-      I3 => \delay_count[31]_i_4_n_0\,
-      I4 => \delay_count[31]_i_5_n_0\,
-      I5 => \delay_count[31]_i_6_n_0\,
+      O => \delay_count[0]_i_1_n_0\
+    );
+\delay_count[31]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"4000"
+    )
+        port map (
+      I0 => m_axis_tvalid_i_2_n_0,
+      I1 => m_axis_tvalid_i_3_n_0,
+      I2 => aresetn,
+      I3 => m_axis_tready,
       O => \delay_count[31]_i_1_n_0\
-    );
-\delay_count[31]_i_10\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => delay_count(19),
-      I1 => delay_count(18),
-      I2 => delay_count(21),
-      I3 => delay_count(20),
-      O => \delay_count[31]_i_10_n_0\
-    );
-\delay_count[31]_i_11\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => delay_count(27),
-      I1 => delay_count(26),
-      I2 => delay_count(29),
-      I3 => delay_count(28),
-      O => \delay_count[31]_i_11_n_0\
     );
 \delay_count[31]_i_2\: unisim.vcomponents.LUT2
     generic map(
@@ -885,76 +949,6 @@ count0_carry: unisim.vcomponents.CARRY4
       I0 => aresetn,
       I1 => m_axis_tready,
       O => delay_count0
-    );
-\delay_count[31]_i_4\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => delay_count(12),
-      I1 => delay_count(13),
-      I2 => delay_count(10),
-      I3 => delay_count(11),
-      I4 => \delay_count[31]_i_7_n_0\,
-      O => \delay_count[31]_i_4_n_0\
-    );
-\delay_count[31]_i_5\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFEFFF"
-    )
-        port map (
-      I0 => delay_count(4),
-      I1 => delay_count(5),
-      I2 => delay_count(2),
-      I3 => delay_count(3),
-      I4 => \delay_count[31]_i_8_n_0\,
-      O => \delay_count[31]_i_5_n_0\
-    );
-\delay_count[31]_i_6\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => \delay_count[31]_i_9_n_0\,
-      I1 => \delay_count[31]_i_10_n_0\,
-      I2 => delay_count(31),
-      I3 => delay_count(30),
-      I4 => delay_count(1),
-      I5 => \delay_count[31]_i_11_n_0\,
-      O => \delay_count[31]_i_6_n_0\
-    );
-\delay_count[31]_i_7\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => delay_count(15),
-      I1 => delay_count(14),
-      I2 => delay_count(17),
-      I3 => delay_count(16),
-      O => \delay_count[31]_i_7_n_0\
-    );
-\delay_count[31]_i_8\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => delay_count(7),
-      I1 => delay_count(6),
-      I2 => delay_count(9),
-      I3 => delay_count(8),
-      O => \delay_count[31]_i_8_n_0\
-    );
-\delay_count[31]_i_9\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => delay_count(23),
-      I1 => delay_count(22),
-      I2 => delay_count(25),
-      I3 => delay_count(24),
-      O => \delay_count[31]_i_9_n_0\
     );
 \delay_count_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1000,18 +994,6 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => delay_count(12),
       R => \delay_count[31]_i_1_n_0\
     );
-\delay_count_reg[12]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[8]_i_1_n_0\,
-      CO(3) => \delay_count_reg[12]_i_1_n_0\,
-      CO(2) => \delay_count_reg[12]_i_1_n_1\,
-      CO(1) => \delay_count_reg[12]_i_1_n_2\,
-      CO(0) => \delay_count_reg[12]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(12 downto 9),
-      S(3 downto 0) => delay_count(12 downto 9)
-    );
 \delay_count_reg[13]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1055,18 +1037,6 @@ count0_carry: unisim.vcomponents.CARRY4
       D => data0(16),
       Q => delay_count(16),
       R => \delay_count[31]_i_1_n_0\
-    );
-\delay_count_reg[16]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[12]_i_1_n_0\,
-      CO(3) => \delay_count_reg[16]_i_1_n_0\,
-      CO(2) => \delay_count_reg[16]_i_1_n_1\,
-      CO(1) => \delay_count_reg[16]_i_1_n_2\,
-      CO(0) => \delay_count_reg[16]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(16 downto 13),
-      S(3 downto 0) => delay_count(16 downto 13)
     );
 \delay_count_reg[17]\: unisim.vcomponents.FDRE
     generic map(
@@ -1123,18 +1093,6 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => delay_count(20),
       R => \delay_count[31]_i_1_n_0\
     );
-\delay_count_reg[20]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[16]_i_1_n_0\,
-      CO(3) => \delay_count_reg[20]_i_1_n_0\,
-      CO(2) => \delay_count_reg[20]_i_1_n_1\,
-      CO(1) => \delay_count_reg[20]_i_1_n_2\,
-      CO(0) => \delay_count_reg[20]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(20 downto 17),
-      S(3 downto 0) => delay_count(20 downto 17)
-    );
 \delay_count_reg[21]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1178,18 +1136,6 @@ count0_carry: unisim.vcomponents.CARRY4
       D => data0(24),
       Q => delay_count(24),
       R => \delay_count[31]_i_1_n_0\
-    );
-\delay_count_reg[24]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[20]_i_1_n_0\,
-      CO(3) => \delay_count_reg[24]_i_1_n_0\,
-      CO(2) => \delay_count_reg[24]_i_1_n_1\,
-      CO(1) => \delay_count_reg[24]_i_1_n_2\,
-      CO(0) => \delay_count_reg[24]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(24 downto 21),
-      S(3 downto 0) => delay_count(24 downto 21)
     );
 \delay_count_reg[25]\: unisim.vcomponents.FDRE
     generic map(
@@ -1235,18 +1181,6 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => delay_count(28),
       R => \delay_count[31]_i_1_n_0\
     );
-\delay_count_reg[28]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[24]_i_1_n_0\,
-      CO(3) => \delay_count_reg[28]_i_1_n_0\,
-      CO(2) => \delay_count_reg[28]_i_1_n_1\,
-      CO(1) => \delay_count_reg[28]_i_1_n_2\,
-      CO(0) => \delay_count_reg[28]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(28 downto 25),
-      S(3 downto 0) => delay_count(28 downto 25)
-    );
 \delay_count_reg[29]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1291,19 +1225,6 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => delay_count(31),
       R => \delay_count[31]_i_1_n_0\
     );
-\delay_count_reg[31]_i_3\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[28]_i_1_n_0\,
-      CO(3 downto 2) => \NLW_delay_count_reg[31]_i_3_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \delay_count_reg[31]_i_3_n_2\,
-      CO(0) => \delay_count_reg[31]_i_3_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \NLW_delay_count_reg[31]_i_3_O_UNCONNECTED\(3),
-      O(2 downto 0) => data0(31 downto 29),
-      S(3) => '0',
-      S(2 downto 0) => delay_count(31 downto 29)
-    );
 \delay_count_reg[3]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1325,18 +1246,6 @@ count0_carry: unisim.vcomponents.CARRY4
       D => data0(4),
       Q => delay_count(4),
       R => \delay_count[31]_i_1_n_0\
-    );
-\delay_count_reg[4]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => \delay_count_reg[4]_i_1_n_0\,
-      CO(2) => \delay_count_reg[4]_i_1_n_1\,
-      CO(1) => \delay_count_reg[4]_i_1_n_2\,
-      CO(0) => \delay_count_reg[4]_i_1_n_3\,
-      CYINIT => delay_count(0),
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(4 downto 1),
-      S(3 downto 0) => delay_count(4 downto 1)
     );
 \delay_count_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -1382,18 +1291,6 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => delay_count(8),
       R => \delay_count[31]_i_1_n_0\
     );
-\delay_count_reg[8]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \delay_count_reg[4]_i_1_n_0\,
-      CO(3) => \delay_count_reg[8]_i_1_n_0\,
-      CO(2) => \delay_count_reg[8]_i_1_n_1\,
-      CO(1) => \delay_count_reg[8]_i_1_n_2\,
-      CO(0) => \delay_count_reg[8]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => data0(8 downto 5),
-      S(3 downto 0) => delay_count(8 downto 5)
-    );
 \delay_count_reg[9]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1407,39 +1304,38 @@ count0_carry: unisim.vcomponents.CARRY4
     );
 \dummy[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"BFAFBFBF80A08080"
+      INIT => X"FFFFFEFF00000200"
     )
         port map (
       I0 => s_axis_tdata(0),
-      I1 => \dummy[1]_i_2_n_0\,
+      I1 => btn_jstk_i_2_n_0,
       I2 => btn_jstk_i_3_n_0,
-      I3 => \count_reg_n_0_[2]\,
-      I4 => count0_0,
+      I3 => count0_0,
+      I4 => \dummy[1]_i_2_n_0\,
       I5 => \dummy_reg_n_0_[0]\,
       O => \dummy[0]_i_1_n_0\
     );
 \dummy[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"BFAFBFBF80A08080"
+      INIT => X"FFFFFEFF00000200"
     )
         port map (
       I0 => s_axis_tdata(1),
-      I1 => \dummy[1]_i_2_n_0\,
+      I1 => btn_jstk_i_2_n_0,
       I2 => btn_jstk_i_3_n_0,
-      I3 => \count_reg_n_0_[2]\,
-      I4 => count0_0,
+      I3 => count0_0,
+      I4 => \dummy[1]_i_2_n_0\,
       I5 => p_0_in,
       O => \dummy[1]_i_1_n_0\
     );
-\dummy[1]_i_2\: unisim.vcomponents.LUT4
+\dummy[1]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"1000"
+      INIT => X"A8"
     )
         port map (
-      I0 => \count_reg_n_0_[1]\,
-      I1 => \count_reg_n_0_[0]\,
-      I2 => aresetn,
-      I3 => s_axis_tvalid,
+      I0 => \count_reg_n_0_[2]\,
+      I1 => \count_reg_n_0_[1]\,
+      I2 => \count_reg_n_0_[0]\,
       O => \dummy[1]_i_2_n_0\
     );
 \dummy_reg[0]\: unisim.vcomponents.FDRE
@@ -1458,16 +1354,119 @@ count0_carry: unisim.vcomponents.CARRY4
       Q => p_0_in,
       R => '0'
     );
-m_axis_tvalid_i_1: unisim.vcomponents.LUT4
+m_axis_tvalid_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AEFE"
+      INIT => X"2EEE2E2E"
     )
         port map (
-      I0 => \delay_count[31]_i_1_n_0\,
-      I1 => \^m_axis_tvalid\,
-      I2 => aresetn,
-      I3 => m_axis_tready,
+      I0 => \^m_axis_tvalid\,
+      I1 => aresetn,
+      I2 => m_axis_tready,
+      I3 => m_axis_tvalid_i_2_n_0,
+      I4 => m_axis_tvalid_i_3_n_0,
       O => m_axis_tvalid_i_1_n_0
+    );
+m_axis_tvalid_i_10: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
+    )
+        port map (
+      I0 => delay_count(19),
+      I1 => delay_count(26),
+      I2 => delay_count(14),
+      O => m_axis_tvalid_i_10_n_0
+    );
+m_axis_tvalid_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FEFFFFFF"
+    )
+        port map (
+      I0 => m_axis_tvalid_i_4_n_0,
+      I1 => m_axis_tvalid_i_5_n_0,
+      I2 => delay_count(29),
+      I3 => delay_count(2),
+      I4 => delay_count(3),
+      O => m_axis_tvalid_i_2_n_0
+    );
+m_axis_tvalid_i_3: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00000004"
+    )
+        port map (
+      I0 => m_axis_tvalid_i_6_n_0,
+      I1 => m_axis_tvalid_i_7_n_0,
+      I2 => m_axis_tvalid_i_8_n_0,
+      I3 => m_axis_tvalid_i_9_n_0,
+      I4 => m_axis_tvalid_i_10_n_0,
+      O => m_axis_tvalid_i_3_n_0
+    );
+m_axis_tvalid_i_4: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => delay_count(7),
+      I1 => delay_count(0),
+      I2 => delay_count(28),
+      I3 => delay_count(5),
+      I4 => delay_count(30),
+      I5 => delay_count(27),
+      O => m_axis_tvalid_i_4_n_0
+    );
+m_axis_tvalid_i_5: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFEF"
+    )
+        port map (
+      I0 => delay_count(6),
+      I1 => delay_count(4),
+      I2 => delay_count(1),
+      I3 => delay_count(31),
+      O => m_axis_tvalid_i_5_n_0
+    );
+m_axis_tvalid_i_6: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => delay_count(20),
+      I1 => delay_count(10),
+      I2 => delay_count(18),
+      I3 => delay_count(15),
+      O => m_axis_tvalid_i_6_n_0
+    );
+m_axis_tvalid_i_7: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0001"
+    )
+        port map (
+      I0 => delay_count(25),
+      I1 => delay_count(24),
+      I2 => delay_count(22),
+      I3 => delay_count(11),
+      O => m_axis_tvalid_i_7_n_0
+    );
+m_axis_tvalid_i_8: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => delay_count(23),
+      I1 => delay_count(8),
+      I2 => delay_count(21),
+      I3 => delay_count(17),
+      O => m_axis_tvalid_i_8_n_0
+    );
+m_axis_tvalid_i_9: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => delay_count(13),
+      I1 => delay_count(9),
+      I2 => delay_count(16),
+      I3 => delay_count(12),
+      O => m_axis_tvalid_i_9_n_0
     );
 m_axis_tvalid_reg: unisim.vcomponents.FDRE
      port map (

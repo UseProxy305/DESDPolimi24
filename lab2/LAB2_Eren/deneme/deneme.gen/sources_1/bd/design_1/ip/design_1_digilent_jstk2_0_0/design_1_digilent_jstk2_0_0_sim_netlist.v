@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sun Apr 21 01:52:26 2024
+// Date        : Sun Apr 21 12:50:34 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0_sim_netlist.v
@@ -75,23 +75,22 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
     btn_trigger,
     btn_jstk,
     aresetn,
-    s_axis_tvalid,
     m_axis_tready,
     aclk,
+    s_axis_tvalid,
     s_axis_tdata);
   output m_axis_tvalid;
   output btn_trigger;
   output btn_jstk;
   input aresetn;
-  input s_axis_tvalid;
   input m_axis_tready;
   input aclk;
+  input s_axis_tvalid;
   input [1:0]s_axis_tdata;
 
   wire aclk;
   wire aresetn;
   wire btn_jstk;
-  wire btn_jstk_i_10_n_0;
   wire btn_jstk_i_1_n_0;
   wire btn_jstk_i_2_n_0;
   wire btn_jstk_i_3_n_0;
@@ -171,147 +170,142 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
   wire [31:1]data0;
   wire [31:0]delay_count;
   wire delay_count0;
+  wire delay_count0_carry__0_n_0;
+  wire delay_count0_carry__0_n_1;
+  wire delay_count0_carry__0_n_2;
+  wire delay_count0_carry__0_n_3;
+  wire delay_count0_carry__1_n_0;
+  wire delay_count0_carry__1_n_1;
+  wire delay_count0_carry__1_n_2;
+  wire delay_count0_carry__1_n_3;
+  wire delay_count0_carry__2_n_0;
+  wire delay_count0_carry__2_n_1;
+  wire delay_count0_carry__2_n_2;
+  wire delay_count0_carry__2_n_3;
+  wire delay_count0_carry__3_n_0;
+  wire delay_count0_carry__3_n_1;
+  wire delay_count0_carry__3_n_2;
+  wire delay_count0_carry__3_n_3;
+  wire delay_count0_carry__4_n_0;
+  wire delay_count0_carry__4_n_1;
+  wire delay_count0_carry__4_n_2;
+  wire delay_count0_carry__4_n_3;
+  wire delay_count0_carry__5_n_0;
+  wire delay_count0_carry__5_n_1;
+  wire delay_count0_carry__5_n_2;
+  wire delay_count0_carry__5_n_3;
+  wire delay_count0_carry__6_n_2;
+  wire delay_count0_carry__6_n_3;
+  wire delay_count0_carry_n_0;
+  wire delay_count0_carry_n_1;
+  wire delay_count0_carry_n_2;
+  wire delay_count0_carry_n_3;
   wire \delay_count[0]_i_1_n_0 ;
-  wire \delay_count[31]_i_10_n_0 ;
-  wire \delay_count[31]_i_11_n_0 ;
   wire \delay_count[31]_i_1_n_0 ;
-  wire \delay_count[31]_i_4_n_0 ;
-  wire \delay_count[31]_i_5_n_0 ;
-  wire \delay_count[31]_i_6_n_0 ;
-  wire \delay_count[31]_i_7_n_0 ;
-  wire \delay_count[31]_i_8_n_0 ;
-  wire \delay_count[31]_i_9_n_0 ;
-  wire \delay_count_reg[12]_i_1_n_0 ;
-  wire \delay_count_reg[12]_i_1_n_1 ;
-  wire \delay_count_reg[12]_i_1_n_2 ;
-  wire \delay_count_reg[12]_i_1_n_3 ;
-  wire \delay_count_reg[16]_i_1_n_0 ;
-  wire \delay_count_reg[16]_i_1_n_1 ;
-  wire \delay_count_reg[16]_i_1_n_2 ;
-  wire \delay_count_reg[16]_i_1_n_3 ;
-  wire \delay_count_reg[20]_i_1_n_0 ;
-  wire \delay_count_reg[20]_i_1_n_1 ;
-  wire \delay_count_reg[20]_i_1_n_2 ;
-  wire \delay_count_reg[20]_i_1_n_3 ;
-  wire \delay_count_reg[24]_i_1_n_0 ;
-  wire \delay_count_reg[24]_i_1_n_1 ;
-  wire \delay_count_reg[24]_i_1_n_2 ;
-  wire \delay_count_reg[24]_i_1_n_3 ;
-  wire \delay_count_reg[28]_i_1_n_0 ;
-  wire \delay_count_reg[28]_i_1_n_1 ;
-  wire \delay_count_reg[28]_i_1_n_2 ;
-  wire \delay_count_reg[28]_i_1_n_3 ;
-  wire \delay_count_reg[31]_i_3_n_2 ;
-  wire \delay_count_reg[31]_i_3_n_3 ;
-  wire \delay_count_reg[4]_i_1_n_0 ;
-  wire \delay_count_reg[4]_i_1_n_1 ;
-  wire \delay_count_reg[4]_i_1_n_2 ;
-  wire \delay_count_reg[4]_i_1_n_3 ;
-  wire \delay_count_reg[8]_i_1_n_0 ;
-  wire \delay_count_reg[8]_i_1_n_1 ;
-  wire \delay_count_reg[8]_i_1_n_2 ;
-  wire \delay_count_reg[8]_i_1_n_3 ;
   wire \dummy[0]_i_1_n_0 ;
   wire \dummy[1]_i_1_n_0 ;
   wire \dummy[1]_i_2_n_0 ;
   wire \dummy_reg_n_0_[0] ;
   wire m_axis_tready;
   wire m_axis_tvalid;
+  wire m_axis_tvalid_i_10_n_0;
   wire m_axis_tvalid_i_1_n_0;
+  wire m_axis_tvalid_i_2_n_0;
+  wire m_axis_tvalid_i_3_n_0;
+  wire m_axis_tvalid_i_4_n_0;
+  wire m_axis_tvalid_i_5_n_0;
+  wire m_axis_tvalid_i_6_n_0;
+  wire m_axis_tvalid_i_7_n_0;
+  wire m_axis_tvalid_i_8_n_0;
+  wire m_axis_tvalid_i_9_n_0;
   wire p_0_in;
   wire p_0_in0;
   wire [1:0]s_axis_tdata;
   wire s_axis_tvalid;
   wire [3:2]NLW_count0_carry__6_CO_UNCONNECTED;
   wire [3:3]NLW_count0_carry__6_O_UNCONNECTED;
-  wire [3:2]\NLW_delay_count_reg[31]_i_3_CO_UNCONNECTED ;
-  wire [3:3]\NLW_delay_count_reg[31]_i_3_O_UNCONNECTED ;
+  wire [3:2]NLW_delay_count0_carry__6_CO_UNCONNECTED;
+  wire [3:3]NLW_delay_count0_carry__6_O_UNCONNECTED;
 
-  LUT4 #(
-    .INIT(16'hBF80)) 
+  LUT6 #(
+    .INIT(64'hFFFFFEFF00000200)) 
     btn_jstk_i_1
        (.I0(\dummy_reg_n_0_[0] ),
         .I1(btn_jstk_i_2_n_0),
         .I2(btn_jstk_i_3_n_0),
-        .I3(btn_jstk),
+        .I3(count0_0),
+        .I4(btn_jstk_i_4_n_0),
+        .I5(btn_jstk),
         .O(btn_jstk_i_1_n_0));
-  LUT4 #(
-    .INIT(16'h0001)) 
-    btn_jstk_i_10
-       (.I0(\count_reg_n_0_[26] ),
-        .I1(\count_reg_n_0_[25] ),
-        .I2(\count_reg_n_0_[24] ),
-        .I3(\count_reg_n_0_[23] ),
-        .O(btn_jstk_i_10_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'h04000000)) 
-    btn_jstk_i_2
-       (.I0(\count_reg_n_0_[0] ),
-        .I1(\count_reg_n_0_[2] ),
-        .I2(\count_reg_n_0_[1] ),
-        .I3(aresetn),
-        .I4(s_axis_tvalid),
-        .O(btn_jstk_i_2_n_0));
-  LUT3 #(
-    .INIT(8'h80)) 
-    btn_jstk_i_3
-       (.I0(btn_jstk_i_4_n_0),
-        .I1(btn_jstk_i_5_n_0),
-        .I2(btn_jstk_i_6_n_0),
-        .O(btn_jstk_i_3_n_0));
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    btn_jstk_i_4
-       (.I0(p_0_in0),
-        .I1(\count_reg_n_0_[4] ),
-        .I2(\count_reg_n_0_[5] ),
-        .I3(\count_reg_n_0_[6] ),
-        .I4(btn_jstk_i_7_n_0),
-        .O(btn_jstk_i_4_n_0));
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    btn_jstk_i_5
-       (.I0(\count_reg_n_0_[11] ),
-        .I1(\count_reg_n_0_[12] ),
-        .I2(\count_reg_n_0_[13] ),
-        .I3(\count_reg_n_0_[14] ),
-        .I4(btn_jstk_i_8_n_0),
-        .O(btn_jstk_i_5_n_0));
   LUT6 #(
-    .INIT(64'h0000000000000008)) 
-    btn_jstk_i_6
-       (.I0(btn_jstk_i_9_n_0),
-        .I1(btn_jstk_i_10_n_0),
-        .I2(\count_reg_n_0_[22] ),
-        .I3(\count_reg_n_0_[21] ),
-        .I4(\count_reg_n_0_[20] ),
-        .I5(\count_reg_n_0_[19] ),
-        .O(btn_jstk_i_6_n_0));
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    btn_jstk_i_2
+       (.I0(btn_jstk_i_5_n_0),
+        .I1(btn_jstk_i_6_n_0),
+        .I2(btn_jstk_i_7_n_0),
+        .I3(\count_reg_n_0_[5] ),
+        .I4(\count_reg_n_0_[19] ),
+        .I5(\count_reg_n_0_[12] ),
+        .O(btn_jstk_i_2_n_0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    btn_jstk_i_3
+       (.I0(btn_jstk_i_8_n_0),
+        .I1(btn_jstk_i_9_n_0),
+        .I2(\count_reg_n_0_[25] ),
+        .I3(\count_reg_n_0_[22] ),
+        .I4(\count_reg_n_0_[11] ),
+        .I5(\count_reg_n_0_[8] ),
+        .O(btn_jstk_i_3_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'hFD)) 
+    btn_jstk_i_4
+       (.I0(\count_reg_n_0_[2] ),
+        .I1(\count_reg_n_0_[1] ),
+        .I2(\count_reg_n_0_[0] ),
+        .O(btn_jstk_i_4_n_0));
   LUT4 #(
-    .INIT(16'h0001)) 
-    btn_jstk_i_7
-       (.I0(\count_reg_n_0_[10] ),
-        .I1(\count_reg_n_0_[9] ),
-        .I2(\count_reg_n_0_[8] ),
-        .I3(\count_reg_n_0_[7] ),
-        .O(btn_jstk_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h0001)) 
-    btn_jstk_i_8
+    .INIT(16'hFFFE)) 
+    btn_jstk_i_5
        (.I0(\count_reg_n_0_[18] ),
         .I1(\count_reg_n_0_[17] ),
-        .I2(\count_reg_n_0_[16] ),
-        .I3(\count_reg_n_0_[15] ),
-        .O(btn_jstk_i_8_n_0));
-  LUT5 #(
-    .INIT(32'h00000001)) 
-    btn_jstk_i_9
+        .I2(\count_reg_n_0_[21] ),
+        .I3(\count_reg_n_0_[16] ),
+        .O(btn_jstk_i_5_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    btn_jstk_i_6
+       (.I0(\count_reg_n_0_[28] ),
+        .I1(\count_reg_n_0_[24] ),
+        .I2(\count_reg_n_0_[20] ),
+        .I3(\count_reg_n_0_[9] ),
+        .O(btn_jstk_i_6_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    btn_jstk_i_7
        (.I0(\count_reg_n_0_[27] ),
-        .I1(\count_reg_n_0_[28] ),
-        .I2(\count_reg_n_0_[29] ),
-        .I3(\count_reg_n_0_[30] ),
-        .I4(\count_reg_n_0_[31] ),
+        .I1(p_0_in0),
+        .I2(\count_reg_n_0_[31] ),
+        .I3(\count_reg_n_0_[10] ),
+        .O(btn_jstk_i_7_n_0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    btn_jstk_i_8
+       (.I0(\count_reg_n_0_[13] ),
+        .I1(\count_reg_n_0_[6] ),
+        .I2(\count_reg_n_0_[4] ),
+        .I3(\count_reg_n_0_[14] ),
+        .I4(\count_reg_n_0_[29] ),
+        .I5(\count_reg_n_0_[30] ),
+        .O(btn_jstk_i_8_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    btn_jstk_i_9
+       (.I0(\count_reg_n_0_[26] ),
+        .I1(\count_reg_n_0_[7] ),
+        .I2(\count_reg_n_0_[23] ),
+        .I3(\count_reg_n_0_[15] ),
         .O(btn_jstk_i_9_n_0));
   FDRE btn_jstk_reg
        (.C(aclk),
@@ -319,13 +313,15 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(btn_jstk_i_1_n_0),
         .Q(btn_jstk),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'hBF80)) 
+  LUT6 #(
+    .INIT(64'hFFFFFEFF00000200)) 
     btn_trigger_i_1
        (.I0(p_0_in),
         .I1(btn_jstk_i_2_n_0),
         .I2(btn_jstk_i_3_n_0),
-        .I3(btn_trigger),
+        .I3(count0_0),
+        .I4(btn_jstk_i_4_n_0),
+        .I5(btn_trigger),
         .O(btn_trigger_i_1_n_0));
   FDRE btn_trigger_reg
        (.C(aclk),
@@ -402,19 +398,20 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
     \count[0]_i_1 
        (.I0(\count_reg_n_0_[0] ),
         .O(\count[0]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h8088)) 
+  LUT5 #(
+    .INIT(32'hFE000000)) 
     \count[31]_i_1 
-       (.I0(aresetn),
-        .I1(s_axis_tvalid),
+       (.I0(btn_jstk_i_2_n_0),
+        .I1(btn_jstk_i_3_n_0),
         .I2(\count_reg_n_0_[2] ),
-        .I3(btn_jstk_i_3_n_0),
+        .I3(s_axis_tvalid),
+        .I4(aresetn),
         .O(\count[31]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h8)) 
     \count[31]_i_2 
-       (.I0(s_axis_tvalid),
-        .I1(aresetn),
+       (.I0(aresetn),
+        .I1(s_axis_tvalid),
         .O(count0_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -672,100 +669,91 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(count0[9]),
         .Q(\count_reg_n_0_[9] ),
         .R(\count[31]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h01FFFFFFFF000000)) 
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry
+       (.CI(1'b0),
+        .CO({delay_count0_carry_n_0,delay_count0_carry_n_1,delay_count0_carry_n_2,delay_count0_carry_n_3}),
+        .CYINIT(delay_count[0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[4:1]),
+        .S(delay_count[4:1]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__0
+       (.CI(delay_count0_carry_n_0),
+        .CO({delay_count0_carry__0_n_0,delay_count0_carry__0_n_1,delay_count0_carry__0_n_2,delay_count0_carry__0_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[8:5]),
+        .S(delay_count[8:5]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__1
+       (.CI(delay_count0_carry__0_n_0),
+        .CO({delay_count0_carry__1_n_0,delay_count0_carry__1_n_1,delay_count0_carry__1_n_2,delay_count0_carry__1_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[12:9]),
+        .S(delay_count[12:9]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__2
+       (.CI(delay_count0_carry__1_n_0),
+        .CO({delay_count0_carry__2_n_0,delay_count0_carry__2_n_1,delay_count0_carry__2_n_2,delay_count0_carry__2_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[16:13]),
+        .S(delay_count[16:13]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__3
+       (.CI(delay_count0_carry__2_n_0),
+        .CO({delay_count0_carry__3_n_0,delay_count0_carry__3_n_1,delay_count0_carry__3_n_2,delay_count0_carry__3_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[20:17]),
+        .S(delay_count[20:17]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__4
+       (.CI(delay_count0_carry__3_n_0),
+        .CO({delay_count0_carry__4_n_0,delay_count0_carry__4_n_1,delay_count0_carry__4_n_2,delay_count0_carry__4_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[24:21]),
+        .S(delay_count[24:21]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__5
+       (.CI(delay_count0_carry__4_n_0),
+        .CO({delay_count0_carry__5_n_0,delay_count0_carry__5_n_1,delay_count0_carry__5_n_2,delay_count0_carry__5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(data0[28:25]),
+        .S(delay_count[28:25]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 delay_count0_carry__6
+       (.CI(delay_count0_carry__5_n_0),
+        .CO({NLW_delay_count0_carry__6_CO_UNCONNECTED[3:2],delay_count0_carry__6_n_2,delay_count0_carry__6_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({NLW_delay_count0_carry__6_O_UNCONNECTED[3],data0[31:29]}),
+        .S({1'b0,delay_count[31:29]}));
+  LUT3 #(
+    .INIT(8'h78)) 
     \delay_count[0]_i_1 
-       (.I0(\delay_count[31]_i_6_n_0 ),
-        .I1(\delay_count[31]_i_5_n_0 ),
-        .I2(\delay_count[31]_i_4_n_0 ),
-        .I3(aresetn),
-        .I4(m_axis_tready),
-        .I5(delay_count[0]),
-        .O(\delay_count[0]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000080)) 
-    \delay_count[31]_i_1 
        (.I0(m_axis_tready),
         .I1(aresetn),
         .I2(delay_count[0]),
-        .I3(\delay_count[31]_i_4_n_0 ),
-        .I4(\delay_count[31]_i_5_n_0 ),
-        .I5(\delay_count[31]_i_6_n_0 ),
+        .O(\delay_count[0]_i_1_n_0 ));
+  LUT4 #(
+    .INIT(16'h4000)) 
+    \delay_count[31]_i_1 
+       (.I0(m_axis_tvalid_i_2_n_0),
+        .I1(m_axis_tvalid_i_3_n_0),
+        .I2(aresetn),
+        .I3(m_axis_tready),
         .O(\delay_count[31]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \delay_count[31]_i_10 
-       (.I0(delay_count[19]),
-        .I1(delay_count[18]),
-        .I2(delay_count[21]),
-        .I3(delay_count[20]),
-        .O(\delay_count[31]_i_10_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \delay_count[31]_i_11 
-       (.I0(delay_count[27]),
-        .I1(delay_count[26]),
-        .I2(delay_count[29]),
-        .I3(delay_count[28]),
-        .O(\delay_count[31]_i_11_n_0 ));
   LUT2 #(
     .INIT(4'h8)) 
     \delay_count[31]_i_2 
        (.I0(aresetn),
         .I1(m_axis_tready),
         .O(delay_count0));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \delay_count[31]_i_4 
-       (.I0(delay_count[12]),
-        .I1(delay_count[13]),
-        .I2(delay_count[10]),
-        .I3(delay_count[11]),
-        .I4(\delay_count[31]_i_7_n_0 ),
-        .O(\delay_count[31]_i_4_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFFEFFF)) 
-    \delay_count[31]_i_5 
-       (.I0(delay_count[4]),
-        .I1(delay_count[5]),
-        .I2(delay_count[2]),
-        .I3(delay_count[3]),
-        .I4(\delay_count[31]_i_8_n_0 ),
-        .O(\delay_count[31]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \delay_count[31]_i_6 
-       (.I0(\delay_count[31]_i_9_n_0 ),
-        .I1(\delay_count[31]_i_10_n_0 ),
-        .I2(delay_count[31]),
-        .I3(delay_count[30]),
-        .I4(delay_count[1]),
-        .I5(\delay_count[31]_i_11_n_0 ),
-        .O(\delay_count[31]_i_6_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \delay_count[31]_i_7 
-       (.I0(delay_count[15]),
-        .I1(delay_count[14]),
-        .I2(delay_count[17]),
-        .I3(delay_count[16]),
-        .O(\delay_count[31]_i_7_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \delay_count[31]_i_8 
-       (.I0(delay_count[7]),
-        .I1(delay_count[6]),
-        .I2(delay_count[9]),
-        .I3(delay_count[8]),
-        .O(\delay_count[31]_i_8_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \delay_count[31]_i_9 
-       (.I0(delay_count[23]),
-        .I1(delay_count[22]),
-        .I2(delay_count[25]),
-        .I3(delay_count[24]),
-        .O(\delay_count[31]_i_9_n_0 ));
   FDRE #(
     .INIT(1'b1)) 
     \delay_count_reg[0] 
@@ -798,14 +786,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[12]),
         .Q(delay_count[12]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[12]_i_1 
-       (.CI(\delay_count_reg[8]_i_1_n_0 ),
-        .CO({\delay_count_reg[12]_i_1_n_0 ,\delay_count_reg[12]_i_1_n_1 ,\delay_count_reg[12]_i_1_n_2 ,\delay_count_reg[12]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[12:9]),
-        .S(delay_count[12:9]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[13] 
@@ -838,14 +818,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[16]),
         .Q(delay_count[16]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[16]_i_1 
-       (.CI(\delay_count_reg[12]_i_1_n_0 ),
-        .CO({\delay_count_reg[16]_i_1_n_0 ,\delay_count_reg[16]_i_1_n_1 ,\delay_count_reg[16]_i_1_n_2 ,\delay_count_reg[16]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[16:13]),
-        .S(delay_count[16:13]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[17] 
@@ -886,14 +858,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[20]),
         .Q(delay_count[20]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[20]_i_1 
-       (.CI(\delay_count_reg[16]_i_1_n_0 ),
-        .CO({\delay_count_reg[20]_i_1_n_0 ,\delay_count_reg[20]_i_1_n_1 ,\delay_count_reg[20]_i_1_n_2 ,\delay_count_reg[20]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[20:17]),
-        .S(delay_count[20:17]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[21] 
@@ -926,14 +890,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[24]),
         .Q(delay_count[24]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[24]_i_1 
-       (.CI(\delay_count_reg[20]_i_1_n_0 ),
-        .CO({\delay_count_reg[24]_i_1_n_0 ,\delay_count_reg[24]_i_1_n_1 ,\delay_count_reg[24]_i_1_n_2 ,\delay_count_reg[24]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[24:21]),
-        .S(delay_count[24:21]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[25] 
@@ -966,14 +922,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[28]),
         .Q(delay_count[28]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[28]_i_1 
-       (.CI(\delay_count_reg[24]_i_1_n_0 ),
-        .CO({\delay_count_reg[28]_i_1_n_0 ,\delay_count_reg[28]_i_1_n_1 ,\delay_count_reg[28]_i_1_n_2 ,\delay_count_reg[28]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[28:25]),
-        .S(delay_count[28:25]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[29] 
@@ -1006,14 +954,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[31]),
         .Q(delay_count[31]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[31]_i_3 
-       (.CI(\delay_count_reg[28]_i_1_n_0 ),
-        .CO({\NLW_delay_count_reg[31]_i_3_CO_UNCONNECTED [3:2],\delay_count_reg[31]_i_3_n_2 ,\delay_count_reg[31]_i_3_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_delay_count_reg[31]_i_3_O_UNCONNECTED [3],data0[31:29]}),
-        .S({1'b0,delay_count[31:29]}));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[3] 
@@ -1030,14 +970,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[4]),
         .Q(delay_count[4]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[4]_i_1 
-       (.CI(1'b0),
-        .CO({\delay_count_reg[4]_i_1_n_0 ,\delay_count_reg[4]_i_1_n_1 ,\delay_count_reg[4]_i_1_n_2 ,\delay_count_reg[4]_i_1_n_3 }),
-        .CYINIT(delay_count[0]),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[4:1]),
-        .S(delay_count[4:1]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[5] 
@@ -1070,14 +1002,6 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(data0[8]),
         .Q(delay_count[8]),
         .R(\delay_count[31]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \delay_count_reg[8]_i_1 
-       (.CI(\delay_count_reg[4]_i_1_n_0 ),
-        .CO({\delay_count_reg[8]_i_1_n_0 ,\delay_count_reg[8]_i_1_n_1 ,\delay_count_reg[8]_i_1_n_2 ,\delay_count_reg[8]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(data0[8:5]),
-        .S(delay_count[8:5]));
   FDRE #(
     .INIT(1'b0)) 
     \delay_count_reg[9] 
@@ -1087,33 +1011,32 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .Q(delay_count[9]),
         .R(\delay_count[31]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hBFAFBFBF80A08080)) 
+    .INIT(64'hFFFFFEFF00000200)) 
     \dummy[0]_i_1 
        (.I0(s_axis_tdata[0]),
-        .I1(\dummy[1]_i_2_n_0 ),
+        .I1(btn_jstk_i_2_n_0),
         .I2(btn_jstk_i_3_n_0),
-        .I3(\count_reg_n_0_[2] ),
-        .I4(count0_0),
+        .I3(count0_0),
+        .I4(\dummy[1]_i_2_n_0 ),
         .I5(\dummy_reg_n_0_[0] ),
         .O(\dummy[0]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hBFAFBFBF80A08080)) 
+    .INIT(64'hFFFFFEFF00000200)) 
     \dummy[1]_i_1 
        (.I0(s_axis_tdata[1]),
-        .I1(\dummy[1]_i_2_n_0 ),
+        .I1(btn_jstk_i_2_n_0),
         .I2(btn_jstk_i_3_n_0),
-        .I3(\count_reg_n_0_[2] ),
-        .I4(count0_0),
+        .I3(count0_0),
+        .I4(\dummy[1]_i_2_n_0 ),
         .I5(p_0_in),
         .O(\dummy[1]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h1000)) 
+  LUT3 #(
+    .INIT(8'hA8)) 
     \dummy[1]_i_2 
-       (.I0(\count_reg_n_0_[1] ),
-        .I1(\count_reg_n_0_[0] ),
-        .I2(aresetn),
-        .I3(s_axis_tvalid),
+       (.I0(\count_reg_n_0_[2] ),
+        .I1(\count_reg_n_0_[1] ),
+        .I2(\count_reg_n_0_[0] ),
         .O(\dummy[1]_i_2_n_0 ));
   FDRE \dummy_reg[0] 
        (.C(aclk),
@@ -1127,14 +1050,90 @@ module design_1_digilent_jstk2_0_0_digilent_jstk2
         .D(\dummy[1]_i_1_n_0 ),
         .Q(p_0_in),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'hAEFE)) 
+  LUT5 #(
+    .INIT(32'h2EEE2E2E)) 
     m_axis_tvalid_i_1
-       (.I0(\delay_count[31]_i_1_n_0 ),
-        .I1(m_axis_tvalid),
-        .I2(aresetn),
-        .I3(m_axis_tready),
+       (.I0(m_axis_tvalid),
+        .I1(aresetn),
+        .I2(m_axis_tready),
+        .I3(m_axis_tvalid_i_2_n_0),
+        .I4(m_axis_tvalid_i_3_n_0),
         .O(m_axis_tvalid_i_1_n_0));
+  LUT3 #(
+    .INIT(8'hFE)) 
+    m_axis_tvalid_i_10
+       (.I0(delay_count[19]),
+        .I1(delay_count[26]),
+        .I2(delay_count[14]),
+        .O(m_axis_tvalid_i_10_n_0));
+  LUT5 #(
+    .INIT(32'hFEFFFFFF)) 
+    m_axis_tvalid_i_2
+       (.I0(m_axis_tvalid_i_4_n_0),
+        .I1(m_axis_tvalid_i_5_n_0),
+        .I2(delay_count[29]),
+        .I3(delay_count[2]),
+        .I4(delay_count[3]),
+        .O(m_axis_tvalid_i_2_n_0));
+  LUT5 #(
+    .INIT(32'h00000004)) 
+    m_axis_tvalid_i_3
+       (.I0(m_axis_tvalid_i_6_n_0),
+        .I1(m_axis_tvalid_i_7_n_0),
+        .I2(m_axis_tvalid_i_8_n_0),
+        .I3(m_axis_tvalid_i_9_n_0),
+        .I4(m_axis_tvalid_i_10_n_0),
+        .O(m_axis_tvalid_i_3_n_0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    m_axis_tvalid_i_4
+       (.I0(delay_count[7]),
+        .I1(delay_count[0]),
+        .I2(delay_count[28]),
+        .I3(delay_count[5]),
+        .I4(delay_count[30]),
+        .I5(delay_count[27]),
+        .O(m_axis_tvalid_i_4_n_0));
+  LUT4 #(
+    .INIT(16'hFFEF)) 
+    m_axis_tvalid_i_5
+       (.I0(delay_count[6]),
+        .I1(delay_count[4]),
+        .I2(delay_count[1]),
+        .I3(delay_count[31]),
+        .O(m_axis_tvalid_i_5_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    m_axis_tvalid_i_6
+       (.I0(delay_count[20]),
+        .I1(delay_count[10]),
+        .I2(delay_count[18]),
+        .I3(delay_count[15]),
+        .O(m_axis_tvalid_i_6_n_0));
+  LUT4 #(
+    .INIT(16'h0001)) 
+    m_axis_tvalid_i_7
+       (.I0(delay_count[25]),
+        .I1(delay_count[24]),
+        .I2(delay_count[22]),
+        .I3(delay_count[11]),
+        .O(m_axis_tvalid_i_7_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    m_axis_tvalid_i_8
+       (.I0(delay_count[23]),
+        .I1(delay_count[8]),
+        .I2(delay_count[21]),
+        .I3(delay_count[17]),
+        .O(m_axis_tvalid_i_8_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    m_axis_tvalid_i_9
+       (.I0(delay_count[13]),
+        .I1(delay_count[9]),
+        .I2(delay_count[16]),
+        .I3(delay_count[12]),
+        .O(m_axis_tvalid_i_9_n_0));
   FDRE m_axis_tvalid_reg
        (.C(aclk),
         .CE(1'b1),

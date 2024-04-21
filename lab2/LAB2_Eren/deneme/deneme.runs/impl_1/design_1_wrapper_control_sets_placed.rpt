@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Apr 21 01:53:36 2024
+| Date         : Sun Apr 21 12:51:51 2024
 | Host         : 7R74KS3-A081 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
@@ -61,7 +61,7 @@ Table of Contents
 | No           | No                    | No                     |              39 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              11 |            5 |
-| Yes          | No                    | No                     |               9 |            2 |
+| Yes          | No                    | No                     |               9 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              75 |           20 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -79,7 +79,7 @@ Table of Contents
 |  sys_clock_IBUF_BUFG | design_1_i/axi4stream_spi_master_0/U0/inst_axis_lw_spi_master/inst_lw_spi_master/cntr[3]_i_2_n_0        | design_1_i/axi4stream_spi_master_0/U0/inst_axis_lw_spi_master/inst_lw_spi_master/cntr[3]_i_1_n_0     |                1 |              4 |         4.00 |
 |  sys_clock_IBUF_BUFG | design_1_i/proc_sys_reset_0/U0/SEQ/seq_cnt_en                                                           | design_1_i/proc_sys_reset_0/U0/SEQ/SEQ_COUNTER/clear                                                 |                1 |              6 |         6.00 |
 |  sys_clock_IBUF_BUFG |                                                                                                         | design_1_i/axi4stream_spi_master_0/U0/inst_axis_lw_spi_master/inst_lw_spi_master/edgecntr[5]_i_1_n_0 |                2 |              7 |         3.50 |
-|  sys_clock_IBUF_BUFG | design_1_i/axi4stream_spi_master_0/U0/inst_axis_lw_spi_master/inst_lw_spi_master/write_reg[7]_i_1_n_0   |                                                                                                      |                1 |              7 |         7.00 |
+|  sys_clock_IBUF_BUFG | design_1_i/axi4stream_spi_master_0/U0/inst_axis_lw_spi_master/inst_lw_spi_master/write_reg[7]_i_1_n_0   |                                                                                                      |                2 |              7 |         3.50 |
 |  sys_clock_IBUF_BUFG | design_1_i/digilent_jstk2_0/U0/delay_count0                                                             | design_1_i/digilent_jstk2_0/U0/delay_count[31]_i_1_n_0                                               |                8 |             31 |         3.88 |
 |  sys_clock_IBUF_BUFG | design_1_i/digilent_jstk2_0/U0/count0_0                                                                 | design_1_i/digilent_jstk2_0/U0/count[31]_i_1_n_0                                                     |                9 |             32 |         3.56 |
 |  sys_clock_IBUF_BUFG |                                                                                                         |                                                                                                      |               18 |             40 |         2.22 |

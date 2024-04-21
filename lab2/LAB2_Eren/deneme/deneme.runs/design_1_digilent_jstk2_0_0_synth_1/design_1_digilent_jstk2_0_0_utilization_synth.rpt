@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Apr 21 01:52:26 2024
+| Date         : Sun Apr 21 12:50:34 2024
 | Host         : 7R74KS3-A081 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_digilent_jstk2_0_0_utilization_synth.rpt -pb design_1_digilent_jstk2_0_0_utilization_synth.pb
 | Design       : design_1_digilent_jstk2_0_0
@@ -151,11 +151,11 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |   69 |        Flop & Latch |
 | CARRY4   |   16 |          CarryLogic |
-| LUT4     |   13 |                 LUT |
-| LUT6     |    6 |                 LUT |
-| LUT5     |    6 |                 LUT |
+| LUT4     |   10 |                 LUT |
+| LUT6     |    8 |                 LUT |
+| LUT5     |    4 |                 LUT |
+| LUT3     |    4 |                 LUT |
 | LUT2     |    2 |                 LUT |
-| LUT3     |    1 |                 LUT |
 | LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 

@@ -11,10 +11,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 ||
 # IP: bd/design_1/ip/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi4stream_spi_master_0_0 || ORIG_REF_NAME==design_1_axi4stream_spi_master_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_digilent_jstk2_0_0 || ORIG_REF_NAME==design_1_digilent_jstk2_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_proc_sys_reset_0_0 || ORIG_REF_NAME==design_1_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_digilent_jstk2_0_0 || ORIG_REF_NAME==design_1_digilent_jstk2_0_0} -quiet] -quiet
 
 # XDC: c:/Users/euzun/Desktop/DESD/LAB2_Eren/deneme/deneme.gen/sources_1/bd/design_1/design_1_ooc.xdc
