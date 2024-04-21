@@ -43,6 +43,7 @@ architecture Behavioral of digilent_jstk2 is
 	------------------------------------------------------------
 
     signal count : integer := 0 ;
+    signal delay_count : integer := 1;
     signal dummy : std_logic_vector(7 downto 0) ;
 
 begin
@@ -59,14 +60,22 @@ begin
             m_axis_tdata <= CMDSETLEDRGB;
             
             if m_axis_tready = '1' then
-           
-                for I in 1 to 2500 loop
-                
-                    m_axis_tvalid <= '0'; -- Burda sorun olabilir dikkat.
+            
+
+                for I in 1 to 2501 loop
+                    delay_count <= delay_count + 1;
+                end loop; 
                     
-                end loop;           
+                if delay_count = 2501 then
+                     m_axis_tvalid <= '1'; -- Burda sorun olabilir dikkat.
+                     delay_count <= 1;
                 
-            end if;
+                else 
+                    m_axis_tvalid <= '0';
+
+                end if;
+                
+             end if;
                 
         end if;
     
@@ -83,43 +92,41 @@ begin
         
             if s_axis_tvalid = '1' then
                 
-                if count = 5 then
-                
-                    count <= 0; -- Problem olabilir.
-                    
-                end if;
-                
                 case count is
                 
                     when 0 =>
                          
                          dummy <= s_axis_tdata;   
-                    
+                         count <= count + 1;
+                        
                     when 1 =>  
                     
                          dummy <= s_axis_tdata;
-                    
+                         count <= count + 1;
+                         
                     when 2 => 
                     
                         dummy <= s_axis_tdata;
-                    
+                        count <= count + 1;
+                        
                     when 3 =>
                     
                         dummy <= s_axis_tdata;
-                    
+                        count <= count + 1;
+                        
                     when 4 =>
                     
                         dummy <= s_axis_tdata;
                         btn_jstk <= dummy(0);
                         btn_trigger <= dummy(1);
+                        count <= 0;
                         
                     when others =>
                     
-                        null;
+                        count <= 0;
              
                  end case;   
-                
-                count <= count + 1;
+               
                 
             end if;
         
