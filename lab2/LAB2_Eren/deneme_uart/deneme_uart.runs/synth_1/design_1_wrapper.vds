@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Apr 21 22:52:11 2024
-# Process ID: 7844
+# Start of session at: Mon Apr 22 13:58:52 2024
+# Process ID: 3352
 # Current directory: D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/design_1_wrapper.vds
@@ -12,6 +12,7 @@
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/AXI4-Stream_UART'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/axi4-stream-spi-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.cache/ip 
@@ -22,36 +23,52 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11004
+INFO: [Synth 8-7075] Helper process launched with PID 16168
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
-INFO: [Synth 8-3491] module 'design_1' declared at 'd:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'design_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:27]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_UART_0_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_AXI4Stream_UART_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_UART_0' of component 'design_1_AXI4Stream_UART_0_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_UART_0_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_AXI4Stream_UART_0_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:127]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_clk_wiz_0_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_jstk_uart_bridge_0_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_jstk_uart_bridge_0_0_stub.vhdl:5' bound to instance 'jstk_uart_bridge_0' of component 'design_1_jstk_uart_bridge_0_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:134]
-INFO: [Synth 8-638] synthesizing module 'design_1_jstk_uart_bridge_0_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_jstk_uart_bridge_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-7844-DESKTOP-BFGL8HQ/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io0_iobuf' of component 'IOBUF' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:73]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io1_iobuf' of component 'IOBUF' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:80]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_sck_iobuf' of component 'IOBUF' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:87]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_ss_iobuf' of component 'IOBUF' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:94]
+INFO: [Synth 8-3491] module 'design_1' declared at 'd:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'design_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:41]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_UART_0_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_AXI4Stream_UART_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_UART_0' of component 'design_1_AXI4Stream_UART_0_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_UART_0_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_AXI4Stream_UART_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_axi4stream_spi_master_0_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:5' bound to instance 'axi4stream_spi_master_0' of component 'design_1_axi4stream_spi_master_0_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi4stream_spi_master_0_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_clk_wiz_0_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_digilent_jstk2_0_1' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_digilent_jstk2_0_1_stub.vhdl:5' bound to instance 'digilent_jstk2_0' of component 'design_1_digilent_jstk2_0_1' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'design_1_digilent_jstk2_0_1' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_digilent_jstk2_0_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_jstk_uart_bridge_0_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_jstk_uart_bridge_0_0_stub.vhdl:5' bound to instance 'jstk_uart_bridge_0' of component 'design_1_jstk_uart_bridge_0_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'design_1_jstk_uart_bridge_0_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_jstk_uart_bridge_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/.Xil/Vivado-3352-DESKTOP-BFGL8HQ/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (2#1) [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/synth/design_1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (3#1) [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1016.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -64,28 +81,37 @@ Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24
 Finished Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_in_context.xdc] for cell 'design_1_i/AXI4Stream_UART_0'
 Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_jstk_uart_bridge_0_0/design_1_jstk_uart_bridge_0_0/design_1_jstk_uart_bridge_0_0_in_context.xdc] for cell 'design_1_i/jstk_uart_bridge_0'
 Finished Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_jstk_uart_bridge_0_0/design_1_jstk_uart_bridge_0_0/design_1_jstk_uart_bridge_0_0_in_context.xdc] for cell 'design_1_i/jstk_uart_bridge_0'
+Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0_in_context.xdc] for cell 'design_1_i/axi4stream_spi_master_0'
+Finished Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0_in_context.xdc] for cell 'design_1_i/axi4stream_spi_master_0'
+Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_1/design_1_digilent_jstk2_0_1/design_1_digilent_jstk2_0_1_in_context.xdc] for cell 'design_1_i/digilent_jstk2_0'
+Finished Parsing XDC File [d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_1/design_1_digilent_jstk2_0_1/design_1_digilent_jstk2_0_1_in_context.xdc] for cell 'design_1_i/digilent_jstk2_0'
 Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/basys3_master_xdc.xdc]
 Finished Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/basys3_master_xdc.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/basys3_master_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/io.xdc]
+Finished Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1033.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1033.250 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.250 ; gain = 16.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.250 ; gain = 16.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -97,11 +123,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI4Stream_UART_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/jstk_uart_bridge_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi4stream_spi_master_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/digilent_jstk2_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.250 ; gain = 16.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.250 ; gain = 16.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -123,25 +151,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1014.840 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1033.250 ; gain = 16.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1050.984 ; gain = 36.145
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1047.406 ; gain = 30.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1050.984 ; gain = 36.145
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1047.406 ; gain = 30.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1070.551 ; gain = 55.711
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1066.516 ; gain = 49.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -159,81 +187,89 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+------------------------------+----------+
-|      |BlackBox name                 |Instances |
-+------+------------------------------+----------+
-|1     |design_1_AXI4Stream_UART_0_0  |         1|
-|2     |design_1_clk_wiz_0_1          |         1|
-|3     |design_1_jstk_uart_bridge_0_0 |         1|
-|4     |design_1_rst_clk_wiz_0_100M_0 |         1|
-+------+------------------------------+----------+
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |design_1_AXI4Stream_UART_0_0       |         1|
+|2     |design_1_axi4stream_spi_master_0_0 |         1|
+|3     |design_1_clk_wiz_0_1               |         1|
+|4     |design_1_digilent_jstk2_0_1        |         1|
+|5     |design_1_jstk_uart_bridge_0_0      |         1|
+|6     |design_1_rst_clk_wiz_0_100M_0      |         1|
++------+-----------------------------------+----------+
 
 Report Cell Usage: 
-+------+-----------------------------------+------+
-|      |Cell                               |Count |
-+------+-----------------------------------+------+
-|1     |design_1_AXI4Stream_UART_0_0_bbox  |     1|
-|2     |design_1_clk_wiz_0_1_bbox          |     1|
-|3     |design_1_jstk_uart_bridge_0_0_bbox |     1|
-|4     |design_1_rst_clk_wiz_0_100M_0_bbox |     1|
-|5     |IBUF                               |     2|
-|6     |OBUF                               |     1|
-+------+-----------------------------------+------+
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |design_1_AXI4Stream_UART_0_0_bbox       |     1|
+|2     |design_1_axi4stream_spi_master_0_0_bbox |     1|
+|3     |design_1_clk_wiz_0_1_bbox               |     1|
+|4     |design_1_digilent_jstk2_0_1_bbox        |     1|
+|5     |design_1_jstk_uart_bridge_0_0_bbox      |     1|
+|6     |design_1_rst_clk_wiz_0_100M_0_bbox      |     1|
+|7     |IBUF                                    |     2|
+|8     |IOBUF                                   |     4|
+|9     |OBUF                                    |     3|
++------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1075.371 ; gain = 60.531
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1075.371 ; gain = 60.531
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1072.266 ; gain = 39.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.266 ; gain = 55.664
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1087.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1072.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1091.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1093.711 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+45 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1091.383 ; gain = 76.543
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1093.711 ; gain = 77.109
 INFO: [Common 17-1381] The checkpoint 'D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 22:53:04 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 13:59:35 2024...

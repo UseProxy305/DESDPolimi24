@@ -133,7 +133,10 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.cache/wt [current_project]
   set_property parent.project_path D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.xpr [current_project]
-  set_property ip_repo_paths {{D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/AXI4-Stream_UART}} [current_project]
+  set_property ip_repo_paths {
+  {d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/AXI4-Stream_UART}
+  {D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/axi4-stream-spi-master}
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
@@ -147,6 +150,7 @@ OPTRACE "add files" START { }
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/basys3_master_xdc.xdc}}
+  read_xdc {{D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/io.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
