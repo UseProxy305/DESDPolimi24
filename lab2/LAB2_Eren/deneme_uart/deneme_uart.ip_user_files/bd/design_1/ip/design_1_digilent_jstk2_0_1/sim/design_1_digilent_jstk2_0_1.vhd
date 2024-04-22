@@ -64,7 +64,7 @@ ENTITY design_1_digilent_jstk2_0_1 IS
     s_axis_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     btn_jstk : OUT STD_LOGIC;
     btn_trigger : OUT STD_LOGIC;
-    eren_debug_spi : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    debug_2_e : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
 END design_1_digilent_jstk2_0_1;
 
@@ -87,7 +87,7 @@ ARCHITECTURE design_1_digilent_jstk2_0_1_arch OF design_1_digilent_jstk2_0_1 IS
       s_axis_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       btn_jstk : OUT STD_LOGIC;
       btn_trigger : OUT STD_LOGIC;
-      eren_debug_spi : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+      debug_2_e : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
     );
   END COMPONENT digilent_jstk2;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -122,6 +122,6 @@ BEGIN
       s_axis_tdata => s_axis_tdata,
       btn_jstk => btn_jstk,
       btn_trigger => btn_trigger,
-      eren_debug_spi => eren_debug_spi
+      debug_2_e => debug_2_e
     );
 END design_1_digilent_jstk2_0_1_arch;

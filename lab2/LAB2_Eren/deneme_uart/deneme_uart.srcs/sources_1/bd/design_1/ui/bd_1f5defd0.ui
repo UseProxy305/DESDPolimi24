@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.733214",
-   "Default View_TopLeft":"-397,-306",
+   "Default View_ScaleFactor":"0.835294",
+   "Default View_TopLeft":"-277,-180",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -17,21 +17,21 @@ preplace inst AXI4Stream_UART_0 -pg 1 -lvl 3 -x 720 -y 30 -defaultsOSRD
 preplace inst jstk_uart_bridge_0 -pg 1 -lvl 2 -x 370 -y 80 -defaultsOSRD
 preplace inst axi4stream_spi_master_0 -pg 1 -lvl 1 -x 20 -y -70 -defaultsOSRD
 preplace inst digilent_jstk2_0 -pg 1 -lvl 1 -x 20 -y 100 -defaultsOSRD
-preplace netloc sys_clock_1 1 0 3 -130 10 210 -10 520
+preplace netloc sys_clock_1 1 0 3 -130 10 200 -10 520
 preplace netloc sys_clock_2 1 0 2 NJ 240 N
-preplace netloc reset_1 1 0 3 N 210 190 380 N
+preplace netloc reset_1 1 0 3 N 210 180 380 N
 preplace netloc clk_wiz_0_locked 1 2 1 510 240n
-preplace netloc Net 1 0 4 -150 -170 200 -90 540J -110 900
+preplace netloc Net 1 0 4 -150 -170 190 -90 540J -110 900
 preplace netloc rst_clk_wiz_0_100M_peripheral_reset 1 2 2 550 150 890
-preplace netloc digilent_jstk2_0_eren_debug_spi 1 1 1 210 110n
-preplace netloc digilent_jstk2_0_btn_trigger 1 1 3 180 -160 NJ -160 NJ
-preplace netloc digilent_jstk2_0_btn_jstk 1 1 3 190 -120 NJ -120 920J
+preplace netloc digilent_jstk2_0_eren_debug_spi 1 1 1 200 110n
+preplace netloc digilent_jstk2_0_btn_trigger 1 1 3 170 -160 NJ -160 NJ
+preplace netloc digilent_jstk2_0_btn_jstk 1 1 3 180 -120 NJ -120 920J
+preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 1 3 210 -100 NJ -100 890
 preplace netloc jstk_uart_bridge_0_m_axis 1 2 1 530 -30n
-preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 1 3 220 -100 NJ -100 890
-preplace netloc AXI4Stream_UART_0_UART 1 3 1 920 20n
+preplace netloc axi4stream_spi_master_0_M_AXIS 1 0 2 -140 -160 160
 preplace netloc axi4stream_spi_master_0_SPI_M 1 1 3 NJ -80 550J -90 910J
-preplace netloc digilent_jstk2_0_m_axis 1 0 2 -130 -150 160
-preplace netloc axi4stream_spi_master_0_M_AXIS 1 0 2 -140 -160 170
+preplace netloc digilent_jstk2_0_m_axis 1 0 2 -130 -150 150
+preplace netloc AXI4Stream_UART_0_UART 1 3 1 920 20n
 levelinfo -pg 1 -170 20 370 720 950
 pagesize -pg 1 -db -bbox -sgen -280 -190 1090 500
 "

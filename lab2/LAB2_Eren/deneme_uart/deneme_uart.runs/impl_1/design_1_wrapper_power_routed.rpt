@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Apr 22 14:01:00 2024
+| Date             : Mon Apr 22 19:02:59 2024
 | Host             : DESKTOP-BFGL8HQ running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        5 |       --- |             --- |
-| Slice Logic             |     0.001 |      762 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      205 |     20800 |            0.99 |
-|   Register              |    <0.001 |      405 |     41600 |            0.97 |
-|   CARRY4                |    <0.001 |       47 |      8150 |            0.58 |
+| Slice Logic             |     0.002 |      916 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      264 |     20800 |            1.27 |
+|   Register              |    <0.001 |      451 |     41600 |            1.08 |
+|   CARRY4                |    <0.001 |       67 |      8150 |            0.82 |
 |   Others                |     0.000 |       53 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        1 |      9600 |            0.01 |
-| Signals                 |     0.001 |      544 |       --- |             --- |
+| Signals                 |     0.002 |      655 |       --- |             --- |
 | Block RAM               |     0.001 |      0.5 |        50 |            1.00 |
 | MMCM                    |     0.106 |        1 |         5 |           20.00 |
-| I/O                     |     0.003 |        9 |       106 |            8.49 |
+| I/O                     |     0.002 |        9 |       106 |            8.49 |
 | Static Power            |     0.072 |          |           |                 |
 | Total                   |     0.187 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.007 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.017 |       0.007 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,12 +146,14 @@ Table of Contents
 | Name                  | Power (W) |
 +-----------------------+-----------+
 | design_1_wrapper      |     0.115 |
-|   SPI_M_0_io0_iobuf   |     0.002 |
-|   design_1_i          |     0.112 |
+|   SPI_M_0_io0_iobuf   |     0.001 |
+|   design_1_i          |     0.113 |
 |     AXI4Stream_UART_0 |     0.004 |
 |       U0              |     0.004 |
 |     clk_wiz_0         |     0.106 |
 |       inst            |     0.106 |
+|     digilent_jstk2_0  |     0.001 |
+|       U0              |     0.001 |
 +-----------------------+-----------+
 
 

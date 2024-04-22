@@ -7,8 +7,7 @@
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.2",
-      "validated": "true"
+      "tool_version": "2020.2"
     },
     "design_tree": {
       "clk_wiz_0": "",
@@ -33,20 +32,8 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_1_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.000"
@@ -57,10 +44,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -303,7 +286,12 @@
         "vlnv": "DigiLAB:ip:axi4stream_spi_master:1.0",
         "xci_name": "design_1_axi4stream_spi_master_0_0",
         "xci_path": "ip\\design_1_axi4stream_spi_master_0_0\\design_1_axi4stream_spi_master_0_0.xci",
-        "inst_hier_path": "axi4stream_spi_master_0"
+        "inst_hier_path": "axi4stream_spi_master_0",
+        "parameters": {
+          "c_sclkfreq": {
+            "value": "5000"
+          }
+        }
       },
       "digilent_jstk2_0": {
         "vlnv": "xilinx.com:module_ref:digilent_jstk2:1.0",
@@ -351,18 +339,6 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
               }
             },
             "port_maps": {
@@ -417,18 +393,6 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
               }
             },
             "port_maps": {
@@ -457,18 +421,6 @@
               "ASSOCIATED_RESET": {
                 "value": "aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
               }
             }
           },
@@ -488,7 +440,7 @@
           "btn_trigger": {
             "direction": "O"
           },
-          "eren_debug_spi": {
+          "debug_2_e": {
             "direction": "O",
             "left": "7",
             "right": "0"
@@ -497,12 +449,6 @@
       }
     },
     "interface_nets": {
-      "axi4stream_spi_master_0_SPI_M": {
-        "interface_ports": [
-          "SPI_M_0",
-          "axi4stream_spi_master_0/SPI_M"
-        ]
-      },
       "digilent_jstk2_0_m_axis": {
         "interface_ports": [
           "digilent_jstk2_0/m_axis",
@@ -515,12 +461,6 @@
           "AXI4Stream_UART_0/UART"
         ]
       },
-      "AXI4Stream_UART_0_M00_AXIS_RX": {
-        "interface_ports": [
-          "jstk_uart_bridge_0/s_axis",
-          "AXI4Stream_UART_0/M00_AXIS_RX"
-        ]
-      },
       "jstk_uart_bridge_0_m_axis": {
         "interface_ports": [
           "jstk_uart_bridge_0/m_axis",
@@ -531,6 +471,18 @@
         "interface_ports": [
           "axi4stream_spi_master_0/M_AXIS",
           "digilent_jstk2_0/s_axis"
+        ]
+      },
+      "axi4stream_spi_master_0_SPI_M": {
+        "interface_ports": [
+          "SPI_M_0",
+          "axi4stream_spi_master_0/SPI_M"
+        ]
+      },
+      "AXI4Stream_UART_0_M00_AXIS_RX": {
+        "interface_ports": [
+          "jstk_uart_bridge_0/s_axis",
+          "AXI4Stream_UART_0/M00_AXIS_RX"
         ]
       }
     },
@@ -584,7 +536,7 @@
       },
       "digilent_jstk2_0_eren_debug_spi": {
         "ports": [
-          "digilent_jstk2_0/eren_debug_spi",
+          "digilent_jstk2_0/debug_2_e",
           "jstk_uart_bridge_0/eren_debug"
         ]
       },

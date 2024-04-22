@@ -144,7 +144,7 @@ BEGIN
   U0 : ipi_axis_lw_spi_master
     GENERIC MAP (
       c_clkfreq => 100000000,
-      c_sclkfreq => 1000000,
+      c_sclkfreq => 5000,
       c_cpol => 0,
       c_cpha => 0
     )

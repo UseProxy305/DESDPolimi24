@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Mon Apr 22 13:55:57 2024
+--Date        : Mon Apr 22 18:59:56 2024
 --Host        : DESKTOP-BFGL8HQ running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -126,7 +126,7 @@ architecture STRUCTURE of design_1 is
     s_axis_tdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     btn_jstk : out STD_LOGIC;
     btn_trigger : out STD_LOGIC;
-    eren_debug_spi : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    debug_2_e : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_1_digilent_jstk2_0_1;
   signal AXI4Stream_UART_0_M00_AXIS_RX_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -257,7 +257,7 @@ digilent_jstk2_0: component design_1_digilent_jstk2_0_1
       aresetn => Net(0),
       btn_jstk => digilent_jstk2_0_btn_jstk,
       btn_trigger => digilent_jstk2_0_btn_trigger,
-      eren_debug_spi(7 downto 0) => digilent_jstk2_0_eren_debug_spi(7 downto 0),
+      debug_2_e(7 downto 0) => digilent_jstk2_0_eren_debug_spi(7 downto 0),
       m_axis_tdata(7 downto 0) => digilent_jstk2_0_m_axis_TDATA(7 downto 0),
       m_axis_tready => digilent_jstk2_0_m_axis_TREADY,
       m_axis_tvalid => digilent_jstk2_0_m_axis_TVALID,

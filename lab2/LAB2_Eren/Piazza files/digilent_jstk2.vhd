@@ -25,16 +25,21 @@ entity digilent_jstk2 is
 		--jstk_x			: out std_logic_vector(9 downto 0);
 		--jstk_y			: out std_logic_vector(9 downto 0);
 		btn_jstk		: out std_logic;
-		btn_trigger		: out std_logic      -- buraya noktali virgul koy
+		btn_trigger		: out std_logic;      -- buraya noktali virgul koy
 
 		-- LED color to send to the module
 		--led_r			: in std_logic_vector(7 downto 0);
 		--led_g			: in std_logic_vector(7 downto 0);
 		--led_b			: in std_logic_vector(7 downto 0)
+		debug_2_e		: out STD_LOGIC_VECTOR(7 downto 0)
 	);
 end digilent_jstk2;
 
 architecture Behavioral of digilent_jstk2 is
+
+    --- Enumerated type declaration and state signal declaration
+    type t_State is (S_Send,Wait_10us, Wait_15us, S_RGB);
+    signal State : t_State := Wait_15us;
 
 	-- Code for the SetLEDRGB command, see the JSTK2 datasheet.
 	constant CMDSETLEDRGB		: std_logic_vector(7 downto 0) := x"84";
@@ -43,42 +48,73 @@ architecture Behavioral of digilent_jstk2 is
 	------------------------------------------------------------
 
     signal count : integer := 0 ;
-    signal delay_count : integer := 1;
+    signal delay_count : integer 	:= 1;
+    signal dummy_count : integer 	:= 0;
+    signal state_rgb_cnt: integer 	:= 0;
     signal dummy : std_logic_vector(7 downto 0) ;
 
 begin
+    debug_2_e <= s_axis_tdata;
 
-    process (aclk, aresetn)
+    
+	process (aclk, aresetn,state)
     begin
     
         if aresetn = '0' then
         
         elsif rising_edge(aclk) then
             
-            m_axis_tvalid <= '1';
-            
-            m_axis_tdata <= CMDSETLEDRGB;
-            
-            if m_axis_tready = '1' then
-            
-
-                for I in 1 to 2501 loop
-                    delay_count <= delay_count + 1;
-                end loop; 
-                    
-                if delay_count = 2501 then
-                     m_axis_tvalid <= '1'; -- Burda sorun olabilir dikkat.
-                     delay_count <= 1;
-                
-                else 
-                    m_axis_tvalid <= '0';
-
-                end if;
-                
-             end if;
-                
-        end if;
-    
+			case (State) is
+			
+				when Wait_15us =>
+					if(delay_count <= 1500) then 
+						delay_count <= delay_count +1;
+					else
+					    state 		<= S_Send;
+						delay_count <= 1;
+					end if;
+					
+					
+				when S_Send =>
+					m_axis_tvalid <= '1';
+					m_axis_tdata <= CMDSETLEDRGB;
+					if m_axis_tready = '1' then
+						state 		<= Wait_10us;
+						m_axis_tvalid <= '0';
+					end if;
+					
+				when Wait_10us =>
+						if(delay_count <= 1000) then 
+							delay_count <= delay_count +1;
+						else
+							 delay_count <= 0;
+							 state 		<= S_RGB;
+							 if(state_rgb_cnt = 0) then
+							     m_axis_tdata    <= x"04";
+							     state_rgb_cnt   <= state_rgb_cnt+1;
+							 elsif(state_rgb_cnt = 1) then
+							     m_axis_tdata    <= x"44";
+							     state_rgb_cnt   <= state_rgb_cnt+1;
+							 elsif(state_rgb_cnt = 2) then
+							     m_axis_tdata    <= x"84";
+							     state_rgb_cnt   <= state_rgb_cnt+1;
+							 elsif(state_rgb_cnt = 3) then
+							     m_axis_tdata    <= x"00";
+							     state_rgb_cnt   <= state_rgb_cnt+1;
+							 else
+							     m_axis_tdata    <= x"00";
+							     state_rgb_cnt   <= state_rgb_cnt+1; -- 4 olunca ba?ka satate e geçsin
+							 end if ;
+					   end if;
+					   
+			    when  S_RGB =>
+					m_axis_tvalid <= '1';
+					if m_axis_tready = '1' then
+						state 		  <= Wait_10us;
+						m_axis_tvalid <= '0';
+					end if;
+			end case;
+		end if;
     end process;
     
 
@@ -134,4 +170,4 @@ begin
     
     end process;    
     
-end architecture;
+end Behavioral;

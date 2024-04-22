@@ -134,7 +134,7 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.cache/wt [current_project]
   set_property parent.project_path D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/deneme_uart/deneme_uart.xpr [current_project]
   set_property ip_repo_paths {
-  {d:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/AXI4-Stream_UART}
+  {D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/AXI4-Stream_UART}
   {D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/axi4-stream-spi-master}
 } [current_project]
   update_ip_catalog
