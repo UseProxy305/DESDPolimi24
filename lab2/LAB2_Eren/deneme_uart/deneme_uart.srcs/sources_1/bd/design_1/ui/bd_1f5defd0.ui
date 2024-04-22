@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.19111",
+   "Default View_TopLeft":"-233,-92",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 3 -x 650 -y 20 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -80 -y 240 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -80 -y 210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 100 -y 230 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -x 450 -y 400 -defaultsOSRD
+preplace inst AXI4Stream_UART_0 -pg 1 -lvl 2 -x 450 -y 30 -defaultsOSRD
+preplace inst jstk_uart_bridge_0 -pg 1 -lvl 1 -x 100 -y 80 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 2 -60 -30 250
+preplace netloc sys_clock_2 1 0 1 NJ 240
+preplace netloc reset_1 1 0 2 -50 380 N
+preplace netloc clk_wiz_0_locked 1 1 1 240 240n
+preplace netloc Net 1 0 3 -50 -20 270J 160 630
+preplace netloc rst_clk_wiz_0_100M_peripheral_reset 1 1 2 280 170 620
+preplace netloc jstk_uart_bridge_0_m_axis 1 1 1 260 -30n
+preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 0 3 -40 -10 240J 150 620
+preplace netloc AXI4Stream_UART_0_UART 1 2 1 630 20n
+levelinfo -pg 1 -80 100 450 650
+pagesize -pg 1 -db -bbox -sgen -190 -90 760 500
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1"
+}

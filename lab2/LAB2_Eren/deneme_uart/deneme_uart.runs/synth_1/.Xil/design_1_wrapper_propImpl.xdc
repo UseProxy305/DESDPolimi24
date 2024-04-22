@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:{D:/OKUL/ee_polimi_2/leave_the_room/Labs/tutorials/DESDPolimi24/lab2/LAB2_Eren/Piazza files/basys3_master_xdc.xdc} rfile:{../../../../Piazza files/basys3_master_xdc.xdc} id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports sys_clock]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports {reset}]
