@@ -1,0 +1,304 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5A0280660C7825D7",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../LAB2_Clean_Eren_v1.gen/sources_1/bd/Project_1",
+      "name": "Project_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "axi4stream_spi_master_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": "",
+      "digilent_jstk2_0": ""
+    },
+    "interface_ports": {
+      "SPI_M_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:spi_rtl:1.0"
+      }
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "btn_jstk_0": {
+        "direction": "O"
+      },
+      "btn_trigger_0": {
+        "direction": "O"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "axi4stream_spi_master_0": {
+        "vlnv": "DigiLAB:ip:axi4stream_spi_master:1.0",
+        "xci_name": "Project_1_axi4stream_spi_master_0_0",
+        "xci_path": "ip\\Project_1_axi4stream_spi_master_0_0\\Project_1_axi4stream_spi_master_0_0.xci",
+        "inst_hier_path": "axi4stream_spi_master_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "Project_1_clk_wiz_0_0",
+        "xci_path": "ip\\Project_1_clk_wiz_0_0\\Project_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "Project_1_proc_sys_reset_0_0",
+        "xci_path": "ip\\Project_1_proc_sys_reset_0_0\\Project_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "digilent_jstk2_0": {
+        "vlnv": "xilinx.com:module_ref:digilent_jstk2:1.0",
+        "xci_name": "Project_1_digilent_jstk2_0_0",
+        "xci_path": "ip\\Project_1_digilent_jstk2_0_0\\Project_1_digilent_jstk2_0_0.xci",
+        "inst_hier_path": "digilent_jstk2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "digilent_jstk2",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_tdata",
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "m_axis_tready",
+                "direction": "I"
+              }
+            }
+          },
+          "s_axis": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "s_axis_tdata",
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "s_axis_tvalid",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "m_axis:s_axis",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "aresetn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "btn_jstk": {
+            "direction": "O"
+          },
+          "btn_trigger": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi4stream_spi_master_0_M_AXIS": {
+        "interface_ports": [
+          "digilent_jstk2_0/s_axis",
+          "axi4stream_spi_master_0/M_AXIS"
+        ]
+      },
+      "axi4stream_spi_master_0_SPI_M": {
+        "interface_ports": [
+          "SPI_M_0",
+          "axi4stream_spi_master_0/SPI_M"
+        ]
+      },
+      "digilent_jstk2_0_m_axis": {
+        "interface_ports": [
+          "axi4stream_spi_master_0/S_AXIS",
+          "digilent_jstk2_0/m_axis"
+        ]
+      }
+    },
+    "nets": {
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "axi4stream_spi_master_0/aclk",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "digilent_jstk2_0/aclk"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "axi4stream_spi_master_0/aresetn",
+          "digilent_jstk2_0/aresetn"
+        ]
+      },
+      "digilent_jstk2_0_btn_jstk": {
+        "ports": [
+          "digilent_jstk2_0/btn_jstk",
+          "btn_jstk_0"
+        ]
+      },
+      "digilent_jstk2_0_btn_trigger": {
+        "ports": [
+          "digilent_jstk2_0/btn_trigger",
+          "btn_trigger_0"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "proc_sys_reset_0/ext_reset_in",
+          "clk_wiz_0/reset"
+        ]
+      }
+    }
+  }
+}
