@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Wed Apr 24 21:48:13 2024
+--Date        : Wed Apr 24 23:11:54 2024
 --Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 --Command     : generate_target Project_1_wrapper.bd
 --Design      : Project_1_wrapper
@@ -17,22 +17,18 @@ entity Project_1_wrapper is
     SPI_M_0_io1_io : inout STD_LOGIC;
     SPI_M_0_sck_io : inout STD_LOGIC;
     SPI_M_0_ss_io : inout STD_LOGIC;
-    aresetn_0 : in STD_LOGIC;
-    btn_jstk_0 : out STD_LOGIC;
-    btn_trigger_0 : out STD_LOGIC;
     reset : in STD_LOGIC;
-    sys_clock : in STD_LOGIC
+    sys_clock : in STD_LOGIC;
+    usb_uart_rxd : in STD_LOGIC;
+    usb_uart_txd : out STD_LOGIC
   );
 end Project_1_wrapper;
 
 architecture STRUCTURE of Project_1_wrapper is
   component Project_1 is
   port (
-    aresetn_0 : in STD_LOGIC;
     sys_clock : in STD_LOGIC;
     reset : in STD_LOGIC;
-    btn_jstk_0 : out STD_LOGIC;
-    btn_trigger_0 : out STD_LOGIC;
     SPI_M_0_sck_t : out STD_LOGIC;
     SPI_M_0_io1_o : out STD_LOGIC;
     SPI_M_0_ss_t : out STD_LOGIC;
@@ -44,7 +40,9 @@ architecture STRUCTURE of Project_1_wrapper is
     SPI_M_0_sck_o : out STD_LOGIC;
     SPI_M_0_ss_i : in STD_LOGIC;
     SPI_M_0_io1_i : in STD_LOGIC;
-    SPI_M_0_io0_i : in STD_LOGIC
+    SPI_M_0_io0_i : in STD_LOGIC;
+    usb_uart_rxd : in STD_LOGIC;
+    usb_uart_txd : out STD_LOGIC
   );
   end component Project_1;
   component IOBUF is
@@ -82,11 +80,10 @@ Project_1_i: component Project_1
       SPI_M_0_ss_i => SPI_M_0_ss_i,
       SPI_M_0_ss_o => SPI_M_0_ss_o,
       SPI_M_0_ss_t => SPI_M_0_ss_t,
-      aresetn_0 => aresetn_0,
-      btn_jstk_0 => btn_jstk_0,
-      btn_trigger_0 => btn_trigger_0,
       reset => reset,
-      sys_clock => sys_clock
+      sys_clock => sys_clock,
+      usb_uart_rxd => usb_uart_rxd,
+      usb_uart_txd => usb_uart_txd
     );
 SPI_M_0_io0_iobuf: component IOBUF
      port map (

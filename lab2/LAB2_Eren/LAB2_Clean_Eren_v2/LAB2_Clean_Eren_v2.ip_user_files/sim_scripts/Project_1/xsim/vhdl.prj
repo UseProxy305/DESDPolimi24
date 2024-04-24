@@ -4,7 +4,15 @@ vhdl xil_defaultlib  \
 "../../../bd/Project_1/ipshared/ead8/hdl/spi_master_lightweight/rtl/lw_spi_master.vhd" \
 "../../../bd/Project_1/ipshared/ead8/hdl/ipi_axis_lw_spi_master.vhd" \
 "../../../bd/Project_1/ip/Project_1_axi4stream_spi_master_0_0/sim/Project_1_axi4stream_spi_master_0_0.vhd" \
+"../../../bd/Project_1/ip/Project_1_jstk_uart_bridge_0_0/sim/Project_1_jstk_uart_bridge_0_0.vhd" \
 "../../../bd/Project_1/ip/Project_1_digilent_jstk2_0_0/sim/Project_1_digilent_jstk2_0_0.vhd" \
+"../../../bd/Project_1/ip/Project_1_proc_sys_reset_0_0/sim/Project_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/hdl/AXI4Stream_UART_v1_0_M00_AXIS_RX.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/hdl/AXI4Stream_UART_v1_0_S00_AXIS_TX.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/hdl/UART_Engine.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/hdl/UART_Manager.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/hdl/AXI4Stream_UART_v1_0.vhd" \
+"../../../bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/sim/Project_1_AXI4Stream_UART_0_0.vhd" \
 "../../../bd/Project_1/sim/Project_1.vhd" \
 
 nosort

@@ -123,7 +123,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part_repo_paths {C:/Users/euzun/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
@@ -134,11 +133,14 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.cache/wt [current_project]
   set_property parent.project_path C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.xpr [current_project]
-  set_property ip_repo_paths {{C:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/axi4-stream-spi-master}} [current_project]
+  set_property ip_repo_paths {
+  {c:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/axi4-stream-spi-master}
+  {C:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/AXI4-Stream_UART}
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.runs/synth_1/Project_1_wrapper.dcp
@@ -316,7 +318,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
   catch { write_mem_info -force -no_partial_mmi Project_1_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

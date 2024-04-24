@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -81,12 +79,15 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.cache/wt [current_project]
 set_property parent.project_path C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/euzun/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_repo_paths {{c:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/axi4-stream-spi-master}} [current_project]
+set_property ip_repo_paths {
+  {c:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/axi4-stream-spi-master}
+  {c:/Users/euzun/Desktop/DESD/LAB2_Eren/Piazza files/AXI4-Stream_UART}
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -97,6 +98,10 @@ add_files C:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Er
 set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_clk_wiz_0/Project_1_clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_clk_wiz_0/Project_1_clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_clk_wiz_0/Project_1_clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_proc_sys_reset_0_0/Project_1_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_proc_sys_reset_0_0/Project_1_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_proc_sys_reset_0_0/Project_1_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/Project_1_AXI4Stream_UART_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/Project_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

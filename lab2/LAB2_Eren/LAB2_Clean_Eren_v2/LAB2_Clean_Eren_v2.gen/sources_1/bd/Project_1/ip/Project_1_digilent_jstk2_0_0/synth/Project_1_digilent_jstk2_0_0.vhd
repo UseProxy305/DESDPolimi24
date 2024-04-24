@@ -62,8 +62,13 @@ ENTITY Project_1_digilent_jstk2_0_0 IS
     m_axis_tready : IN STD_LOGIC;
     s_axis_tvalid : IN STD_LOGIC;
     s_axis_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    jstk_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+    jstk_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
     btn_jstk : OUT STD_LOGIC;
-    btn_trigger : OUT STD_LOGIC
+    btn_trigger : OUT STD_LOGIC;
+    led_r : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    led_g : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    led_b : IN STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
 END Project_1_digilent_jstk2_0_0;
 
@@ -84,8 +89,13 @@ ARCHITECTURE Project_1_digilent_jstk2_0_0_arch OF Project_1_digilent_jstk2_0_0 I
       m_axis_tready : IN STD_LOGIC;
       s_axis_tvalid : IN STD_LOGIC;
       s_axis_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      jstk_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      jstk_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
       btn_jstk : OUT STD_LOGIC;
-      btn_trigger : OUT STD_LOGIC
+      btn_trigger : OUT STD_LOGIC;
+      led_r : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      led_g : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      led_b : IN STD_LOGIC_VECTOR(7 DOWNTO 0)
     );
   END COMPONENT digilent_jstk2;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -124,7 +134,12 @@ BEGIN
       m_axis_tready => m_axis_tready,
       s_axis_tvalid => s_axis_tvalid,
       s_axis_tdata => s_axis_tdata,
+      jstk_x => jstk_x,
+      jstk_y => jstk_y,
       btn_jstk => btn_jstk,
-      btn_trigger => btn_trigger
+      btn_trigger => btn_trigger,
+      led_r => led_r,
+      led_g => led_g,
+      led_b => led_b
     );
 END Project_1_digilent_jstk2_0_0_arch;

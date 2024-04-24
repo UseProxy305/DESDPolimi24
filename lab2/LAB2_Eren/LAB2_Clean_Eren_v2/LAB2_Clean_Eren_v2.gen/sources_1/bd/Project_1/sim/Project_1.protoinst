@@ -3,6 +3,16 @@
 	"modules": {
 		"Project_1": {
 			"proto_instances": {
+				"/AXI4Stream_UART_0/M00_AXIS_RX": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "m00_axis_rx_aclk"},
+						"ARESETN": { "actual": "m00_axis_rx_aresetn"},
+						"TDATA": { "actual": "m00_axis_rx_tdata"},
+						"TREADY": { "actual": "m00_axis_rx_tready"},
+						"TVALID": { "actual": "m00_axis_rx_tvalid"}
+					}
+				},
 				"/axi4stream_spi_master_0/M_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
@@ -36,6 +46,16 @@
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
 						"TDATA": { "actual": "s_axis_tdata"},
+						"TVALID": { "actual": "s_axis_tvalid"}
+					}
+				},
+				"/jstk_uart_bridge_0/s_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s_axis_tdata"},
+						"TREADY": { "actual": "s_axis_tready"},
 						"TVALID": { "actual": "s_axis_tvalid"}
 					}
 				}

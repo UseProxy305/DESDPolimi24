@@ -22,15 +22,15 @@ entity digilent_jstk2 is
 		s_axis_tdata	: in STD_LOGIC_VECTOR(7 downto 0);
 
 		-- Joystick and button values read from the module
-		--jstk_x			: out std_logic_vector(9 downto 0);
-		--jstk_y			: out std_logic_vector(9 downto 0);
+		jstk_x			: out std_logic_vector(9 downto 0);
+		jstk_y			: out std_logic_vector(9 downto 0);
 		btn_jstk		: out std_logic;
-		btn_trigger		: out std_logic      
+		btn_trigger		: out std_logic;      
 
 		-- LED color to send to the module
-		--led_r			: in std_logic_vector(7 downto 0);
-		--led_g			: in std_logic_vector(7 downto 0);
-		--led_b			: in std_logic_vector(7 downto 0)
+		led_r			: in std_logic_vector(7 downto 0);
+		led_g			: in std_logic_vector(7 downto 0);
+		led_b			: in std_logic_vector(7 downto 0)
 
 	);
 end digilent_jstk2;
@@ -68,19 +68,30 @@ begin
                 if(count = 0) then
                           
                         count <= count + 1;
+                        for i in 0 to 7 loop
+                            jstk_x(i) <= s_axis_tdata(i);
+                        end loop;
                         
                 elsif(count = 1) then  
                         
                         count <= count + 1;
+                        for i in 8 to 9 loop
+                            jstk_x(i) <= s_axis_tdata(i-8);
+                        end loop;
                         
                 elsif(count = 2) then
                         
                         count <= count + 1;
+                        for i in 0 to 7 loop
+                            jstk_y(i) <= s_axis_tdata(i);
+                        end loop;
                         
                 elsif(count = 3) then
                         
                         count <= count + 1;
-                        
+                        for i in 8 to 9 loop
+                            jstk_y(i) <= s_axis_tdata(i-8);
+                        end loop;
                 elsif(count = 4) then
                        
                         btn_jstk <= s_axis_tdata(0);
@@ -119,15 +130,15 @@ begin
 						
 					    if param_count = 0 then     -- Red      Byte 1
                         
-                            m_axis_tdata <= x"FF";
+                            m_axis_tdata <= led_r;
                     
                         elsif param_count = 1 then  -- Green    Byte 2
                     
-                            m_axis_tdata <= x"00";
+                            m_axis_tdata <= led_b;
                     
                         elsif param_count = 2 then  -- Blue     Byte 3
                     
-                            m_axis_tdata <= x"00";
+                            m_axis_tdata <= led_g;
                     
                         elsif param_count = 3 then  -- Dummy    Byte 4
                         

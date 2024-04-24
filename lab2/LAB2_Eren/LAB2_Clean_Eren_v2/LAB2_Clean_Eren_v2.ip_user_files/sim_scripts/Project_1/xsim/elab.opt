@@ -1,1 +1,1 @@
---relax --debug typical --mt auto -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Project_1 xil_defaultlib.Project_1 xil_defaultlib.glbl -log elaborate.log
+--relax --debug typical --mt auto -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Project_1 xil_defaultlib.Project_1 xil_defaultlib.glbl -log elaborate.log

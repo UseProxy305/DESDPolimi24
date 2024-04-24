@@ -14,7 +14,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_c
 # IP: bd/Project_1/ip/Project_1_axi4stream_spi_master_0_0/Project_1_axi4stream_spi_master_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_axi4stream_spi_master_0_0 || ORIG_REF_NAME==Project_1_axi4stream_spi_master_0_0} -quiet] -quiet
 
+# IP: bd/Project_1/ip/Project_1_jstk_uart_bridge_0_0/Project_1_jstk_uart_bridge_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_jstk_uart_bridge_0_0 || ORIG_REF_NAME==Project_1_jstk_uart_bridge_0_0} -quiet] -quiet
+
 # IP: bd/Project_1/ip/Project_1_digilent_jstk2_0_0/Project_1_digilent_jstk2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_digilent_jstk2_0_0 || ORIG_REF_NAME==Project_1_digilent_jstk2_0_0} -quiet] -quiet
+
+# IP: bd/Project_1/ip/Project_1_proc_sys_reset_0_0/Project_1_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_proc_sys_reset_0_0 || ORIG_REF_NAME==Project_1_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/Project_1/ip/Project_1_AXI4Stream_UART_0_0/Project_1_AXI4Stream_UART_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Project_1_AXI4Stream_UART_0_0 || ORIG_REF_NAME==Project_1_AXI4Stream_UART_0_0} -quiet] -quiet
 
 # XDC: c:/Users/euzun/Desktop/DESD/LAB2_Eren/LAB2_Clean_Eren_v2/LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/Project_1_ooc.xdc
