@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.935849",
+   "Default View_TopLeft":"-425,-459",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port SPI_M_0 -pg 1 -lvl 3 -x 530 -y -370 -defaultsOSRD
+preplace port aresetn_0 -pg 1 -lvl 0 -x -100 -y -30 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -100 -y -170 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -100 -y -190 -defaultsOSRD
+preplace port btn_jstk_0 -pg 1 -lvl 3 -x 530 -y 20 -defaultsOSRD
+preplace port btn_trigger_0 -pg 1 -lvl 3 -x 530 -y 40 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 140 -y -170 -defaultsOSRD
+preplace inst axi4stream_spi_master_0 -pg 1 -lvl 2 -x 380 -y -360 -defaultsOSRD
+preplace inst digilent_jstk2_0 -pg 1 -lvl 2 -x 380 -y -10 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 1 1 230 -360n
+preplace netloc sys_clock_1 1 0 1 -80 -170n
+preplace netloc reset_1 1 0 1 -80 -190n
+preplace netloc aresetn_0_1 1 0 2 N -30 240
+preplace netloc digilent_jstk2_0_btn_jstk 1 2 1 510 -10n
+preplace netloc digilent_jstk2_0_btn_trigger 1 2 1 500 10n
+preplace netloc axi4stream_spi_master_0_M_AXIS 1 1 2 250 -450 510
+preplace netloc axi4stream_spi_master_0_SPI_M 1 2 1 N -370
+preplace netloc digilent_jstk2_0_m_axis 1 1 2 260 -440 500
+levelinfo -pg 1 -100 140 380 530
+pagesize -pg 1 -db -bbox -sgen -220 -520 670 230
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"4"
+}

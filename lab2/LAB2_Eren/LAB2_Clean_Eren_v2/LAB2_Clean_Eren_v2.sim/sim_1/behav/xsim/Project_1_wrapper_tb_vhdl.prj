@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LAB2_Clean_Eren_v2.srcs/sources_1/new/digilent_jstk2.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ip/Project_1_clk_wiz_0/Project_1_clk_wiz_0_sim_netlist.vhdl" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ip/Project_1_digilent_jstk2_0_0/sim/Project_1_digilent_jstk2_0_0.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ipshared/ead8/hdl/axis_lw_spi_master.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ipshared/ead8/hdl/spi_master_lightweight/rtl/lw_spi_master.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ipshared/ead8/hdl/ipi_axis_lw_spi_master.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/ip/Project_1_axi4stream_spi_master_0_0/sim/Project_1_axi4stream_spi_master_0_0.vhd" \
+"../../../../LAB2_Clean_Eren_v2.ip_user_files/bd/Project_1/sim/Project_1.vhd" \
+"../../../../LAB2_Clean_Eren_v2.gen/sources_1/bd/Project_1/hdl/Project_1_wrapper.vhd" \
+"../../../../LAB2_Clean_Eren_v2.srcs/sim_1/new/Project_1_wrapper_tb.vhd" \
+
+# Do not sort compile order
+nosort
