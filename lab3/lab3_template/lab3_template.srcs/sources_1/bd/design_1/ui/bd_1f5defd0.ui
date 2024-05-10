@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.04783",
-   "Default View_TopLeft":"1783,-779",
+   "Default View_TopLeft":"715,-672",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -29,14 +29,14 @@ preplace inst LFO_0 -pg 1 -lvl 8 -x 1940 -y -410 -defaultsOSRD
 preplace inst debouncer_0 -pg 1 -lvl 4 -x 670 -y -460 -defaultsOSRD
 preplace inst digilent_jstk2_0 -pg 1 -lvl 10 -x 2580 -y -820 -defaultsOSRD
 preplace inst edge_detector_toggle_0 -pg 1 -lvl 3 -x 330 -y -730 -defaultsOSRD
-preplace inst effect_selector_0 -pg 1 -lvl 5 -x 1020 -y -470 -defaultsOSRD
-preplace inst led_controller_0 -pg 1 -lvl 4 -x 670 -y -920 -defaultsOSRD
 preplace inst led_level_controller_0 -pg 1 -lvl 11 -x 2950 -y -580 -defaultsOSRD
 preplace inst moving_average_filte_0 -pg 1 -lvl 5 -x 1020 -y -240 -defaultsOSRD
 preplace inst mute_controller_0 -pg 1 -lvl 9 -x 2240 -y -430 -defaultsOSRD
 preplace inst edge_detector_toggle_1 -pg 1 -lvl 4 -x 670 -y -240 -defaultsOSRD
 preplace inst axis_broadcaster_0 -pg 1 -lvl 10 -x 2580 -y -430 -defaultsOSRD
 preplace inst proc_sys_reset_1 -pg 1 -lvl 10 -x 2580 -y -170 -defaultsOSRD
+preplace inst led_controller_0 -pg 1 -lvl 4 -x 670 -y -920 -defaultsOSRD
+preplace inst effect_selector_0 -pg 1 -lvl 5 -x 1020 -y -470 -defaultsOSRD
 preplace netloc reset_1 1 0 10 -560J -590 -220 -670 140 -640 N -640 N -640 N -640 N -640 N -640 N -640 2360
 preplace netloc sys_clock_1 1 0 1 NJ -470
 preplace netloc clk_wiz_0_locked 1 1 9 -220 -330 N -330 N -330 800 -130 N -130 N -130 N -130 N -130 N

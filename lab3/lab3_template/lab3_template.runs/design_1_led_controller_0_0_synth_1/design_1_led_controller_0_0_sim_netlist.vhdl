@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu May  9 00:30:57 2024
+-- Date        : Fri May 10 15:46:36 2024
 -- Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_led_controller_0_0_sim_netlist.vhdl
@@ -35,24 +35,39 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
-  component decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_led_controller is
-  port (
-    mute_enable : in STD_LOGIC;
-    filter_enable : in STD_LOGIC;
-    led_r : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    led_g : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    led_b : out STD_LOGIC_VECTOR ( 7 downto 0 )
-  );
-  end component decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_led_controller;
-  attribute LED_WIDTH : integer;
-  attribute LED_WIDTH of U0 : label is 8;
+  signal \<const0>\ : STD_LOGIC;
+  signal \<const1>\ : STD_LOGIC;
 begin
-U0: component decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_led_controller
+  led_b(7) <= \<const0>\;
+  led_b(6) <= \<const0>\;
+  led_b(5) <= \<const0>\;
+  led_b(4) <= \<const0>\;
+  led_b(3) <= \<const0>\;
+  led_b(2) <= \<const0>\;
+  led_b(1) <= \<const0>\;
+  led_b(0) <= \<const0>\;
+  led_g(7) <= \<const0>\;
+  led_g(6) <= \<const0>\;
+  led_g(5) <= \<const0>\;
+  led_g(4) <= \<const0>\;
+  led_g(3) <= \<const0>\;
+  led_g(2) <= \<const0>\;
+  led_g(1) <= \<const0>\;
+  led_g(0) <= \<const0>\;
+  led_r(7) <= \<const1>\;
+  led_r(6) <= \<const1>\;
+  led_r(5) <= \<const1>\;
+  led_r(4) <= \<const1>\;
+  led_r(3) <= \<const1>\;
+  led_r(2) <= \<const1>\;
+  led_r(1) <= \<const1>\;
+  led_r(0) <= \<const1>\;
+GND: unisim.vcomponents.GND
      port map (
-      filter_enable => filter_enable,
-      led_b(7 downto 0) => led_b(7 downto 0),
-      led_g(7 downto 0) => led_g(7 downto 0),
-      led_r(7 downto 0) => led_r(7 downto 0),
-      mute_enable => mute_enable
+      G => \<const0>\
+    );
+VCC: unisim.vcomponents.VCC
+     port map (
+      P => \<const1>\
     );
 end STRUCTURE;

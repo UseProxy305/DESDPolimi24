@@ -103,3 +103,110 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:49 . Memory (MB): peak = 1017.469 ; gain = 0.000
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 1032.648 ; gain = 15.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 1032.648 ; gain = 15.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 1051.723 ; gain = 34.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT4 |     1|
+|3     |FDRE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:09 . Memory (MB): peak = 1057.504 ; gain = 40.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1057.504 ; gain = 40.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1074.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:30 . Memory (MB): peak = 1074.883 ; gain = 57.414
+INFO: [Common 17-1381] The checkpoint 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_edge_detector_toggle_1_0_synth_1/design_1_edge_detector_toggle_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_edge_detector_toggle_1_0_synth_1/design_1_edge_detector_toggle_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_edge_detector_toggle_1_0_utilization_synth.rpt -pb design_1_edge_detector_toggle_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 15:23:51 2024...

@@ -59,7 +59,6 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_led_level_controller_0_0/sim/design_1_led_level_controller_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_moving_average_filte_0_0/sim/design_1_moving_average_filte_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd" \
-"../../../bd/design_1/sim/design_1.vhd" \
 "../../../bd/design_1/ip/design_1_edge_detector_toggle_1_0/sim/design_1_edge_detector_toggle_1_0.vhd" \
 
 vlog -work axis_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
@@ -78,6 +77,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab3_template.gen/sources_
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_proc_sys_reset_1_0/sim/design_1_proc_sys_reset_1_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

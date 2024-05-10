@@ -28,9 +28,35 @@ end effect_selector;
 
 architecture Behavioral of effect_selector is
 
-
-
 begin
+
+process (aclk)
+begin
+
+    if rising_edge(aclk) then
+    
+        if aresetn = '0' then
+        
+        else
+        
+            if effect = '1' then
+            
+                jstk_y_lfo <= jstck_y ;
+            
+            else
+            
+                volume <= jstck_y;
+                balance <= jstck_x;
+            
+            end if;    
+            
+        end if;
+        
+        
+    
+    end if; 
+
+end process;
 
 
 

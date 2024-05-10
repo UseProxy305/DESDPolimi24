@@ -17,10 +17,38 @@ end led_controller;
 
 architecture Behavioral of led_controller is
 
+type state_led_type is (MUTE, FILTER, NO_EFFECT);
 
+signal state_led        : state_led_type;
 
 begin
 
+    process (state_led)
+    begin
+    
+        case state_led is
+        
+            when MUTE =>
+            
+                led_r <= x"FF";
+                led_g <= x"00";
+                led_b <= x"00";
+                     
+            when FILTER =>
+            
+                led_r <= x"00";
+                led_g <= x"00";
+                led_b <= x"FF";
+                
+            when NO_EFFECT =>
+            
+                led_r <= x"00";
+                led_g <= x"FF";
+                led_b <= x"00";
+          
+        end case;
+    
+    end process;
 
 
 end Behavioral;

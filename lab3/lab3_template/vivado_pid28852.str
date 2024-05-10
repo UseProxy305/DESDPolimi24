@@ -2175,3 +2175,770 @@ selectButton("OptionPane.button", "OK"); // JButton
 // WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 401ms to process. Increasing delay to 3000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 210 ms. Decreasing delay to 2210 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2372 ms. Increasing delay to 7116 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4869 ms. Increasing delay to 14607 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 285 ms. Decreasing delay to 2285 ms.
+// Elapsed time: 196 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1970 ms. Increasing delay to 5910 ms.
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 13); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 14); // D
+// PAPropertyPanels.initPanels (clk_out2) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1052 ms.
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// WARNING: HEventQueue.dispatchEvent() is taking  2229 ms.
+// r (cr): Customize Pin: addNotify
+// Elapsed time: 38 seconds
+setText("Frequency", "100000000"); // B
+dismissDialog("Customize Pin"); // r
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 386, 282, 1299, 661, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 32 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 387, 270, 1299, 661, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 378, 270, 1299, 661, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "IP", 2); // i
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cV
+// Elapsed time: 14 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "22.579", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 10 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "22.58", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "22.58065", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {22.58065} CONFIG.MMCM_CLKFBOUT_MULT_F {7.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} CONFIG.MMCM_CLKOUT1_DIVIDE {31} CONFIG.CLKOUT1_JITTER {149.337} CONFIG.CLKOUT1_PHASE_ERROR {122.577} CONFIG.CLKOUT2_JITTER {201.826} CONFIG.CLKOUT2_PHASE_ERROR {122.577}] [get_bd_cells clk_wiz_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {22.58065} CONFIG.MMCM_CLKFBOUT_MULT_F {7.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} CONFIG.MMCM_CLKOUT1_DIVIDE {31} CONFIG.CLKOUT1_JITTER {149.337} CONFIG.CLKOUT1_PHASE_ERROR {122.577} CONFIG.CLKOUT2_JITTER {201.826} CONFIG.CLKOUT2_PHASE_ERROR {122.577}] [get_bd_cells clk_wiz_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+// Elapsed time: 32 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // E
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 . 
+// Tcl Message: Exporting to file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_1] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_proc_sys_reset_1_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs design_1_clk_wiz_0_1_synth_1 design_1_proc_sys_reset_1_0_synth_1 -jobs 8 
+// Tcl Message: [Fri May 10 15:28:54 2024] Launched design_1_clk_wiz_0_1_synth_1, design_1_proc_sys_reset_1_0_synth_1... Run output will be captured here: design_1_clk_wiz_0_1_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_clk_wiz_0_1_synth_1/runme.log design_1_proc_sys_reset_1_0_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_proc_sys_reset_1_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'br' command handler elapsed time: 44 seconds
+// Elapsed time: 43 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bz (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_RESET
+// Tcl Message: INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_clk_wiz_0_1 INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_proc_sys_reset_1_0 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 10 15:29:59 2024] Launched design_1_clk_wiz_0_1_synth_1, design_1_proc_sys_reset_1_0_synth_1... Run output will be captured here: design_1_clk_wiz_0_1_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_clk_wiz_0_1_synth_1/runme.log design_1_proc_sys_reset_1_0_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_proc_sys_reset_1_0_synth_1/runme.log [Fri May 10 15:29:59 2024] Launched synth_1... Run output will be captured here: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.738 ; gain = 0.000 
+// 'k' command handler elapsed time: 20 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 123 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+// Elapsed time: 196 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debouncer(Behavioral) (debouncer.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digilent_jstk2(Behavioral) (digilent_jstk2.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, edge_detector_toggle(Behavioral) (edge_detector_toggle.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("led_controller.vhd", 158, 432); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digilent_jstk2(Behavioral) (digilent_jstk2.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digilent_jstk2(Behavioral) (digilent_jstk2.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("digilent_jstk2.vhd", 47, 287); // bP
+typeControlKey((HResource) null, "digilent_jstk2.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectCodeEditor("led_controller.vhd", 43, 442); // bP
+typeControlKey((HResource) null, "led_controller.vhd", 'v'); // bP
+selectCodeEditor("led_controller.vhd", 57, 444, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("led_controller.vhd", 160, 454); // bP
+selectCodeEditor("led_controller.vhd", 160, 454, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_controller.vhd", 335, 458); // bP
+selectCodeEditor("led_controller.vhd", 344, 447); // bP
+selectCodeEditor("led_controller.vhd", 344, 447, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_controller.vhd", 396, 454); // bP
+selectCodeEditor("led_controller.vhd", 394, 454, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_controller.vhd", 474, 444); // bP
+selectCodeEditor("led_controller.vhd", 475, 444, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_controller.vhd", 457, 453); // bP
+selectCodeEditor("led_controller.vhd", 599, 445); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectCodeEditor("led_controller.vhd", 671, 330); // bP
+selectCodeEditor("led_controller.vhd", 676, 361); // bP
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+selectCodeEditor("digilent_jstk2.vhd", 276, 116); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectCodeEditor("led_controller.vhd", 263, 423); // bP
+selectCodeEditor("led_controller.vhd", 253, 423); // bP
+selectCodeEditor("led_controller.vhd", 294, 423); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectCodeEditor("led_controller.vhd", 260, 449); // bP
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 2); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+selectCodeEditor("led_controller.vhd", 252, 360); // bP
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+selectCodeEditor("led_controller.vhd", 304, 401); // bP
+selectCodeEditor("led_controller.vhd", 375, 319); // bP
+// Elapsed time: 21 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 51 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 80 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 130 MB. Current time: 5/10/24, 3:44:32 PM CEST
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_module_reference design_1_led_controller_0_0 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-dual-i2s'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-spi-master'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_led_controller_0_0 from led_controller_v1_0 1.0 to led_controller_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 2); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("led_controller.vhd", 325, 231); // bP
+selectCodeEditor("led_controller.vhd", 128, 244); // bP
+selectCodeEditor("led_controller.vhd", 97, 416); // bP
+selectCodeEditor("led_controller.vhd", 207, 505); // bP
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference design_1_led_controller_0_0 
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-dual-i2s'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-spi-master'. 
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_led_controller_0_0 from led_controller_v1_0 1.0 to led_controller_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1563.758 ; gain = 0.000 
+// Elapsed time: 14 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block led_controller_0 . 
+// Tcl Message: Exporting to file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1563.758 ; gain = 0.000 
+// Tcl Message: launch_runs design_1_led_controller_0_0_synth_1 -jobs 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 10 15:45:53 2024] Launched design_1_led_controller_0_0_synth_1... Run output will be captured here: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_led_controller_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'br' command handler elapsed time: 38 seconds
+// Elapsed time: 37 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mute_controller(Behavioral) (mute_controller.vhd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mute_controller(Behavioral) (mute_controller.vhd)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mute_controller.vhd", 2); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mute_controller.vhd", 2); // m
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("effect_selector.vhd", 161, 435); // bP
+// Elapsed time: 934 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 68 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+selectCodeEditor("effect_selector.vhd", 87, 532); // bP
+selectCodeEditor("effect_selector.vhd", 117, 507); // bP
+selectCodeEditor("effect_selector.vhd", 154, 528); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("effect_selector.vhd", 92, 378); // bP
+selectCodeEditor("effect_selector.vhd", 55, 348); // bP
+typeControlKey((HResource) null, "effect_selector.vhd", 'v'); // bP
+selectCodeEditor("effect_selector.vhd", 54, 450); // bP
+selectCodeEditor("effect_selector.vhd", 123, 415); // bP
+selectCodeEditor("effect_selector.vhd", 93, 280); // bP
+selectCodeEditor("effect_selector.vhd", 133, 426); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+selectCodeEditor("effect_selector.vhd", 131, 426); // bP
+selectCodeEditor("effect_selector.vhd", 131, 426, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("effect_selector.vhd", 197, 424); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+selectCodeEditor("effect_selector.vhd", 156, 286); // bP
+selectCodeEditor("effect_selector.vhd", 96, 293); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+// Elapsed time: 109 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("effect_selector.vhd", 249, 224); // bP
+// Elapsed time: 54 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: update_module_reference design_1_effect_selector_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-dual-i2s'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-spi-master'. 
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_effect_selector_0_0 from effect_selector_v1_0 1.0 to effect_selector_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block effect_selector_0 . 
+// Tcl Message: Exporting to file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1563.758 ; gain = 0.000 
+// Tcl Message: launch_runs design_1_effect_selector_0_0_synth_1 -jobs 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 10 16:11:47 2024] Launched design_1_effect_selector_0_0_synth_1... Run output will be captured here: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_effect_selector_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'br' command handler elapsed time: 39 seconds
+// Elapsed time: 38 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_RESET
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 10 16:12:24 2024] Launched design_1_effect_selector_0_0_synth_1... Run output will be captured here: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_effect_selector_0_0_synth_1/runme.log [Fri May 10 16:12:24 2024] Launched synth_1... Run output will be captured here: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 98 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag

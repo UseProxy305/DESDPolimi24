@@ -3,61 +3,61 @@
 
 # XDC: new/io.xdc
 
-# Block Designs: bd/top_bd/top_bd.bd
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd || ORIG_REF_NAME==top_bd} -quiet] -quiet
+# Block Designs: bd/design_1/design_1.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_clk_wiz_0_0 || ORIG_REF_NAME==top_bd_clk_wiz_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axi4stream_spi_master_0_0/design_1_axi4stream_spi_master_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi4stream_spi_master_0_0 || ORIG_REF_NAME==design_1_axi4stream_spi_master_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_proc_sys_reset_0_0/top_bd_proc_sys_reset_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_proc_sys_reset_0_0 || ORIG_REF_NAME==top_bd_proc_sys_reset_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axis_dual_i2s_0_0/design_1_axis_dual_i2s_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axis_dual_i2s_0_0 || ORIG_REF_NAME==design_1_axis_dual_i2s_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_axis_dual_i2s_0_0/top_bd_axis_dual_i2s_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_axis_dual_i2s_0_0 || ORIG_REF_NAME==top_bd_axis_dual_i2s_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_proc_sys_reset_0_0 || ORIG_REF_NAME==design_1_proc_sys_reset_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_proc_sys_reset_1_0/top_bd_proc_sys_reset_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_proc_sys_reset_1_0 || ORIG_REF_NAME==top_bd_proc_sys_reset_1_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_0_1 || ORIG_REF_NAME==design_1_clk_wiz_0_1} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_axi4stream_spi_master_0_0/top_bd_axi4stream_spi_master_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_axi4stream_spi_master_0_0 || ORIG_REF_NAME==top_bd_axi4stream_spi_master_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_volume_controller_0_0 || ORIG_REF_NAME==design_1_volume_controller_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_digilent_jstk2_0_0/top_bd_digilent_jstk2_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_digilent_jstk2_0_0 || ORIG_REF_NAME==top_bd_digilent_jstk2_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_balance_controller_0_0/design_1_balance_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_balance_controller_0_0 || ORIG_REF_NAME==design_1_balance_controller_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_edge_detector_toggle_0_0/top_bd_edge_detector_toggle_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_edge_detector_toggle_0_0 || ORIG_REF_NAME==top_bd_edge_detector_toggle_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_LFO_0_0/design_1_LFO_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_LFO_0_0 || ORIG_REF_NAME==design_1_LFO_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_edge_detector_toggle_1_0/top_bd_edge_detector_toggle_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_edge_detector_toggle_1_0 || ORIG_REF_NAME==top_bd_edge_detector_toggle_1_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_debouncer_0_0 || ORIG_REF_NAME==design_1_debouncer_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_mute_controller_0_0/top_bd_mute_controller_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_mute_controller_0_0 || ORIG_REF_NAME==top_bd_mute_controller_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_digilent_jstk2_0_0 || ORIG_REF_NAME==design_1_digilent_jstk2_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_led_controller_0_1/top_bd_led_controller_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_led_controller_0_1 || ORIG_REF_NAME==top_bd_led_controller_0_1} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_edge_detector_toggle_0_0/design_1_edge_detector_toggle_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_edge_detector_toggle_0_0 || ORIG_REF_NAME==design_1_edge_detector_toggle_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_balance_controller_0_0/top_bd_balance_controller_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_balance_controller_0_0 || ORIG_REF_NAME==top_bd_balance_controller_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_effect_selector_0_0/design_1_effect_selector_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_effect_selector_0_0 || ORIG_REF_NAME==design_1_effect_selector_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_volume_controller_0_0/top_bd_volume_controller_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_volume_controller_0_0 || ORIG_REF_NAME==top_bd_volume_controller_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_led_controller_0_0 || ORIG_REF_NAME==design_1_led_controller_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_moving_average_filte_0_0/top_bd_moving_average_filte_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_moving_average_filte_0_0 || ORIG_REF_NAME==top_bd_moving_average_filte_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_led_level_controller_0_0 || ORIG_REF_NAME==design_1_led_level_controller_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_LFO_0_0/top_bd_LFO_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_LFO_0_0 || ORIG_REF_NAME==top_bd_LFO_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_moving_average_filte_0_0 || ORIG_REF_NAME==design_1_moving_average_filte_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_effect_selector_0_0/top_bd_effect_selector_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_effect_selector_0_0 || ORIG_REF_NAME==top_bd_effect_selector_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mute_controller_0_0 || ORIG_REF_NAME==design_1_mute_controller_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_led_level_controller_0_0/top_bd_led_level_controller_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_led_level_controller_0_0 || ORIG_REF_NAME==top_bd_led_level_controller_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_edge_detector_toggle_1_0/design_1_edge_detector_toggle_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_edge_detector_toggle_1_0 || ORIG_REF_NAME==design_1_edge_detector_toggle_1_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_debouncer_0_0/top_bd_debouncer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_debouncer_0_0 || ORIG_REF_NAME==top_bd_debouncer_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axis_broadcaster_0_0 || ORIG_REF_NAME==design_1_axis_broadcaster_0_0} -quiet] -quiet
 
-# IP: bd/top_bd/ip/top_bd_axis_broadcaster_0_0/top_bd_axis_broadcaster_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_bd_axis_broadcaster_0_0 || ORIG_REF_NAME==top_bd_axis_broadcaster_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_proc_sys_reset_1_0 || ORIG_REF_NAME==design_1_proc_sys_reset_1_0} -quiet] -quiet
 
-# XDC: /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/top_bd_ooc.xdc
+# XDC: c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/design_1_ooc.xdc

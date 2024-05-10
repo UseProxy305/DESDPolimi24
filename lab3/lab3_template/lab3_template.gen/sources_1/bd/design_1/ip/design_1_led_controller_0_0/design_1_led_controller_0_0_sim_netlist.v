@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:30:59 2024
+// Date        : Fri May 10 15:46:36 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0_sim_netlist.v
@@ -27,35 +27,37 @@ module design_1_led_controller_0_0
   output [7:0]led_g;
   output [7:0]led_b;
 
-  wire filter_enable;
-  wire [7:0]led_b;
-  wire [7:0]led_g;
-  wire [7:0]led_r;
-  wire mute_enable;
+  wire \<const0> ;
+  wire \<const1> ;
 
-  (* LED_WIDTH = "8" *) 
-  design_1_led_controller_0_0_led_controller U0
-       (.filter_enable(filter_enable),
-        .led_b(led_b),
-        .led_g(led_g),
-        .led_r(led_r),
-        .mute_enable(mute_enable));
-endmodule
-
-(* LED_WIDTH = "8" *) (* ORIG_REF_NAME = "led_controller" *) 
-module design_1_led_controller_0_0_led_controller
-   (mute_enable,
-    filter_enable,
-    led_r,
-    led_g,
-    led_b);
-  input mute_enable;
-  input filter_enable;
-  output [7:0]led_r;
-  output [7:0]led_g;
-  output [7:0]led_b;
-
-
+  assign led_b[7] = \<const0> ;
+  assign led_b[6] = \<const0> ;
+  assign led_b[5] = \<const0> ;
+  assign led_b[4] = \<const0> ;
+  assign led_b[3] = \<const0> ;
+  assign led_b[2] = \<const0> ;
+  assign led_b[1] = \<const0> ;
+  assign led_b[0] = \<const0> ;
+  assign led_g[7] = \<const0> ;
+  assign led_g[6] = \<const0> ;
+  assign led_g[5] = \<const0> ;
+  assign led_g[4] = \<const0> ;
+  assign led_g[3] = \<const0> ;
+  assign led_g[2] = \<const0> ;
+  assign led_g[1] = \<const0> ;
+  assign led_g[0] = \<const0> ;
+  assign led_r[7] = \<const1> ;
+  assign led_r[6] = \<const1> ;
+  assign led_r[5] = \<const1> ;
+  assign led_r[4] = \<const1> ;
+  assign led_r[3] = \<const1> ;
+  assign led_r[2] = \<const1> ;
+  assign led_r[1] = \<const1> ;
+  assign led_r[0] = \<const1> ;
+  GND GND
+       (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
 endmodule
 `ifndef GLBL
 `define GLBL
