@@ -1,0 +1,90 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.04783",
+   "Default View_TopLeft":"1783,-779",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port SPI_M_0 -pg 1 -lvl 12 -x 3080 -y -840 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -580 -y -590 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -580 -y -470 -defaultsOSRD
+preplace port tx_mclk_0 -pg 1 -lvl 12 -x 3080 -y -320 -defaultsOSRD
+preplace port tx_lrck_0 -pg 1 -lvl 12 -x 3080 -y -300 -defaultsOSRD
+preplace port tx_sclk_0 -pg 1 -lvl 12 -x 3080 -y -280 -defaultsOSRD
+preplace port tx_sdout_0 -pg 1 -lvl 12 -x 3080 -y -260 -defaultsOSRD
+preplace port rx_mclk_0 -pg 1 -lvl 12 -x 3080 -y -240 -defaultsOSRD
+preplace port rx_lrck_0 -pg 1 -lvl 12 -x 3080 -y -220 -defaultsOSRD
+preplace port rx_sclk_0 -pg 1 -lvl 12 -x 3080 -y -200 -defaultsOSRD
+preplace port lfo_enable -pg 1 -lvl 0 -x -580 -y -370 -defaultsOSRD
+preplace port effect -pg 1 -lvl 0 -x -580 -y -400 -defaultsOSRD
+preplace port rx_sdin_0 -pg 1 -lvl 0 -x -580 -y -340 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 12 -x 3080 -y -580 -defaultsOSRD
+preplace inst axi4stream_spi_master_0 -pg 1 -lvl 11 -x 2950 -y -830 -defaultsOSRD
+preplace inst axis_dual_i2s_0 -pg 1 -lvl 11 -x 2950 -y -270 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x -30 -y -570 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -320 -y -480 -defaultsOSRD
+preplace inst volume_controller_0 -pg 1 -lvl 7 -x 1620 -y -310 -defaultsOSRD
+preplace inst balance_controller_0 -pg 1 -lvl 6 -x 1350 -y -340 -defaultsOSRD
+preplace inst LFO_0 -pg 1 -lvl 8 -x 1940 -y -410 -defaultsOSRD
+preplace inst debouncer_0 -pg 1 -lvl 4 -x 670 -y -460 -defaultsOSRD
+preplace inst digilent_jstk2_0 -pg 1 -lvl 10 -x 2580 -y -820 -defaultsOSRD
+preplace inst edge_detector_toggle_0 -pg 1 -lvl 3 -x 330 -y -730 -defaultsOSRD
+preplace inst effect_selector_0 -pg 1 -lvl 5 -x 1020 -y -470 -defaultsOSRD
+preplace inst led_controller_0 -pg 1 -lvl 4 -x 670 -y -920 -defaultsOSRD
+preplace inst led_level_controller_0 -pg 1 -lvl 11 -x 2950 -y -580 -defaultsOSRD
+preplace inst moving_average_filte_0 -pg 1 -lvl 5 -x 1020 -y -240 -defaultsOSRD
+preplace inst mute_controller_0 -pg 1 -lvl 9 -x 2240 -y -430 -defaultsOSRD
+preplace inst edge_detector_toggle_1 -pg 1 -lvl 4 -x 670 -y -240 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 10 -x 2580 -y -430 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 10 -x 2580 -y -170 -defaultsOSRD
+preplace netloc reset_1 1 0 10 -560J -590 -220 -670 140 -640 N -640 N -640 N -640 N -640 N -640 N -640 2360
+preplace netloc sys_clock_1 1 0 1 NJ -470
+preplace netloc clk_wiz_0_locked 1 1 9 -220 -330 N -330 N -330 800 -130 N -130 N -130 N -130 N -130 N
+preplace netloc clk_wiz_0_clk_out1 1 1 10 -230 -680 150 -630 480 -320 840 -340 1220 -250 1480 -430 1760 -520 2080 -530 2380 -700 2810
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 160 -540 460
+preplace netloc edge_detector_toggle_0_output_signal 1 3 6 460 -660 N -660 N -660 N -660 N -660 2060
+preplace netloc edge_detector_toggle_1_output_signal 1 3 2 500 -360 810
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 9 NJ -530 490 -540 830 -330 1200 -230 1490 -410 1770 -510 2090 -520 2390 -680 2820
+preplace netloc debouncer_0_debounced 1 4 1 800 -470n
+preplace netloc effect_selector_0_balance 1 5 1 1210 -470n
+preplace netloc effect_selector_0_volume 1 5 2 1190J -240 1500
+preplace netloc led_level_controller_0_led 1 11 1 N -580
+preplace netloc axis_dual_i2s_0_tx_mclk 1 11 1 N -320
+preplace netloc axis_dual_i2s_0_tx_lrck 1 11 1 N -300
+preplace netloc axis_dual_i2s_0_tx_sclk 1 11 1 N -280
+preplace netloc axis_dual_i2s_0_tx_sdout 1 11 1 N -260
+preplace netloc axis_dual_i2s_0_rx_mclk 1 11 1 N -240
+preplace netloc axis_dual_i2s_0_rx_lrck 1 11 1 N -220
+preplace netloc axis_dual_i2s_0_rx_sclk 1 11 1 N -200
+preplace netloc digilent_jstk2_0_jstk_x 1 4 7 850 -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 2780
+preplace netloc digilent_jstk2_0_jstk_y 1 4 7 860 -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 2770
+preplace netloc effect_selector_0_jstk_y_lfo 1 5 3 NJ -450 NJ -450 1740
+preplace netloc led_controller_0_led_r 1 4 6 NJ -940 NJ -940 NJ -940 NJ -940 NJ -940 2400
+preplace netloc led_controller_0_led_g 1 4 6 NJ -920 NJ -920 NJ -920 NJ -920 NJ -920 2370
+preplace netloc led_controller_0_led_b 1 4 6 NJ -900 NJ -900 NJ -900 NJ -900 NJ -900 2360
+preplace netloc digilent_jstk2_0_btn_jstk 1 3 8 500 -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 2760
+preplace netloc digilent_jstk2_0_btn_trigger 1 2 9 170 -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 2750
+preplace netloc lfo_enable_0_1 1 0 8 NJ -370 NJ -370 NJ -370 NJ -370 NJ -370 1160J -210 NJ -210 1760J
+preplace netloc input_signal_0_1 1 0 4 NJ -400 -230J -440 NJ -440 NJ
+preplace netloc clk_wiz_0_clk_out2 1 1 10 NJ -460 NJ -460 470J -380 820J -150 1190J -220 NJ -220 NJ -220 NJ -220 2390J -280 2800
+preplace netloc rx_sdin_0_1 1 0 11 NJ -340 NJ -340 NJ -340 500J -350 NJ -350 1150J -200 NJ -200 1770J -270 NJ -270 NJ -270 2800J
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 10 1 2830 -280n
+preplace netloc moving_average_filte_0_m_axis 1 5 1 1180 -370n
+preplace netloc balance_controller_0_m_axis 1 6 1 N -340
+preplace netloc volume_controller_0_m_axis 1 7 1 1750 -450n
+preplace netloc LFO_0_m_axis 1 8 1 2070 -460n
+preplace netloc mute_controller_0_m_axis 1 9 1 2370 -450n
+preplace netloc axis_broadcaster_0_M01_AXIS 1 10 1 2790 -600n
+preplace netloc axis_broadcaster_0_M00_AXIS 1 10 1 2800 -440n
+preplace netloc axis_dual_i2s_0_m_axis 1 4 8 870 -360 1170J -540 NJ -540 NJ -540 NJ -540 NJ -540 2800J -500 3060
+preplace netloc digilent_jstk2_0_m_axis 1 10 1 2780 -860n
+preplace netloc axi4stream_spi_master_0_M_AXIS 1 9 3 2410 -710 NJ -710 3060
+preplace netloc axi4stream_spi_master_0_SPI_M 1 11 1 N -840
+levelinfo -pg 1 -580 -320 -30 330 670 1020 1350 1620 1940 2240 2580 2950 3080
+pagesize -pg 1 -db -bbox -sgen -700 -1250 3200 160
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"4"
+}

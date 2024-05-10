@@ -1,0 +1,229 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May  6 17:16:31 2024
+# Process ID: 249190
+# Current directory: /home/gbonanno
+# Command line: vivado
+# Log file: /home/gbonanno/vivado.log
+# Journal file: /home/gbonanno/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/gbonanno/Music/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gbonanno/Music/lab3/lab3.ipdefs/IPs_DESD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 7465.375 ; gain = 110.023 ; free physical = 8156 ; free virtual = 12004
+open_bd_design {/home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd}
+Reading block design file </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- DigiLAB:ip:axis_dual_i2s:1.0 - axis_dual_i2s_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- DigiLAB:ip:axi4stream_spi_master:1.0 - axi4stream_spi_master_0
+Adding component instance block -- xilinx.com:module_ref:digilent_jstk2:1.0 - digilent_jstk2_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector_toggle:1.0 - edge_detector_toggle_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector_toggle:1.0 - edge_detector_toggle_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:led_controller:1.0 - led_controller_0
+Adding component instance block -- xilinx.com:module_ref:balance_controller:1.0 - balance_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:moving_average_filter_en:1.0 - moving_average_filte_0
+Adding component instance block -- xilinx.com:module_ref:effect_selector:1.0 - effect_selector_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Adding component instance block -- xilinx.com:module_ref:led_level_controller:1.0 - led_level_controller_0
+Adding component instance block -- xilinx.com:module_ref:LFO:1.0 - LFO_0
+Successfully read diagram <top_bd> from block design file </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:12 . Memory (MB): peak = 7876.719 ; gain = 297.289 ; free physical = 8023 ; free virtual = 11848
+update_module_reference top_bd_LFO_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gbonanno/Music/lab3/lab3.ipdefs/IPs_DESD'.
+Upgrading '/home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_LFO_0_0 from LFO_v1_0 1.0 to LFO_v1_0 1.0
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} CONFIG.CLKOUT1_JITTER {149.337}] [get_bd_cells clk_wiz_0]
+endgroup
+update_compile_order -fileset sources_1
+update_module_reference top_bd_LFO_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gbonanno/Music/lab3/lab3.ipdefs/IPs_DESD'.
+Upgrading '/home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_LFO_0_0 from LFO_v1_0 1.0 to LFO_v1_0 1.0
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:37 ; elapsed = 00:00:12 . Memory (MB): peak = 7887.375 ; gain = 0.000 ; free physical = 7899 ; free virtual = 11682
+startgroup
+set_property -dict [list CONFIG.CLK_PERIOD_NS {10}] [get_bd_cells LFO_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_period_ns {10}] [get_bd_cells led_level_controller_0]
+endgroup
+save_bd_design
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+reset_run top_bd_led_level_controller_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /axi4stream_spi_master_0/aclk have been updated from connected ip, but BD cell '/axi4stream_spi_master_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </axi4stream_spi_master_0> to completely resolve these warnings.
+Wrote  : </home/gbonanno/Music/lab3/lab3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_iocc/1.2/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/gbonanno/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2020.2/boards/Avnet/ultrazed_3eg_pciecc/1.3/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.0 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.0/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part timeengineers:panther_te0715_30_1c:part0:1.1 available at /opt/Xilinx/Vivado/2020.2/data/boards/board_files/Panther-TE0715-30-1C/1.1/board.xml as part xc7z030sbg485-1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/ip/top_bd_axis_broadcaster_0_0/top_bd_axis_broadcaster_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_broadcaster_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_level_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LFO_0 .
+Exporting to file /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/gbonanno/Music/lab3/lab3.gen/sources_1/bd/top_bd/synth/top_bd.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP top_bd_axis_broadcaster_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP top_bd_clk_wiz_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP top_bd_proc_sys_reset_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_bd_proc_sys_reset_0_0, cache-ID = 00d940d4a5198a48; cache size = 60.124 MB.
+[Mon May  6 17:19:48 2024] Launched top_bd_led_level_controller_0_0_synth_1, top_bd_clk_wiz_0_0_synth_1, top_bd_axis_broadcaster_0_0_synth_1, top_bd_LFO_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_led_level_controller_0_0_synth_1: /home/gbonanno/Music/lab3/lab3.runs/top_bd_led_level_controller_0_0_synth_1/runme.log
+top_bd_clk_wiz_0_0_synth_1: /home/gbonanno/Music/lab3/lab3.runs/top_bd_clk_wiz_0_0_synth_1/runme.log
+top_bd_axis_broadcaster_0_0_synth_1: /home/gbonanno/Music/lab3/lab3.runs/top_bd_axis_broadcaster_0_0_synth_1/runme.log
+top_bd_LFO_0_0_synth_1: /home/gbonanno/Music/lab3/lab3.runs/top_bd_LFO_0_0_synth_1/runme.log
+synth_1: /home/gbonanno/Music/lab3/lab3.runs/synth_1/runme.log
+[Mon May  6 17:19:48 2024] Launched impl_1...
+Run output will be captured here: /home/gbonanno/Music/lab3/lab3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:10 ; elapsed = 00:00:26 . Memory (MB): peak = 8052.387 ; gain = 112.988 ; free physical = 7652 ; free virtual = 11259
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299ACFECF
+current_hw_device [get_hw_devices xczu3_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu3_0] 0]
+INFO: [Labtools 27-1434] Device xczu3 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu3_0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299ACFECF}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210299ACFECF
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183AA0C51A}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+set_property PROGRAM.FILE {/home/gbonanno/Music/lab3/lab3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/gbonanno/Music/lab3/lab3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/gbonanno/Music/lab3/lab3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/gbonanno/Music/lab3/lab3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0C51A
+close_project
+open_project /home/gbonanno/Music/lab3_template/lab3_template.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gbonanno/Music/lab3/lab3.ipdefs/IPs_DESD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+archive_project /home/gbonanno/Music/lab3_template.xpr.zip -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-249190-gbonanno-B450-GAMING-X' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

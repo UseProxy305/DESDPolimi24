@@ -1,0 +1,500 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Apr 29 14:49:43 2024
+| Host         : gbonanno-B450-GAMING-X running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_bus_skew -warn_on_violation -file top_bd_wrapper_bus_skew_routed.rpt -pb top_bd_wrapper_bus_skew_routed.pb -rpx top_bd_wrapper_bus_skew_routed.rpx
+| Design       : top_bd_wrapper
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   6         [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              5.000       0.971      4.029
+2   8         [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              5.000       1.014      3.986
+3   10        [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              5.000       1.068      3.932
+4   12        [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              5.000       1.319      3.681
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_top_bd_clk_wiz_0_0
+                      clk_out2_top_bd_clk_wiz_0_0
+                                            top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                                                            Slow         0.971      4.029
+
+
+Slack (MET) :             4.029ns  (requirement - actual skew)
+  Endpoint Source:        top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Endpoint Destination:   top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Reference Source:       top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Reference Destination:  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.555ns
+  Reference Relative Delay:   0.452ns
+  Relative CRPR:              0.359ns
+  Uncertainty:                0.227ns
+  Actual Bus Skew:            0.971ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.741    -0.771    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X10Y104        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y104        FDRE (Prop_fdre_C_Q)         0.478    -0.293 r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.601     0.308    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X16Y104        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.614    -1.381    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X16Y104        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.398    -0.983    
+    SLICE_X16Y104        FDRE (Setup_fdre_C_D)       -0.264    -1.247    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           0.308    
+                         clock arrival                         -1.247    
+  -------------------------------------------------------------------
+                         relative delay                         1.555    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.615    -1.380    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X12Y105        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y105        FDRE (Prop_fdre_C_Q)         0.418    -0.962 r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.414    -0.549    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
+    SLICE_X18Y105        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.740    -0.772    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X18Y105        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism             -0.398    -1.170    
+    SLICE_X18Y105        FDRE (Hold_fdre_C_D)         0.169    -1.001    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                          -0.549    
+                         clock arrival                         -1.001    
+  -------------------------------------------------------------------
+                         relative delay                         0.452    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_top_bd_clk_wiz_0_0
+                      clk_out2_top_bd_clk_wiz_0_0
+                                            top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                                                            Slow         1.014      3.986
+
+
+Slack (MET) :             3.986ns  (requirement - actual skew)
+  Endpoint Source:        top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Endpoint Destination:   top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Reference Source:       top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Reference Destination:  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.590ns
+  Reference Relative Delay:   0.462ns
+  Relative CRPR:              0.341ns
+  Uncertainty:                0.227ns
+  Actual Bus Skew:            1.014ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.558    -0.954    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X13Y97         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y97         FDRE (Prop_fdre_C_Q)         0.419    -0.535 r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.754     0.219    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X10Y94         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.441    -1.555    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X10Y94         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.398    -1.157    
+    SLICE_X10Y94         FDRE (Setup_fdre_C_D)       -0.215    -1.372    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           0.219    
+                         clock arrival                         -1.372    
+  -------------------------------------------------------------------
+                         relative delay                         1.590    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.441    -1.555    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X13Y98         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y98         FDRE (Prop_fdre_C_Q)         0.367    -1.188 r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.531    -0.657    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[6]
+    SLICE_X14Y97         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.558    -0.954    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X14Y97         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism             -0.398    -1.352    
+    SLICE_X14Y97         FDRE (Hold_fdre_C_D)         0.233    -1.119    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                          -0.657    
+                         clock arrival                         -1.119    
+  -------------------------------------------------------------------
+                         relative delay                         0.462    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out2_top_bd_clk_wiz_0_0
+                      clk_out1_top_bd_clk_wiz_0_0
+                                            top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                            top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         1.068      3.932
+
+
+Slack (MET) :             3.932ns  (requirement - actual skew)
+  Endpoint Source:        top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Endpoint Destination:   top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Reference Source:       top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Reference Destination:  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.612ns
+  Reference Relative Delay:   0.415ns
+  Relative CRPR:              0.355ns
+  Uncertainty:                0.227ns
+  Actual Bus Skew:            1.068ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.557    -0.955    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X9Y95          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y95          FDRE (Prop_fdre_C_Q)         0.456    -0.499 r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.906     0.407    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[0]
+    SLICE_X8Y94          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.440    -1.556    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X8Y94          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.398    -1.158    
+    SLICE_X8Y94          FDRE (Setup_fdre_C_D)       -0.047    -1.205    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           0.407    
+                         clock arrival                         -1.205    
+  -------------------------------------------------------------------
+                         relative delay                         1.612    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.440    -1.556    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X9Y96          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y96          FDRE (Prop_fdre_C_Q)         0.367    -1.189 r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.481    -0.708    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
+    SLICE_X8Y96          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.557    -0.955    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X8Y96          FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism             -0.398    -1.353    
+    SLICE_X8Y96          FDRE (Hold_fdre_C_D)         0.230    -1.123    top_bd_i/axis_dual_i2s_0/inst/rx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                          -0.708    
+                         clock arrival                         -1.123    
+  -------------------------------------------------------------------
+                         relative delay                         0.415    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out2_top_bd_clk_wiz_0_0
+                      clk_out1_top_bd_clk_wiz_0_0
+                                            top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                                                            Slow         1.319      3.681
+
+
+Slack (MET) :             3.681ns  (requirement - actual skew)
+  Endpoint Source:        top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Endpoint Destination:   top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Reference Source:       top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_top_bd_clk_wiz_0_0)
+  Reference Destination:  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_top_bd_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.773ns
+  Reference Relative Delay:   0.336ns
+  Relative CRPR:              0.345ns
+  Uncertainty:                0.227ns
+  Actual Bus Skew:            1.319ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.808    -0.704    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X6Y106         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y106         FDRE (Prop_fdre_C_Q)         0.478    -0.226 r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.815     0.589    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X4Y106         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.682    -1.313    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X4Y106         FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.398    -0.915    
+    SLICE_X4Y106         FDRE (Setup_fdre_C_D)       -0.269    -1.184    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           0.589    
+                         clock arrival                         -1.184    
+  -------------------------------------------------------------------
+                         relative delay                         1.773    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162     2.550    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -7.217    -4.668 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    -3.086    top_bd_i/clk_wiz_0/inst/clk_out2_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    -2.995 r  top_bd_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=404, routed)         1.615    -1.380    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X13Y106        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y106        FDRE (Prop_fdre_C_Q)         0.367    -1.013 r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.410    -0.603    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[6]
+    SLICE_X12Y106        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_top_bd_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    top_bd_i/clk_wiz_0/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  top_bd_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    top_bd_i/clk_wiz_0/inst/clk_in1_top_bd_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  top_bd_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    top_bd_i/clk_wiz_0/inst/clk_out1_top_bd_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  top_bd_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=957, routed)         1.740    -0.772    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X12Y106        FDRE                                         r  top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism             -0.398    -1.170    
+    SLICE_X12Y106        FDRE (Hold_fdre_C_D)         0.231    -0.939    top_bd_i/axis_dual_i2s_0/inst/tx_fifo/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                          -0.603    
+                         clock arrival                         -0.939    
+  -------------------------------------------------------------------
+                         relative delay                         0.336    
+
+
+
