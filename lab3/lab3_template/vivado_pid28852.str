@@ -2942,3 +2942,713 @@ dismissDialog("Starting Design Runs"); // bz
 // Elapsed time: 98 seconds
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
 dismissDialog("Synthesis Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 130 MB. Current time: 5/10/24, 4:14:32 PM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize Module Reference: addNotify
+// Elapsed time: 96 seconds
+dismissDialog("Re-customize Module Reference"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize Module Reference: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize Module Reference"); // r
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 2); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, moving_average_filter_en(Behavioral) (moving_average_filter_en.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, moving_average_filter_en(Behavioral) (moving_average_filter_en.vhd)]", 10, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 167, 349); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 155, 376); // bP
+// Elapsed time: 95 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 86, 310); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 228, 448); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 94, 463); // bP
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 114, 455); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 304, 444); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 339, 411); // bP
+// Elapsed time: 29 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 39 seconds
+selectCodeEditor("digilent_jstk2.vhd", 404, 254); // bP
+selectCodeEditor("digilent_jstk2.vhd", 404, 254, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 178 seconds
+selectCodeEditor("digilent_jstk2.vhd", 429, 182); // bP
+selectCodeEditor("digilent_jstk2.vhd", 430, 144); // bP
+selectCodeEditor("digilent_jstk2.vhd", 438, 151); // bP
+selectCodeEditor("digilent_jstk2.vhd", 415, 289); // bP
+selectCodeEditor("digilent_jstk2.vhd", 415, 289, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("digilent_jstk2.vhd", 4, 137); // bP
+selectCodeEditor("digilent_jstk2.vhd", 3, 146); // bP
+selectCodeEditor("digilent_jstk2.vhd", 468, 287); // bP
+// Elapsed time: 380 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: update_module_reference design_1_moving_average_filte_0_0 
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_moving_average_filte_0_0 from moving_average_filter_en_v1_0 1.0 to moving_average_filter_en_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 228, 362); // bP
+// Elapsed time: 67 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 222, 366); // bP
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 32 seconds
+selectCodeEditor("digilent_jstk2.vhd", 42, 117); // bP
+selectCodeEditor("digilent_jstk2.vhd", 385, 288); // bP
+selectCodeEditor("digilent_jstk2.vhd", 437, 267); // bP
+selectCodeEditor("digilent_jstk2.vhd", 357, 287); // bP
+selectCodeEditor("digilent_jstk2.vhd", 442, 270); // bP
+selectCodeEditor("digilent_jstk2.vhd", 350, 299); // bP
+selectCodeEditor("digilent_jstk2.vhd", 359, 273); // bP
+selectCodeEditor("digilent_jstk2.vhd", 376, 279); // bP
+selectCodeEditor("digilent_jstk2.vhd", 427, 281); // bP
+selectCodeEditor("digilent_jstk2.vhd", 1, 119); // bP
+selectCodeEditor("digilent_jstk2.vhd", 1, 117); // bP
+selectCodeEditor("digilent_jstk2.vhd", 392, 281); // bP
+selectCodeEditor("digilent_jstk2.vhd", 382, 282); // bP
+selectCodeEditor("digilent_jstk2.vhd", 379, 286); // bP
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 120, 185); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 156, 278); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 196, 270); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 218, 119); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 143, 194); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 371, 266); // bP
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 155 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 83 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 87, 395); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 105, 301); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 82, 343); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 76, 330); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 93, 316); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 217, 363); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 214, 400); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, balance_controller(Behavioral) (balance_controller.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, balance_controller(Behavioral) (balance_controller.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "balance_controller.vhd", 3); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("moving_average_filter_en.vhd", 95, 232); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 493, 310); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 516, 322); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 12, 236); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 4, 223); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 604, 311); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 660, 309); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 322, 307); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 354, 289); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 85, 257); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 227, 309); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 518, 198); // bP
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 131 MB. Current time: 5/10/24, 4:44:33 PM CEST
+// Elapsed time: 55 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 408, 277); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectCodeEditor("digilent_jstk2.vhd", 48, 151); // bP
+typeControlKey((HResource) null, "digilent_jstk2.vhd", 'c'); // bP
+selectCodeEditor("digilent_jstk2.vhd", 46, 202); // bP
+typeControlKey((HResource) null, "digilent_jstk2.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 162, 319); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 162, 319, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 224, 309); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 167, 323); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 287, 395); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 452, 310); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 452, 310, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("effect_selector.vhd", 389, 297); // bP
+selectCodeEditor("effect_selector.vhd", 389, 297, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 407, 278); // bP
+selectCodeEditor("effect_selector.vhd", 408, 278, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 242, 278); // bP
+selectCodeEditor("effect_selector.vhd", 242, 278, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 347, 384); // bP
+selectCodeEditor("effect_selector.vhd", 347, 384, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 201, 394); // bP
+selectCodeEditor("effect_selector.vhd", 201, 394, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 349, 420); // bP
+selectCodeEditor("effect_selector.vhd", 349, 420, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("effect_selector.vhd", 240, 411); // bP
+selectCodeEditor("effect_selector.vhd", 240, 411, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("led_controller.vhd", 140, 233); // bP
+selectCodeEditor("led_controller.vhd", 140, 233, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_controller.vhd", 152, 260); // bP
+selectCodeEditor("led_controller.vhd", 152, 260, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Tcl Command: 'set_property location {6 1347 -332} [get_bd_cells balance_controller_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1347 -332} [get_bd_cells balance_controller_0] 
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 284, 203); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 284, 203, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 484, 204); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 495, 203); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 269, 208); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 265, 207); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 493, 191); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 490, 204); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 482, 210); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 496, 200); // bP
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 89, 221); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 269, 451); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 276, 444); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 251, 456); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 233, 265); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 74, 365); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 267, 359); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 264, 359); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 107, 224); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 86, 232); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 96 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 583, 225); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 583, 225, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 600, 243); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 619, 214); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 618, 214, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 615, 231); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 615, 231, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 640, 227); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 640, 227, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 641, 227); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 641, 227); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("moving_average_filter_en.vhd", 628, 230); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 628, 230, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 628, 230); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 628, 230); // bP
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectCodeEditor("digilent_jstk2.vhd", 621, 258); // bP
+selectCodeEditor("digilent_jstk2.vhd", 638, 222); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 570, 235); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 610, 262); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 152, 311); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 149, 338); // bP
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 3, 366); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 290, 237); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 115, 376); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 124, 336); // bP
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 329, 367); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 310, 341); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 19 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 214, 285); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 274, 368); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 739, 381); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 620, 475); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 178, 467); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 183, 179); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 561, 368); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 573, 345); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 529, 485); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 528, 472); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 528, 472, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectCodeEditor("moving_average_filter_en.vhd", 265, 282); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 277, 291); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 387, 254); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 327, 74); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 277, 398); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 229, 390); // bP
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 253, 163); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 230, 169); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 380, 302); // bP
+// Elapsed time: 81 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 490, 426); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 422, 395); // bP
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 567, 230); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 454, 88); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 492, 97); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 490, 92); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 452, 139); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 200, 148); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 201, 147, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 214, 147); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 239, 147); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 101, 154); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 100, 154, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("moving_average_filter_en.vhd", 240, 158); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 102, 283); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 854, 288); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 862, 284); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 90, 294); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 94, 291); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 657, 307); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("moving_average_filter_en.vhd", 314, 229); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 329, 393); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 336, 356); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 341, 414); // bP
+// Elapsed time: 47 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "effect_selector.vhd", 3); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectCodeEditor("led_controller.vhd", 200, 246); // bP
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+// Elapsed time: 14 seconds
+selectCodeEditor("led_controller.vhd", 450, 279); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("led_controller.vhd", 152, 370); // bP
+selectCodeEditor("led_controller.vhd", 149, 395); // bP
+selectCodeEditor("led_controller.vhd", 194, 331); // bP
+selectCodeEditor("led_controller.vhd", 195, 342); // bP
+selectCodeEditor("led_controller.vhd", 202, 330); // bP
+selectCodeEditor("led_controller.vhd", 202, 330, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("led_controller.vhd", 183, 475); // bP
+// Elapsed time: 60 seconds
+selectCodeEditor("led_controller.vhd", 188, 211); // bP
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("led_controller.vhd", 120, 378); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_controller.vhd", 3); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "moving_average_filter_en.vhd", 2); // m
+// Elapsed time: 16 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 446, 420); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 474, 413); // bP
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 22 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 228, 234); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 410, 210); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 349, 175); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 248, 128); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 292, 176); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 165, 203); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 271, 239); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 449, 462); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 436, 481); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 3, 356); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 280, 413); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 209, 409); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 226, 425); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 249, 428); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 246, 447); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 215, 120); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 154, 492); // bP
+typeControlKey((HResource) null, "moving_average_filter_en.vhd", 'v'); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 377, 206); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 421, 318); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 488, 257); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 656, 235); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 275, 471); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 376, 375); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("moving_average_filter_en.vhd", 494, 368); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 409, 411); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 258, 311); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 172, 153); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 587, 207); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 577, 260); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 278, 266); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 299, 254); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 626, 257); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 555, 260); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 293, 269); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 286, 254); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 552, 257); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 299, 314); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 7, 284); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("moving_average_filter_en.vhd", 268, 483); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 151, 127); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 126, 125); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 234, 215); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 228, 306); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 181, 153); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 182, 479); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 246, 442); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 256, 445); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 132 MB. Current time: 5/10/24, 5:14:33 PM CEST
+selectCodeEditor("moving_average_filter_en.vhd", 319, 255); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 364, 309); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 364, 338); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 370, 371); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 318, 418); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 367, 394); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 424, 444); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 365, 506); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 250, 400); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 195, 96); // bP
+selectCodeEditor("moving_average_filter_en.vhd", 202, 532); // bP
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  80748 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12097385 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 132 MB. Current time: 5/10/24, 8:39:13 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  148912296 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 131 MB. Current time: 5/12/24, 2:01:10 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3054 ms. Increasing delay to 9162 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 132 MB. Current time: 5/12/24, 2:31:13 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 131 MB. Current time: 5/12/24, 3:01:13 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3222540 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,173 MB. GUI used memory: 131 MB. Current time: 5/12/24, 3:58:53 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// Elapsed time: 168571 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digilent_jstk2.vhd", 1); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, balance_controller(Behavioral) (balance_controller.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, balance_controller(Behavioral) (balance_controller.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "balance_controller.vhd", 3); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_controller(Behavioral) (led_controller.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, effect_selector(Behavioral) (effect_selector.vhd)]", 7, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: update_module_reference design_1_moving_average_filte_0_0 
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_moving_average_filte_0_0 from moving_average_filter_en_v1_0 1.0 to moving_average_filter_en_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: update_module_reference design_1_led_controller_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-dual-i2s'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/axi4-stream-spi-master'. 
+// Tcl Message: Upgrading 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_led_controller_0_0 from led_controller_v1_0 1.0 to led_controller_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1620.438 ; gain = 0.000 
+// Elapsed time: 18 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: Wrote  : <C:\Users\euzun\Desktop\DESD\LAB3_Eren\lab3_template.xpr\lab3_template\lab3_template.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block led_controller_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block moving_average_filte_0 . 
+// Tcl Message: Exporting to file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.438 ; gain = 0.000 
+// Tcl Message: launch_runs design_1_led_controller_0_0_synth_1 design_1_moving_average_filte_0_0_synth_1 -jobs 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 12 16:05:56 2024] Launched design_1_led_controller_0_0_synth_1, design_1_moving_average_filte_0_0_synth_1... Run output will be captured here: design_1_led_controller_0_0_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_led_controller_0_0_synth_1/runme.log design_1_moving_average_filte_0_0_synth_1: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/design_1_moving_average_filte_0_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'br' command handler elapsed time: 64 seconds
+// Elapsed time: 63 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED

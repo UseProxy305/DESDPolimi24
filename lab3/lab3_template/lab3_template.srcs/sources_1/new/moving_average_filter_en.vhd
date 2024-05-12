@@ -27,12 +27,73 @@ entity moving_average_filter_en is
 	);
 end moving_average_filter_en;
 
+
+
+
+
 architecture Behavioral of moving_average_filter_en is
 
-	
+    type state_cmd_type is (GET_DATA, SEND_DATA, APPLY_FILTER);
+	signal state_cmd			: state_cmd_type;
 
 begin
 
+    with state_cmd select m_axis_tvalid <=
+        '0' when GET_DATA,
+        '0' when APPLY_FILTER,
+        '1' when SEND_DATA;
+    
+    with state_cmd select s_axis_tready <=
+        '1' when GET_DATA,
+        '0' when APPLY_FILTER,
+        '0' when SEND_DATA;
+    
 
+	process (aclk)
+	begin
+	
+	   if rising_edge (aclk) then
+	   
+	       if aresetn = '0' then
+	       
+	       else
+	       
+	           if enable_filter = '0' then
+	           
+	               if s_axis_tvalid = '1' then
+	               
+                        state_cmd <= GET_DATA;	                       
+	                       
+	               end if;        
+	           
+	          
+	           else
+	           
+	              
+	           end if;
+	       
+	       	   case state_cmd is
+	                       
+	                   when GET_DATA =>
+	                       
+	                         m_axis_tdata <= s_axis_tdata;
+	                         m_axis_tlast <= s_axis_tlast;
+	                         state_cmd    <= SEND_DATA;
+	                       
+	                   when SEND_DATA =>
+	                       
+	                         if m_axis_tready = '1' then
+
+                                  state_cmd <= GET_DATA;
+
+	                         end if;
+	                           
+	            end case; 
+	                 
+	       end if;
+	       
+	   end if;
+	
+	end process;
 
 end Behavioral;

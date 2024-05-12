@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Fri May 10 16:11:36 2024
+--Date        : Sun May 12 16:05:44 2024
 --Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -207,21 +207,6 @@ architecture STRUCTURE of design_1 is
     s_axis_tready : out STD_LOGIC
   );
   end component design_1_led_level_controller_0_0;
-  component design_1_moving_average_filte_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tlast : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC;
-    enable_filter : in STD_LOGIC
-  );
-  end component design_1_moving_average_filte_0_0;
   component design_1_mute_controller_0_0 is
   port (
     aclk : in STD_LOGIC;
@@ -273,15 +258,6 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_proc_sys_reset_1_0;
-  component design_1_led_controller_0_0 is
-  port (
-    mute_enable : in STD_LOGIC;
-    filter_enable : in STD_LOGIC;
-    led_r : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    led_g : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    led_b : out STD_LOGIC_VECTOR ( 7 downto 0 )
-  );
-  end component design_1_led_controller_0_0;
   component design_1_effect_selector_0_0 is
   port (
     aclk : in STD_LOGIC;
@@ -294,6 +270,30 @@ architecture STRUCTURE of design_1 is
     jstk_y_lfo : out STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   end component design_1_effect_selector_0_0;
+  component design_1_moving_average_filte_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tlast : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
+    enable_filter : in STD_LOGIC
+  );
+  end component design_1_moving_average_filte_0_0;
+  component design_1_led_controller_0_0 is
+  port (
+    mute_enable : in STD_LOGIC;
+    filter_enable : in STD_LOGIC;
+    led_r : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    led_g : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    led_b : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component design_1_led_controller_0_0;
   signal LFO_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal LFO_0_m_axis_TLAST : STD_LOGIC;
   signal LFO_0_m_axis_TREADY : STD_LOGIC;

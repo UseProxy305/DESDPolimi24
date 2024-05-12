@@ -23,9 +23,20 @@ signal state_led        : state_led_type;
 
 begin
 
-    process (state_led)
+    process (mute_enable, filter_enable)
     begin
-    
+        
+        if mute_enable = '1' then
+           state_led <= MUTE;
+        
+        elsif filter_enable = '1' then
+            state_led <= FILTER;
+            
+        else 
+            state_led <= NO_EFFECT;
+            
+        end if;
+        
         case state_led is
         
             when MUTE =>

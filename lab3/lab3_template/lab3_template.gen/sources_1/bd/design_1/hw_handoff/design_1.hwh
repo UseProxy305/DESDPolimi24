@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 10 16:11:37 2024" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 12 16:05:44 2024" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -1487,7 +1487,6 @@
             <CONNECTION INSTANCE="debouncer_0" PORT="clk"/>
             <CONNECTION INSTANCE="edge_detector_toggle_0" PORT="clk"/>
             <CONNECTION INSTANCE="edge_detector_toggle_1" PORT="clk"/>
-            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aclk"/>
             <CONNECTION INSTANCE="balance_controller_0" PORT="aclk"/>
             <CONNECTION INSTANCE="volume_controller_0" PORT="aclk"/>
             <CONNECTION INSTANCE="LFO_0" PORT="aclk"/>
@@ -1498,6 +1497,7 @@
             <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aclk"/>
             <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aclk"/>
             <CONNECTION INSTANCE="effect_selector_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
@@ -2160,7 +2160,6 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="debouncer_0" PORT="reset"/>
-            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="balance_controller_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="volume_controller_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="LFO_0" PORT="aresetn"/>
@@ -2171,6 +2170,7 @@
             <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="effect_selector_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
