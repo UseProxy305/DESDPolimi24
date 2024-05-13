@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Fri May 10 16:13:00 2024
+-- Date        : Sun May 12 22:16:28 2024
 -- Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_effect_selector_0_0_sim_netlist.vhdl
@@ -22,19 +22,17 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_selector is
     jstck_y : in STD_LOGIC_VECTOR ( 9 downto 0 );
     aclk : in STD_LOGIC;
     jstck_x : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    aresetn : in STD_LOGIC;
     effect : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_selector;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_selector is
-  signal \jstk_y_lfo[9]_i_1_n_0\ : STD_LOGIC;
-  signal \volume[9]_i_1_n_0\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC;
 begin
 \balance_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(0),
       Q => balance(0),
       R => '0'
@@ -42,7 +40,7 @@ begin
 \balance_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(1),
       Q => balance(1),
       R => '0'
@@ -50,7 +48,7 @@ begin
 \balance_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(2),
       Q => balance(2),
       R => '0'
@@ -58,7 +56,7 @@ begin
 \balance_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(3),
       Q => balance(3),
       R => '0'
@@ -66,7 +64,7 @@ begin
 \balance_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(4),
       Q => balance(4),
       R => '0'
@@ -74,7 +72,7 @@ begin
 \balance_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(5),
       Q => balance(5),
       R => '0'
@@ -82,7 +80,7 @@ begin
 \balance_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(6),
       Q => balance(6),
       R => '0'
@@ -90,7 +88,7 @@ begin
 \balance_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(7),
       Q => balance(7),
       R => '0'
@@ -98,7 +96,7 @@ begin
 \balance_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(8),
       Q => balance(8),
       R => '0'
@@ -106,24 +104,15 @@ begin
 \balance_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_x(9),
       Q => balance(9),
       R => '0'
     );
-\jstk_y_lfo[9]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => aresetn,
-      I1 => effect,
-      O => \jstk_y_lfo[9]_i_1_n_0\
-    );
 \jstk_y_lfo_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(0),
       Q => jstk_y_lfo(0),
       R => '0'
@@ -131,7 +120,7 @@ begin
 \jstk_y_lfo_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(1),
       Q => jstk_y_lfo(1),
       R => '0'
@@ -139,7 +128,7 @@ begin
 \jstk_y_lfo_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(2),
       Q => jstk_y_lfo(2),
       R => '0'
@@ -147,7 +136,7 @@ begin
 \jstk_y_lfo_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(3),
       Q => jstk_y_lfo(3),
       R => '0'
@@ -155,7 +144,7 @@ begin
 \jstk_y_lfo_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(4),
       Q => jstk_y_lfo(4),
       R => '0'
@@ -163,7 +152,7 @@ begin
 \jstk_y_lfo_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(5),
       Q => jstk_y_lfo(5),
       R => '0'
@@ -171,7 +160,7 @@ begin
 \jstk_y_lfo_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(6),
       Q => jstk_y_lfo(6),
       R => '0'
@@ -179,7 +168,7 @@ begin
 \jstk_y_lfo_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(7),
       Q => jstk_y_lfo(7),
       R => '0'
@@ -187,7 +176,7 @@ begin
 \jstk_y_lfo_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(8),
       Q => jstk_y_lfo(8),
       R => '0'
@@ -195,24 +184,23 @@ begin
 \jstk_y_lfo_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \jstk_y_lfo[9]_i_1_n_0\,
+      CE => effect,
       D => jstck_y(9),
       Q => jstk_y_lfo(9),
       R => '0'
     );
-\volume[9]_i_1\: unisim.vcomponents.LUT2
+\volume[9]_i_1\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"2"
+      INIT => X"1"
     )
         port map (
-      I0 => aresetn,
-      I1 => effect,
-      O => \volume[9]_i_1_n_0\
+      I0 => effect,
+      O => p_0_in
     );
 \volume_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(0),
       Q => volume(0),
       R => '0'
@@ -220,7 +208,7 @@ begin
 \volume_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(1),
       Q => volume(1),
       R => '0'
@@ -228,7 +216,7 @@ begin
 \volume_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(2),
       Q => volume(2),
       R => '0'
@@ -236,7 +224,7 @@ begin
 \volume_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(3),
       Q => volume(3),
       R => '0'
@@ -244,7 +232,7 @@ begin
 \volume_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(4),
       Q => volume(4),
       R => '0'
@@ -252,7 +240,7 @@ begin
 \volume_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(5),
       Q => volume(5),
       R => '0'
@@ -260,7 +248,7 @@ begin
 \volume_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(6),
       Q => volume(6),
       R => '0'
@@ -268,7 +256,7 @@ begin
 \volume_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(7),
       Q => volume(7),
       R => '0'
@@ -276,7 +264,7 @@ begin
 \volume_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(8),
       Q => volume(8),
       R => '0'
@@ -284,7 +272,7 @@ begin
 \volume_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \volume[9]_i_1_n_0\,
+      CE => p_0_in,
       D => jstck_y(9),
       Q => volume(9),
       R => '0'
@@ -328,7 +316,6 @@ begin
 U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_selector
      port map (
       aclk => aclk,
-      aresetn => aresetn,
       balance(9 downto 0) => balance(9 downto 0),
       effect => effect,
       jstck_x(9 downto 0) => jstck_x(9 downto 0),

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:26:13 2024
+// Date        : Mon May 13 14:35:35 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_balance_controller_0_0_sim_netlist.v
@@ -12,32 +12,47 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* BALANCE_STEP_2 = "6" *) (* BALANCE_WIDTH = "10" *) (* TDATA_WIDTH = "24" *) 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_balance_controller
-   (aclk,
-    aresetn,
-    s_axis_tvalid,
-    s_axis_tdata,
+   (m_axis_tvalid,
     s_axis_tready,
-    s_axis_tlast,
-    m_axis_tvalid,
-    m_axis_tdata,
+    aclk,
     m_axis_tready,
-    m_axis_tlast,
-    balance);
-  input aclk;
-  input aresetn;
-  input s_axis_tvalid;
-  input [23:0]s_axis_tdata;
-  output s_axis_tready;
-  input s_axis_tlast;
+    s_axis_tvalid);
   output m_axis_tvalid;
-  output [23:0]m_axis_tdata;
+  output s_axis_tready;
+  input aclk;
   input m_axis_tready;
-  output m_axis_tlast;
-  input [9:0]balance;
+  input s_axis_tvalid;
 
+  wire aclk;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
+  wire state_cmd_i_1_n_0;
 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    s_axis_tready_INST_0
+       (.I0(m_axis_tvalid),
+        .O(s_axis_tready));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'h74)) 
+    state_cmd_i_1
+       (.I0(m_axis_tready),
+        .I1(m_axis_tvalid),
+        .I2(s_axis_tvalid),
+        .O(state_cmd_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    state_cmd_reg
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_cmd_i_1_n_0),
+        .Q(m_axis_tvalid),
+        .R(1'b0));
 endmodule
 
 (* CHECK_LICENSE_TYPE = "design_1_balance_controller_0_0,balance_controller,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
@@ -68,10 +83,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   input [9:0]balance;
 
   wire aclk;
-  wire aresetn;
-  wire [9:0]balance;
-  wire [23:0]m_axis_tdata;
-  wire m_axis_tlast;
   wire m_axis_tready;
   wire m_axis_tvalid;
   wire [23:0]s_axis_tdata;
@@ -79,19 +90,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire s_axis_tready;
   wire s_axis_tvalid;
 
-  (* BALANCE_STEP_2 = "6" *) 
-  (* BALANCE_WIDTH = "10" *) 
-  (* TDATA_WIDTH = "24" *) 
+  assign m_axis_tdata[23:0] = s_axis_tdata;
+  assign m_axis_tlast = s_axis_tlast;
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_balance_controller U0
        (.aclk(aclk),
-        .aresetn(aresetn),
-        .balance(balance),
-        .m_axis_tdata(m_axis_tdata),
-        .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
         .m_axis_tvalid(m_axis_tvalid),
-        .s_axis_tdata(s_axis_tdata),
-        .s_axis_tlast(s_axis_tlast),
         .s_axis_tready(s_axis_tready),
         .s_axis_tvalid(s_axis_tvalid));
 endmodule

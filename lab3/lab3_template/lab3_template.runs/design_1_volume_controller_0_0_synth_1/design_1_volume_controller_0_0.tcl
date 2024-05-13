@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_volume_controller_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 set_msg_config  -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} 
 set_msg_config  -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} 
 set_msg_config  -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} 
@@ -92,6 +94,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.cache/wt [current_project]
 set_property parent.project_path C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.board} [current_project]
@@ -106,7 +109,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/new/volume_controller.vhd
-read_ip -quiet c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0.xci
+read_ip -quiet C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

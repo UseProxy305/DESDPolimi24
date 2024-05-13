@@ -52,6 +52,6 @@
 # #########################################################
 
 
-create_clock -period 44.286 -name slowest_sync_clk [get_ports slowest_sync_clk]
+create_clock -period 44.255 -name slowest_sync_clk [get_ports slowest_sync_clk]
 
 

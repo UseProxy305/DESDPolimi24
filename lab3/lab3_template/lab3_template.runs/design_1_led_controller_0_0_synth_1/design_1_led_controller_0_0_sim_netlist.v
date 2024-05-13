@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri May 10 15:46:36 2024
+// Date        : Mon May 13 22:16:41 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_led_controller_0_0_sim_netlist.v
@@ -27,37 +27,47 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   output [7:0]led_g;
   output [7:0]led_b;
 
-  wire \<const0> ;
-  wire \<const1> ;
+  wire filter_enable;
+  wire [7:7]\^led_b ;
+  wire [7:7]\^led_g ;
+  wire mute_enable;
 
-  assign led_b[7] = \<const0> ;
-  assign led_b[6] = \<const0> ;
-  assign led_b[5] = \<const0> ;
-  assign led_b[4] = \<const0> ;
-  assign led_b[3] = \<const0> ;
-  assign led_b[2] = \<const0> ;
-  assign led_b[1] = \<const0> ;
-  assign led_b[0] = \<const0> ;
-  assign led_g[7] = \<const0> ;
-  assign led_g[6] = \<const0> ;
-  assign led_g[5] = \<const0> ;
-  assign led_g[4] = \<const0> ;
-  assign led_g[3] = \<const0> ;
-  assign led_g[2] = \<const0> ;
-  assign led_g[1] = \<const0> ;
-  assign led_g[0] = \<const0> ;
-  assign led_r[7] = \<const1> ;
-  assign led_r[6] = \<const1> ;
-  assign led_r[5] = \<const1> ;
-  assign led_r[4] = \<const1> ;
-  assign led_r[3] = \<const1> ;
-  assign led_r[2] = \<const1> ;
-  assign led_r[1] = \<const1> ;
-  assign led_r[0] = \<const1> ;
-  GND GND
-       (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
+  assign led_b[7] = \^led_b [7];
+  assign led_b[6] = \^led_b [7];
+  assign led_b[5] = \^led_b [7];
+  assign led_b[4] = \^led_b [7];
+  assign led_b[3] = \^led_b [7];
+  assign led_b[2] = \^led_b [7];
+  assign led_b[1] = \^led_b [7];
+  assign led_b[0] = \^led_b [7];
+  assign led_g[7] = \^led_g [7];
+  assign led_g[6] = \^led_g [7];
+  assign led_g[5] = \^led_g [7];
+  assign led_g[4] = \^led_g [7];
+  assign led_g[3] = \^led_g [7];
+  assign led_g[2] = \^led_g [7];
+  assign led_g[1] = \^led_g [7];
+  assign led_g[0] = \^led_g [7];
+  assign led_r[7] = mute_enable;
+  assign led_r[6] = mute_enable;
+  assign led_r[5] = mute_enable;
+  assign led_r[4] = mute_enable;
+  assign led_r[3] = mute_enable;
+  assign led_r[2] = mute_enable;
+  assign led_r[1] = mute_enable;
+  assign led_r[0] = mute_enable;
+  LUT2 #(
+    .INIT(4'h4)) 
+    \led_b[0]_INST_0 
+       (.I0(mute_enable),
+        .I1(filter_enable),
+        .O(\^led_b ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \led_g[0]_INST_0 
+       (.I0(mute_enable),
+        .I1(filter_enable),
+        .O(\^led_g ));
 endmodule
 `ifndef GLBL
 `define GLBL

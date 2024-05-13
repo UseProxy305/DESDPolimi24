@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:30:52 2024
+// Date        : Mon May 13 23:33:32 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_led_level_controller_0_0_sim_netlist.v
@@ -31,47 +31,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis TLAST" *) input s_axis_tlast;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 s_axis TREADY" *) output s_axis_tready;
 
-  wire aclk;
-  wire aresetn;
-  wire [15:0]led;
-  wire [23:0]s_axis_tdata;
-  wire s_axis_tlast;
-  wire s_axis_tready;
-  wire s_axis_tvalid;
+  wire \<const0> ;
+  wire \<const1> ;
 
-  (* CHANNEL_LENGTH = "24" *) 
-  (* NUM_LEDS = "16" *) 
-  (* clock_period_ns = "10" *) 
-  (* refresh_time_ms = "1" *) 
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_led_level_controller U0
-       (.aclk(aclk),
-        .aresetn(aresetn),
-        .led(led),
-        .s_axis_tdata(s_axis_tdata),
-        .s_axis_tlast(s_axis_tlast),
-        .s_axis_tready(s_axis_tready),
-        .s_axis_tvalid(s_axis_tvalid));
-endmodule
-
-(* CHANNEL_LENGTH = "24" *) (* NUM_LEDS = "16" *) (* clock_period_ns = "10" *) 
-(* refresh_time_ms = "1" *) 
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_led_level_controller
-   (aclk,
-    aresetn,
-    led,
-    s_axis_tvalid,
-    s_axis_tdata,
-    s_axis_tlast,
-    s_axis_tready);
-  input aclk;
-  input aresetn;
-  output [15:0]led;
-  input s_axis_tvalid;
-  input [23:0]s_axis_tdata;
-  input s_axis_tlast;
-  output s_axis_tready;
-
-
+  assign led[15] = \<const0> ;
+  assign led[14] = \<const0> ;
+  assign led[13] = \<const0> ;
+  assign led[12] = \<const0> ;
+  assign led[11] = \<const0> ;
+  assign led[10] = \<const0> ;
+  assign led[9] = \<const0> ;
+  assign led[8] = \<const0> ;
+  assign led[7] = \<const0> ;
+  assign led[6] = \<const0> ;
+  assign led[5] = \<const0> ;
+  assign led[4] = \<const0> ;
+  assign led[3] = \<const0> ;
+  assign led[2] = \<const0> ;
+  assign led[1] = \<const0> ;
+  assign led[0] = \<const0> ;
+  assign s_axis_tready = \<const1> ;
+  GND GND
+       (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
 endmodule
 `ifndef GLBL
 `define GLBL

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:25:43 2024
+// Date        : Mon May 13 14:35:35 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0_sim_netlist.v
@@ -40,63 +40,65 @@ module design_1_volume_controller_0_0
   input [9:0]volume;
 
   wire aclk;
-  wire aresetn;
-  wire [23:0]m_axis_tdata;
-  wire m_axis_tlast;
   wire m_axis_tready;
   wire m_axis_tvalid;
   wire [23:0]s_axis_tdata;
   wire s_axis_tlast;
   wire s_axis_tready;
   wire s_axis_tvalid;
-  wire [9:0]volume;
 
-  (* HIGHER_BOUND = "8388607" *) 
-  (* LOWER_BOUND = "-21" *) 
-  (* TDATA_WIDTH = "24" *) 
-  (* VOLUME_STEP_2 = "6" *) 
-  (* VOLUME_WIDTH = "10" *) 
+  assign m_axis_tdata[23:0] = s_axis_tdata;
+  assign m_axis_tlast = s_axis_tlast;
   design_1_volume_controller_0_0_volume_controller U0
        (.aclk(aclk),
-        .aresetn(aresetn),
-        .m_axis_tdata(m_axis_tdata),
-        .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
         .m_axis_tvalid(m_axis_tvalid),
-        .s_axis_tdata(s_axis_tdata),
-        .s_axis_tlast(s_axis_tlast),
         .s_axis_tready(s_axis_tready),
-        .s_axis_tvalid(s_axis_tvalid),
-        .volume(volume));
+        .s_axis_tvalid(s_axis_tvalid));
 endmodule
 
-(* HIGHER_BOUND = "8388607" *) (* LOWER_BOUND = "-21" *) (* ORIG_REF_NAME = "volume_controller" *) 
-(* TDATA_WIDTH = "24" *) (* VOLUME_STEP_2 = "6" *) (* VOLUME_WIDTH = "10" *) 
+(* ORIG_REF_NAME = "volume_controller" *) 
 module design_1_volume_controller_0_0_volume_controller
-   (aclk,
-    aresetn,
-    s_axis_tvalid,
-    s_axis_tdata,
-    s_axis_tlast,
+   (m_axis_tvalid,
     s_axis_tready,
-    m_axis_tvalid,
-    m_axis_tdata,
-    m_axis_tlast,
+    aclk,
     m_axis_tready,
-    volume);
-  input aclk;
-  input aresetn;
-  input s_axis_tvalid;
-  input [23:0]s_axis_tdata;
-  input s_axis_tlast;
-  output s_axis_tready;
+    s_axis_tvalid);
   output m_axis_tvalid;
-  output [23:0]m_axis_tdata;
-  output m_axis_tlast;
+  output s_axis_tready;
+  input aclk;
   input m_axis_tready;
-  input [9:0]volume;
+  input s_axis_tvalid;
 
+  wire aclk;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
+  wire state_cmd_i_1_n_0;
 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    s_axis_tready_INST_0
+       (.I0(m_axis_tvalid),
+        .O(s_axis_tready));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'h74)) 
+    state_cmd_i_1
+       (.I0(m_axis_tready),
+        .I1(m_axis_tvalid),
+        .I2(s_axis_tvalid),
+        .O(state_cmd_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    state_cmd_reg
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_cmd_i_1_n_0),
+        .Q(m_axis_tvalid),
+        .R(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

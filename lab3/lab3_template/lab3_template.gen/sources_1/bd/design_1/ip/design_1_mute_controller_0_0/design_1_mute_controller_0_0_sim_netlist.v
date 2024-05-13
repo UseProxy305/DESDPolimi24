@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:30:21 2024
+// Date        : Tue May 14 00:02:15 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_sim_netlist.v
@@ -40,9 +40,7 @@ module design_1_mute_controller_0_0
   input mute;
 
   wire aclk;
-  wire aresetn;
   wire [23:0]m_axis_tdata;
-  wire m_axis_tlast;
   wire m_axis_tready;
   wire m_axis_tvalid;
   wire mute;
@@ -51,47 +49,268 @@ module design_1_mute_controller_0_0
   wire s_axis_tready;
   wire s_axis_tvalid;
 
-  (* TDATA_WIDTH = "24" *) 
+  assign m_axis_tlast = s_axis_tlast;
   design_1_mute_controller_0_0_mute_controller U0
        (.aclk(aclk),
-        .aresetn(aresetn),
         .m_axis_tdata(m_axis_tdata),
-        .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
         .m_axis_tvalid(m_axis_tvalid),
         .mute(mute),
         .s_axis_tdata(s_axis_tdata),
-        .s_axis_tlast(s_axis_tlast),
         .s_axis_tready(s_axis_tready),
         .s_axis_tvalid(s_axis_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "mute_controller" *) (* TDATA_WIDTH = "24" *) 
+(* ORIG_REF_NAME = "mute_controller" *) 
 module design_1_mute_controller_0_0_mute_controller
-   (aclk,
-    aresetn,
-    s_axis_tvalid,
-    s_axis_tdata,
-    s_axis_tlast,
-    s_axis_tready,
+   (m_axis_tdata,
     m_axis_tvalid,
-    m_axis_tdata,
-    m_axis_tlast,
+    s_axis_tready,
+    aclk,
+    mute,
+    s_axis_tvalid,
     m_axis_tready,
-    mute);
-  input aclk;
-  input aresetn;
-  input s_axis_tvalid;
-  input [23:0]s_axis_tdata;
-  input s_axis_tlast;
-  output s_axis_tready;
-  output m_axis_tvalid;
+    s_axis_tdata);
   output [23:0]m_axis_tdata;
-  output m_axis_tlast;
-  input m_axis_tready;
+  output m_axis_tvalid;
+  output s_axis_tready;
+  input aclk;
   input mute;
+  input s_axis_tvalid;
+  input m_axis_tready;
+  input [23:0]s_axis_tdata;
 
+  wire aclk;
+  wire [23:0]m_axis_tdata;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire mute;
+  wire [23:0]s_axis_tdata;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
+  wire [1:0]state_cmd;
+  wire [1:0]state_cmd__0;
 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h000004F4)) 
+    \FSM_sequential_state_cmd[0]_i_1 
+       (.I0(mute),
+        .I1(s_axis_tvalid),
+        .I2(state_cmd[0]),
+        .I3(m_axis_tready),
+        .I4(state_cmd[1]),
+        .O(state_cmd__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h5D581010)) 
+    \FSM_sequential_state_cmd[1]_i_1 
+       (.I0(state_cmd[0]),
+        .I1(m_axis_tready),
+        .I2(state_cmd[1]),
+        .I3(s_axis_tvalid),
+        .I4(mute),
+        .O(state_cmd__0[1]));
+  (* FSM_ENCODED_STATES = "send_data:01,get_data:00,muted:10" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_state_cmd_reg[0] 
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_cmd__0[0]),
+        .Q(state_cmd[0]),
+        .R(1'b0));
+  (* FSM_ENCODED_STATES = "send_data:01,get_data:00,muted:10" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_state_cmd_reg[1] 
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_cmd__0[1]),
+        .Q(state_cmd[1]),
+        .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[0]_INST_0 
+       (.I0(s_axis_tdata[0]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[0]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[10]_INST_0 
+       (.I0(s_axis_tdata[10]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[10]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[11]_INST_0 
+       (.I0(s_axis_tdata[11]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[11]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[12]_INST_0 
+       (.I0(s_axis_tdata[12]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[12]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[13]_INST_0 
+       (.I0(s_axis_tdata[13]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[13]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[14]_INST_0 
+       (.I0(s_axis_tdata[14]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[14]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[15]_INST_0 
+       (.I0(s_axis_tdata[15]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[15]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[16]_INST_0 
+       (.I0(s_axis_tdata[16]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[16]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[17]_INST_0 
+       (.I0(s_axis_tdata[17]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[17]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[18]_INST_0 
+       (.I0(s_axis_tdata[18]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[18]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[19]_INST_0 
+       (.I0(s_axis_tdata[19]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[19]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[1]_INST_0 
+       (.I0(s_axis_tdata[1]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[1]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[20]_INST_0 
+       (.I0(s_axis_tdata[20]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[20]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[21]_INST_0 
+       (.I0(s_axis_tdata[21]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[21]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[22]_INST_0 
+       (.I0(s_axis_tdata[22]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[22]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[23]_INST_0 
+       (.I0(s_axis_tdata[23]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[23]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[2]_INST_0 
+       (.I0(s_axis_tdata[2]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[2]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[3]_INST_0 
+       (.I0(s_axis_tdata[3]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[3]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[4]_INST_0 
+       (.I0(s_axis_tdata[4]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[4]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[5]_INST_0 
+       (.I0(s_axis_tdata[5]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[5]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[6]_INST_0 
+       (.I0(s_axis_tdata[6]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[6]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[7]_INST_0 
+       (.I0(s_axis_tdata[7]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[7]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[8]_INST_0 
+       (.I0(s_axis_tdata[8]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[8]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \m_axis_tdata[9]_INST_0 
+       (.I0(s_axis_tdata[9]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tdata[9]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    m_axis_tvalid_INST_0
+       (.I0(state_cmd[0]),
+        .I1(state_cmd[1]),
+        .O(m_axis_tvalid));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    s_axis_tready_INST_0
+       (.I0(state_cmd[0]),
+        .I1(state_cmd[1]),
+        .O(s_axis_tready));
 endmodule
 `ifndef GLBL
 `define GLBL

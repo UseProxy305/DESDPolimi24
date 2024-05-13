@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr 29 14:48:40 2024
-# Process ID: 1002945
-# Current directory: /home/gbonanno/Music/lab3/lab3.runs/impl_1
-# Command line: vivado -log top_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_bd_wrapper.tcl -notrace
-# Log file: /home/gbonanno/Music/lab3/lab3.runs/impl_1/top_bd_wrapper.vdi
-# Journal file: /home/gbonanno/Music/lab3/lab3.runs/impl_1/vivado.jou
+# Start of session at: Tue May 14 00:58:31 2024
+# Process ID: 8016
+# Current directory: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source top_bd_wrapper.tcl -notrace
+source design_1_wrapper.tcl -notrace

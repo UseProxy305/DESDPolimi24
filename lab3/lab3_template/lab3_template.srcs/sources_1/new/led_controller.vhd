@@ -22,6 +22,7 @@ type state_led_type is (MUTE, FILTER, NO_EFFECT);
 signal state_led        : state_led_type;
 
 begin
+                
 
     process (mute_enable, filter_enable)
     begin
@@ -36,7 +37,10 @@ begin
             state_led <= NO_EFFECT;
             
         end if;
-        
+    end process;
+    
+    process (state_led)
+    begin   
         case state_led is
         
             when MUTE =>

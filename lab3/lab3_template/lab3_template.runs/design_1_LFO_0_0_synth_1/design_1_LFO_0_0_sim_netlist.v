@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:26:13 2024
+// Date        : Mon May 13 14:35:35 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_LFO_0_0_sim_netlist.v
@@ -11,6 +11,49 @@
 // Device      : xc7a35tcpg236-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
+
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_LFO
+   (m_axis_tvalid,
+    s_axis_tready,
+    aclk,
+    m_axis_tready,
+    s_axis_tvalid);
+  output m_axis_tvalid;
+  output s_axis_tready;
+  input aclk;
+  input m_axis_tready;
+  input s_axis_tvalid;
+
+  wire aclk;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
+  wire state_cmd_i_1_n_0;
+
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    s_axis_tready_INST_0
+       (.I0(m_axis_tvalid),
+        .O(s_axis_tready));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'h74)) 
+    state_cmd_i_1
+       (.I0(m_axis_tready),
+        .I1(m_axis_tvalid),
+        .I2(s_axis_tvalid),
+        .O(state_cmd_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    state_cmd_reg
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_cmd_i_1_n_0),
+        .Q(m_axis_tvalid),
+        .R(1'b0));
+endmodule
 
 (* CHECK_LICENSE_TYPE = "design_1_LFO_0_0,LFO,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
 (* x_core_info = "LFO,Vivado 2020.2" *) 
@@ -41,37 +84,22 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TLAST" *) output m_axis_tlast;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TREADY" *) input m_axis_tready;
 
-  wire \<const0> ;
+  wire aclk;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire [23:0]s_axis_tdata;
+  wire s_axis_tlast;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
 
-  assign m_axis_tdata[23] = \<const0> ;
-  assign m_axis_tdata[22] = \<const0> ;
-  assign m_axis_tdata[21] = \<const0> ;
-  assign m_axis_tdata[20] = \<const0> ;
-  assign m_axis_tdata[19] = \<const0> ;
-  assign m_axis_tdata[18] = \<const0> ;
-  assign m_axis_tdata[17] = \<const0> ;
-  assign m_axis_tdata[16] = \<const0> ;
-  assign m_axis_tdata[15] = \<const0> ;
-  assign m_axis_tdata[14] = \<const0> ;
-  assign m_axis_tdata[13] = \<const0> ;
-  assign m_axis_tdata[12] = \<const0> ;
-  assign m_axis_tdata[11] = \<const0> ;
-  assign m_axis_tdata[10] = \<const0> ;
-  assign m_axis_tdata[9] = \<const0> ;
-  assign m_axis_tdata[8] = \<const0> ;
-  assign m_axis_tdata[7] = \<const0> ;
-  assign m_axis_tdata[6] = \<const0> ;
-  assign m_axis_tdata[5] = \<const0> ;
-  assign m_axis_tdata[4] = \<const0> ;
-  assign m_axis_tdata[3] = \<const0> ;
-  assign m_axis_tdata[2] = \<const0> ;
-  assign m_axis_tdata[1] = \<const0> ;
-  assign m_axis_tdata[0] = \<const0> ;
-  assign m_axis_tlast = \<const0> ;
-  assign m_axis_tvalid = \<const0> ;
-  assign s_axis_tready = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
+  assign m_axis_tdata[23:0] = s_axis_tdata;
+  assign m_axis_tlast = s_axis_tlast;
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_LFO U0
+       (.aclk(aclk),
+        .m_axis_tready(m_axis_tready),
+        .m_axis_tvalid(m_axis_tvalid),
+        .s_axis_tready(s_axis_tready),
+        .s_axis_tvalid(s_axis_tvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

@@ -200,6 +200,9 @@ proc create_root_design { parentCell } {
   
   # Create instance: axi4stream_spi_master_0, and set properties
   set axi4stream_spi_master_0 [ create_bd_cell -type ip -vlnv DigiLAB:ip:axi4stream_spi_master:1.0 axi4stream_spi_master_0 ]
+  set_property -dict [ list \
+   CONFIG.c_sclkfreq {66666} \
+ ] $axi4stream_spi_master_0
 
   # Create instance: axis_broadcaster_0, and set properties
   set axis_broadcaster_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_broadcaster:1.1 axis_broadcaster_0 ]
@@ -221,16 +224,16 @@ proc create_root_design { parentCell } {
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {149.337} \
-   CONFIG.CLKOUT1_PHASE_ERROR {122.577} \
-   CONFIG.CLKOUT2_JITTER {201.826} \
-   CONFIG.CLKOUT2_PHASE_ERROR {122.577} \
-   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {22.58065} \
+   CONFIG.CLKOUT1_JITTER {117.368} \
+   CONFIG.CLKOUT1_PHASE_ERROR {88.161} \
+   CONFIG.CLKOUT2_JITTER {161.076} \
+   CONFIG.CLKOUT2_PHASE_ERROR {88.161} \
+   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {22.591} \
    CONFIG.CLKOUT2_USED {true} \
    CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {7.000} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {31} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {11.750} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {11.750} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {52} \
    CONFIG.NUM_OUT_CLKS {2} \
    CONFIG.RESET_BOARD_INTERFACE {reset} \
    CONFIG.USE_BOARD_FLOW {true} \

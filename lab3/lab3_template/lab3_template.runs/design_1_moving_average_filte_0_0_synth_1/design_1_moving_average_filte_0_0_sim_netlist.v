@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu May  9 00:30:51 2024
+// Date        : Tue May 14 00:52:14 2024
 // Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_moving_average_filte_0_0_sim_netlist.v
@@ -40,7 +40,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   input enable_filter;
 
   wire aclk;
-  wire aresetn;
   wire enable_filter;
   wire [23:0]m_axis_tdata;
   wire m_axis_tlast;
@@ -51,11 +50,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire s_axis_tready;
   wire s_axis_tvalid;
 
-  (* FILTER_ORDER_POWER = "5" *) 
-  (* TDATA_WIDTH = "24" *) 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_filter_en U0
        (.aclk(aclk),
-        .aresetn(aresetn),
         .enable_filter(enable_filter),
         .m_axis_tdata(m_axis_tdata),
         .m_axis_tlast(m_axis_tlast),
@@ -67,32 +63,292 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
         .s_axis_tvalid(s_axis_tvalid));
 endmodule
 
-(* FILTER_ORDER_POWER = "5" *) (* TDATA_WIDTH = "24" *) 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_filter_en
-   (aclk,
-    aresetn,
-    s_axis_tvalid,
-    s_axis_tdata,
-    s_axis_tlast,
-    s_axis_tready,
-    m_axis_tvalid,
-    m_axis_tdata,
+   (m_axis_tdata,
     m_axis_tlast,
+    m_axis_tvalid,
+    s_axis_tready,
+    enable_filter,
     m_axis_tready,
-    enable_filter);
-  input aclk;
-  input aresetn;
-  input s_axis_tvalid;
-  input [23:0]s_axis_tdata;
-  input s_axis_tlast;
-  output s_axis_tready;
-  output m_axis_tvalid;
+    s_axis_tvalid,
+    aclk,
+    s_axis_tdata,
+    s_axis_tlast);
   output [23:0]m_axis_tdata;
   output m_axis_tlast;
-  input m_axis_tready;
+  output m_axis_tvalid;
+  output s_axis_tready;
   input enable_filter;
+  input m_axis_tready;
+  input s_axis_tvalid;
+  input aclk;
+  input [23:0]s_axis_tdata;
+  input s_axis_tlast;
 
+  wire aclk;
+  wire enable_filter;
+  wire [23:0]m_axis_tdata;
+  wire m_axis_tlast;
+  wire m_axis_tready;
+  wire m_axis_tvalid;
+  wire [23:0]s_axis_tdata;
+  wire s_axis_tlast;
+  wire s_axis_tready;
+  wire s_axis_tvalid;
+  wire state_data_i_1_n_0;
+  wire state_data_reg_n_0;
+  wire state_read;
+  wire state_read_i_1_n_0;
+  wire \temp_tdata[23]_i_1_n_0 ;
 
+  LUT1 #(
+    .INIT(2'h1)) 
+    m_axis_tvalid_INST_0
+       (.I0(state_data_reg_n_0),
+        .O(m_axis_tvalid));
+  LUT1 #(
+    .INIT(2'h1)) 
+    s_axis_tready_INST_0
+       (.I0(state_read),
+        .O(s_axis_tready));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'h08)) 
+    state_data_i_1
+       (.I0(enable_filter),
+        .I1(m_axis_tready),
+        .I2(state_data_reg_n_0),
+        .O(state_data_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    state_data_reg
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_data_i_1_n_0),
+        .Q(state_data_reg_n_0),
+        .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'h8B)) 
+    state_read_i_1
+       (.I0(state_read),
+        .I1(state_data_reg_n_0),
+        .I2(m_axis_tready),
+        .O(state_read_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    state_read_reg
+       (.C(aclk),
+        .CE(1'b1),
+        .D(state_read_i_1_n_0),
+        .Q(state_read),
+        .R(1'b0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \temp_tdata[23]_i_1 
+       (.I0(s_axis_tvalid),
+        .I1(state_read),
+        .O(\temp_tdata[23]_i_1_n_0 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[0] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[0]),
+        .Q(m_axis_tdata[0]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[10] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[10]),
+        .Q(m_axis_tdata[10]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[11] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[11]),
+        .Q(m_axis_tdata[11]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[12] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[12]),
+        .Q(m_axis_tdata[12]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[13] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[13]),
+        .Q(m_axis_tdata[13]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[14] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[14]),
+        .Q(m_axis_tdata[14]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[15] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[15]),
+        .Q(m_axis_tdata[15]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[16] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[16]),
+        .Q(m_axis_tdata[16]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[17] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[17]),
+        .Q(m_axis_tdata[17]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[18] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[18]),
+        .Q(m_axis_tdata[18]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[19] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[19]),
+        .Q(m_axis_tdata[19]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[1] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[1]),
+        .Q(m_axis_tdata[1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[20] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[20]),
+        .Q(m_axis_tdata[20]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[21] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[21]),
+        .Q(m_axis_tdata[21]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[22] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[22]),
+        .Q(m_axis_tdata[22]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[23] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[23]),
+        .Q(m_axis_tdata[23]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[2] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[2]),
+        .Q(m_axis_tdata[2]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[3] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[3]),
+        .Q(m_axis_tdata[3]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[4] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[4]),
+        .Q(m_axis_tdata[4]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[5] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[5]),
+        .Q(m_axis_tdata[5]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[6] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[6]),
+        .Q(m_axis_tdata[6]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[7] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[7]),
+        .Q(m_axis_tdata[7]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[8] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[8]),
+        .Q(m_axis_tdata[8]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \temp_tdata_reg[9] 
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tdata[9]),
+        .Q(m_axis_tdata[9]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    temp_tlast_reg
+       (.C(aclk),
+        .CE(\temp_tdata[23]_i_1_n_0 ),
+        .D(s_axis_tlast),
+        .Q(m_axis_tlast),
+        .R(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

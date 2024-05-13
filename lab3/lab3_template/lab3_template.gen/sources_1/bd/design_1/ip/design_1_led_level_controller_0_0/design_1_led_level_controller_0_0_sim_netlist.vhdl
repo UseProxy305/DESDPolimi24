@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu May  9 00:30:56 2024
+-- Date        : Mon May 13 23:33:32 2024
 -- Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0_sim_netlist.vhdl
@@ -37,25 +37,8 @@ entity design_1_led_level_controller_0_0 is
 end design_1_led_level_controller_0_0;
 
 architecture STRUCTURE of design_1_led_level_controller_0_0 is
-  component design_1_led_level_controller_0_0_led_level_controller is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC
-  );
-  end component design_1_led_level_controller_0_0_led_level_controller;
-  attribute CHANNEL_LENGTH : integer;
-  attribute CHANNEL_LENGTH of U0 : label is 24;
-  attribute NUM_LEDS : integer;
-  attribute NUM_LEDS of U0 : label is 16;
-  attribute clock_period_ns : integer;
-  attribute clock_period_ns of U0 : label is 10;
-  attribute refresh_time_ms : integer;
-  attribute refresh_time_ms of U0 : label is 1;
+  signal \<const0>\ : STD_LOGIC;
+  signal \<const1>\ : STD_LOGIC;
   attribute x_interface_info : string;
   attribute x_interface_info of aclk : signal is "xilinx.com:signal:clock:1.0 aclk CLK";
   attribute x_interface_parameter : string;
@@ -68,14 +51,29 @@ architecture STRUCTURE of design_1_led_level_controller_0_0 is
   attribute x_interface_parameter of s_axis_tvalid : signal is "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 s_axis TDATA";
 begin
-U0: component design_1_led_level_controller_0_0_led_level_controller
+  led(15) <= \<const0>\;
+  led(14) <= \<const0>\;
+  led(13) <= \<const0>\;
+  led(12) <= \<const0>\;
+  led(11) <= \<const0>\;
+  led(10) <= \<const0>\;
+  led(9) <= \<const0>\;
+  led(8) <= \<const0>\;
+  led(7) <= \<const0>\;
+  led(6) <= \<const0>\;
+  led(5) <= \<const0>\;
+  led(4) <= \<const0>\;
+  led(3) <= \<const0>\;
+  led(2) <= \<const0>\;
+  led(1) <= \<const0>\;
+  led(0) <= \<const0>\;
+  s_axis_tready <= \<const1>\;
+GND: unisim.vcomponents.GND
      port map (
-      aclk => aclk,
-      aresetn => aresetn,
-      led(15 downto 0) => led(15 downto 0),
-      s_axis_tdata(23 downto 0) => s_axis_tdata(23 downto 0),
-      s_axis_tlast => s_axis_tlast,
-      s_axis_tready => s_axis_tready,
-      s_axis_tvalid => s_axis_tvalid
+      G => \<const0>\
+    );
+VCC: unisim.vcomponents.VCC
+     port map (
+      P => \<const1>\
     );
 end STRUCTURE;

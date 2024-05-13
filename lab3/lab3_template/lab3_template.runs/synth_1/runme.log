@@ -16,7 +16,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/euzun/Desktop/DESD/L
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.cache/ip 
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.551 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1019.348 ; gain = 0.000
 Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
@@ -24,74 +24,74 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23780
+INFO: [Synth 8-7075] Helper process launched with PID 23136
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io0_iobuf' of component 'IOBUF' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io0_iobuf' of component 'IOBUF' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:87]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io1_iobuf' of component 'IOBUF' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:94]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_sck_iobuf' of component 'IOBUF' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:101]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_ss_iobuf' of component 'IOBUF' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:108]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:115]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io1_iobuf' of component 'IOBUF' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:94]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_sck_iobuf' of component 'IOBUF' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:101]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_ss_iobuf' of component 'IOBUF' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:108]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:48]
-INFO: [Synth 8-3491] module 'design_1_LFO_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_LFO_0_0_stub.vhdl:5' bound to instance 'LFO_0' of component 'design_1_LFO_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:429]
-INFO: [Synth 8-638] synthesizing module 'design_1_LFO_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_LFO_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'design_1_axi4stream_spi_master_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:5' bound to instance 'axi4stream_spi_master_0' of component 'design_1_axi4stream_spi_master_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:444]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi4stream_spi_master_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:30]
-INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:466]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_axis_dual_i2s_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axis_dual_i2s_0_0_stub.vhdl:5' bound to instance 'axis_dual_i2s_0' of component 'design_1_axis_dual_i2s_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:483]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_dual_i2s_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_axis_dual_i2s_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_balance_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_balance_controller_0_0_stub.vhdl:5' bound to instance 'balance_controller_0' of component 'design_1_balance_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:506]
-INFO: [Synth 8-638] synthesizing module 'design_1_balance_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_balance_controller_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:520]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_clk_wiz_0_1_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_debouncer_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_debouncer_0_0_stub.vhdl:5' bound to instance 'debouncer_0' of component 'design_1_debouncer_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:528]
-INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_debouncer_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_digilent_jstk2_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_digilent_jstk2_0_0_stub.vhdl:5' bound to instance 'digilent_jstk2_0' of component 'design_1_digilent_jstk2_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:535]
-INFO: [Synth 8-638] synthesizing module 'design_1_digilent_jstk2_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_digilent_jstk2_0_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_1_edge_detector_toggle_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_edge_detector_toggle_0_0_stub.vhdl:5' bound to instance 'edge_detector_toggle_0' of component 'design_1_edge_detector_toggle_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:552]
-INFO: [Synth 8-638] synthesizing module 'design_1_edge_detector_toggle_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_edge_detector_toggle_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_edge_detector_toggle_1_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_edge_detector_toggle_1_0_stub.vhdl:5' bound to instance 'edge_detector_toggle_1' of component 'design_1_edge_detector_toggle_1_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:559]
-INFO: [Synth 8-638] synthesizing module 'design_1_edge_detector_toggle_1_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_edge_detector_toggle_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_effect_selector_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_effect_selector_0_0_stub.vhdl:5' bound to instance 'effect_selector_0' of component 'design_1_effect_selector_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:566]
-INFO: [Synth 8-638] synthesizing module 'design_1_effect_selector_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_effect_selector_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_led_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_led_controller_0_0_stub.vhdl:5' bound to instance 'led_controller_0' of component 'design_1_led_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:577]
-INFO: [Synth 8-638] synthesizing module 'design_1_led_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_led_controller_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_led_level_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_led_level_controller_0_0_stub.vhdl:5' bound to instance 'led_level_controller_0' of component 'design_1_led_level_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:585]
-INFO: [Synth 8-638] synthesizing module 'design_1_led_level_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_led_level_controller_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_moving_average_filte_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_moving_average_filte_0_0_stub.vhdl:5' bound to instance 'moving_average_filte_0' of component 'design_1_moving_average_filte_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:595]
-INFO: [Synth 8-638] synthesizing module 'design_1_moving_average_filte_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_moving_average_filte_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_mute_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_mute_controller_0_0_stub.vhdl:5' bound to instance 'mute_controller_0' of component 'design_1_mute_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:609]
-INFO: [Synth 8-638] synthesizing module 'design_1_mute_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_mute_controller_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:623]
-INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_1_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'design_1_proc_sys_reset_1_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:636]
-INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_1_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_volume_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_volume_controller_0_0_stub.vhdl:5' bound to instance 'volume_controller_0' of component 'design_1_volume_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:649]
-INFO: [Synth 8-638] synthesizing module 'design_1_volume_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-8544-7R74KS3-A081/realtime/design_1_volume_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_LFO_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_LFO_0_0_stub.vhdl:5' bound to instance 'LFO_0' of component 'design_1_LFO_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'design_1_LFO_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_LFO_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_axi4stream_spi_master_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:5' bound to instance 'axi4stream_spi_master_0' of component 'design_1_axi4stream_spi_master_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:444]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi4stream_spi_master_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axi4stream_spi_master_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:466]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_axis_dual_i2s_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axis_dual_i2s_0_0_stub.vhdl:5' bound to instance 'axis_dual_i2s_0' of component 'design_1_axis_dual_i2s_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:483]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_dual_i2s_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_axis_dual_i2s_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_balance_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_balance_controller_0_0_stub.vhdl:5' bound to instance 'balance_controller_0' of component 'design_1_balance_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'design_1_balance_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_balance_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:520]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_clk_wiz_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_debouncer_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_debouncer_0_0_stub.vhdl:5' bound to instance 'debouncer_0' of component 'design_1_debouncer_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:528]
+INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_debouncer_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_digilent_jstk2_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_digilent_jstk2_0_0_stub.vhdl:5' bound to instance 'digilent_jstk2_0' of component 'design_1_digilent_jstk2_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:535]
+INFO: [Synth 8-638] synthesizing module 'design_1_digilent_jstk2_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_digilent_jstk2_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_edge_detector_toggle_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_edge_detector_toggle_0_0_stub.vhdl:5' bound to instance 'edge_detector_toggle_0' of component 'design_1_edge_detector_toggle_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:552]
+INFO: [Synth 8-638] synthesizing module 'design_1_edge_detector_toggle_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_edge_detector_toggle_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_edge_detector_toggle_1_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_edge_detector_toggle_1_0_stub.vhdl:5' bound to instance 'edge_detector_toggle_1' of component 'design_1_edge_detector_toggle_1_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'design_1_edge_detector_toggle_1_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_edge_detector_toggle_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_effect_selector_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_effect_selector_0_0_stub.vhdl:5' bound to instance 'effect_selector_0' of component 'design_1_effect_selector_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:566]
+INFO: [Synth 8-638] synthesizing module 'design_1_effect_selector_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_effect_selector_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_led_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_led_controller_0_0_stub.vhdl:5' bound to instance 'led_controller_0' of component 'design_1_led_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:577]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_led_controller_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_led_level_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_led_level_controller_0_0_stub.vhdl:5' bound to instance 'led_level_controller_0' of component 'design_1_led_level_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:585]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_level_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_led_level_controller_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_moving_average_filte_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_moving_average_filte_0_0_stub.vhdl:5' bound to instance 'moving_average_filte_0' of component 'design_1_moving_average_filte_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:595]
+INFO: [Synth 8-638] synthesizing module 'design_1_moving_average_filte_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_moving_average_filte_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_mute_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_mute_controller_0_0_stub.vhdl:5' bound to instance 'mute_controller_0' of component 'design_1_mute_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:609]
+INFO: [Synth 8-638] synthesizing module 'design_1_mute_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_mute_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:623]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_1_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'design_1_proc_sys_reset_1_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:636]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_1_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_volume_controller_0_0' declared at 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_volume_controller_0_0_stub.vhdl:5' bound to instance 'volume_controller_0' of component 'design_1_volume_controller_0_0' [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:649]
+INFO: [Synth 8-638] synthesizing module 'design_1_volume_controller_0_0' [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/.Xil/Vivado-23844-7R74KS3-A081/realtime/design_1_volume_controller_0_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (2#1) [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/synth/design_1.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (3#1) [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (3#1) [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1019.348 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -106,34 +106,34 @@ Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_t
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0/design_1_volume_controller_0_0_in_context.xdc] for cell 'design_1_i/volume_controller_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0/design_1_volume_controller_0_0_in_context.xdc] for cell 'design_1_i/volume_controller_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_balance_controller_0_0/design_1_balance_controller_0_0/design_1_balance_controller_0_0_in_context.xdc] for cell 'design_1_i/balance_controller_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_balance_controller_0_0/design_1_balance_controller_0_0/design_1_balance_controller_0_0_in_context.xdc] for cell 'design_1_i/balance_controller_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_LFO_0_0/design_1_LFO_0_0/design_1_LFO_0_0_in_context.xdc] for cell 'design_1_i/LFO_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_LFO_0_0/design_1_LFO_0_0/design_1_LFO_0_0_in_context.xdc] for cell 'design_1_i/LFO_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0/design_1_debouncer_0_0_in_context.xdc] for cell 'design_1_i/debouncer_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0/design_1_debouncer_0_0_in_context.xdc] for cell 'design_1_i/debouncer_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0_in_context.xdc] for cell 'design_1_i/digilent_jstk2_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0/design_1_digilent_jstk2_0_0_in_context.xdc] for cell 'design_1_i/digilent_jstk2_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_edge_detector_toggle_0_0/design_1_edge_detector_toggle_0_0/design_1_edge_detector_toggle_0_0_in_context.xdc] for cell 'design_1_i/edge_detector_toggle_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_edge_detector_toggle_0_0/design_1_edge_detector_toggle_0_0/design_1_edge_detector_toggle_0_0_in_context.xdc] for cell 'design_1_i/edge_detector_toggle_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0_in_context.xdc] for cell 'design_1_i/led_level_controller_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0_in_context.xdc] for cell 'design_1_i/led_level_controller_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0_in_context.xdc] for cell 'design_1_i/moving_average_filte_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0_in_context.xdc] for cell 'design_1_i/moving_average_filte_0'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0/design_1_mute_controller_0_0_in_context.xdc] for cell 'design_1_i/mute_controller_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0/design_1_mute_controller_0_0_in_context.xdc] for cell 'design_1_i/mute_controller_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_edge_detector_toggle_1_0/design_1_edge_detector_toggle_1_0/design_1_edge_detector_toggle_1_0_in_context.xdc] for cell 'design_1_i/edge_detector_toggle_1'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_edge_detector_toggle_1_0/design_1_edge_detector_toggle_1_0/design_1_edge_detector_toggle_1_0_in_context.xdc] for cell 'design_1_i/edge_detector_toggle_1'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_in_context.xdc] for cell 'design_1_i/axis_broadcaster_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_in_context.xdc] for cell 'design_1_i/axis_broadcaster_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
-Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0/design_1_led_controller_0_0_in_context.xdc] for cell 'design_1_i/led_controller_0'
-Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0/design_1_led_controller_0_0_in_context.xdc] for cell 'design_1_i/led_controller_0'
 Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_effect_selector_0_0/design_1_effect_selector_0_0/design_1_effect_selector_0_0_in_context.xdc] for cell 'design_1_i/effect_selector_0'
 Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_effect_selector_0_0/design_1_effect_selector_0_0/design_1_effect_selector_0_0_in_context.xdc] for cell 'design_1_i/effect_selector_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_balance_controller_0_0/design_1_balance_controller_0_0/design_1_balance_controller_0_0_in_context.xdc] for cell 'design_1_i/balance_controller_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_balance_controller_0_0/design_1_balance_controller_0_0/design_1_balance_controller_0_0_in_context.xdc] for cell 'design_1_i/balance_controller_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0/design_1_volume_controller_0_0_in_context.xdc] for cell 'design_1_i/volume_controller_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_volume_controller_0_0/design_1_volume_controller_0_0/design_1_volume_controller_0_0_in_context.xdc] for cell 'design_1_i/volume_controller_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_LFO_0_0/design_1_LFO_0_0/design_1_LFO_0_0_in_context.xdc] for cell 'design_1_i/LFO_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_LFO_0_0/design_1_LFO_0_0/design_1_LFO_0_0_in_context.xdc] for cell 'design_1_i/LFO_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0/design_1_led_controller_0_0_in_context.xdc] for cell 'design_1_i/led_controller_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_controller_0_0/design_1_led_controller_0_0/design_1_led_controller_0_0_in_context.xdc] for cell 'design_1_i/led_controller_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0_in_context.xdc] for cell 'design_1_i/led_level_controller_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0/design_1_led_level_controller_0_0_in_context.xdc] for cell 'design_1_i/led_level_controller_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0/design_1_mute_controller_0_0_in_context.xdc] for cell 'design_1_i/mute_controller_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0/design_1_mute_controller_0_0_in_context.xdc] for cell 'design_1_i/mute_controller_0'
+Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0_in_context.xdc] for cell 'design_1_i/moving_average_filte_0'
+Finished Parsing XDC File [c:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.gen/sources_1/bd/design_1/ip/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0/design_1_moving_average_filte_0_0_in_context.xdc] for cell 'design_1_i/moving_average_filte_0'
 Parsing XDC File [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/constrs_1/new/io.xdc]
 Finished Parsing XDC File [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/constrs_1/new/io.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -142,21 +142,21 @@ Parsing XDC File [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_t
 Finished Parsing XDC File [C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1019.348 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -168,25 +168,25 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi4stream_spi_master_
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_dual_i2s_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/volume_controller_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/balance_controller_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/LFO_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/debouncer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/digilent_jstk2_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/edge_detector_toggle_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_level_controller_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/moving_average_filte_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mute_controller_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/edge_detector_toggle_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_broadcaster_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_controller_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/effect_selector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/balance_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/volume_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/LFO_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_level_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mute_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/moving_average_filte_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -208,25 +208,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.551 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1019.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1019.648 ; gain = 4.098
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1025.117 ; gain = 5.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1019.723 ; gain = 4.172
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1025.117 ; gain = 5.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1038.820 ; gain = 23.270
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1044.719 ; gain = 25.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -244,37 +244,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -331,18 +331,18 @@ Report Cell Usage:
 |21    |OBUF                                    |    23|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.594 ; gain = 29.043
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.594 ; gain = 29.043
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.512 ; gain = 31.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1050.512 ; gain = 31.164
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1044.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1050.512 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1066.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.406 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
@@ -350,7 +350,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 68 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1066.477 ; gain = 50.926
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 1068.406 ; gain = 49.059
 INFO: [Common 17-1381] The checkpoint 'C:/Users/euzun/Desktop/DESD/LAB3_Eren/lab3_template.xpr/lab3_template/lab3_template.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 10 16:13:50 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 00:55:44 2024...

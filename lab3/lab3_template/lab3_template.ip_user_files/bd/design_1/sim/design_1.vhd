@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Sun May 12 16:05:44 2024
+--Date        : Mon May 13 23:26:29 2024
 --Host        : 7R74KS3-A081 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -112,56 +112,10 @@ architecture STRUCTURE of design_1 is
     reset : in STD_LOGIC;
     clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC;
-    clk_out2 : out STD_LOGIC
+    clk_out2 : out STD_LOGIC;
+    locked : out STD_LOGIC
   );
   end component design_1_clk_wiz_0_1;
-  component design_1_volume_controller_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tlast : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC;
-    volume : in STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component design_1_volume_controller_0_0;
-  component design_1_balance_controller_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tready : out STD_LOGIC;
-    s_axis_tlast : in STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tready : in STD_LOGIC;
-    m_axis_tlast : out STD_LOGIC;
-    balance : in STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component design_1_balance_controller_0_0;
-  component design_1_LFO_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    jstk_y : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    lfo_enable : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tlast : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC
-  );
-  end component design_1_LFO_0_0;
   component design_1_debouncer_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -196,32 +150,6 @@ architecture STRUCTURE of design_1 is
     output_signal : out STD_LOGIC
   );
   end component design_1_edge_detector_toggle_0_0;
-  component design_1_led_level_controller_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC
-  );
-  end component design_1_led_level_controller_0_0;
-  component design_1_mute_controller_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tlast : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC;
-    mute : in STD_LOGIC
-  );
-  end component design_1_mute_controller_0_0;
   component design_1_edge_detector_toggle_1_0 is
   port (
     input_signal : in STD_LOGIC;
@@ -285,6 +213,67 @@ architecture STRUCTURE of design_1 is
     enable_filter : in STD_LOGIC
   );
   end component design_1_moving_average_filte_0_0;
+  component design_1_balance_controller_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tready : out STD_LOGIC;
+    s_axis_tlast : in STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tready : in STD_LOGIC;
+    m_axis_tlast : out STD_LOGIC;
+    balance : in STD_LOGIC_VECTOR ( 9 downto 0 )
+  );
+  end component design_1_balance_controller_0_0;
+  component design_1_volume_controller_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tlast : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
+    volume : in STD_LOGIC_VECTOR ( 9 downto 0 )
+  );
+  end component design_1_volume_controller_0_0;
+  component design_1_mute_controller_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tlast : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
+    mute : in STD_LOGIC
+  );
+  end component design_1_mute_controller_0_0;
+  component design_1_LFO_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    jstk_y : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    lfo_enable : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tlast : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC
+  );
+  end component design_1_LFO_0_0;
   component design_1_led_controller_0_0 is
   port (
     mute_enable : in STD_LOGIC;
@@ -294,6 +283,17 @@ architecture STRUCTURE of design_1 is
     led_b : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_1_led_controller_0_0;
+  component design_1_led_level_controller_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC
+  );
+  end component design_1_led_level_controller_0_0;
   signal LFO_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal LFO_0_m_axis_TLAST : STD_LOGIC;
   signal LFO_0_m_axis_TREADY : STD_LOGIC;

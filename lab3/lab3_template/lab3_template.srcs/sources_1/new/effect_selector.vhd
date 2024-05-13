@@ -35,9 +35,9 @@ begin
 
     if rising_edge(aclk) then
     
-        if aresetn = '0' then
+        --if aresetn = '0' then
         
-        else
+        --else
         
             if effect = '1' then
             
@@ -54,7 +54,7 @@ begin
         
         
     
-    end if; 
+    --end if; 
 
 end process;
 

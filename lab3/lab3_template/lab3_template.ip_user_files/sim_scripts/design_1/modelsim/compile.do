@@ -48,17 +48,9 @@ vlog -work xil_defaultlib  -incr "+incdir+../../../../lab3_template.gen/sources_
 "../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" \
 
 vcom -work xil_defaultlib  -93 \
-"../../../bd/design_1/ip/design_1_volume_controller_0_0/sim/design_1_volume_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_balance_controller_0_0/sim/design_1_balance_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_LFO_0_0/sim/design_1_LFO_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_debouncer_0_0/sim/design_1_debouncer_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_digilent_jstk2_0_0/sim/design_1_digilent_jstk2_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_edge_detector_toggle_0_0/sim/design_1_edge_detector_toggle_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_effect_selector_0_0/sim/design_1_effect_selector_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_led_controller_0_0/sim/design_1_led_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_led_level_controller_0_0/sim/design_1_led_level_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_moving_average_filte_0_0/sim/design_1_moving_average_filte_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_edge_detector_toggle_1_0/sim/design_1_edge_detector_toggle_1_0.vhd" \
 
 vlog -work axis_infrastructure_v1_1_0  -incr "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
@@ -77,6 +69,14 @@ vlog -work xil_defaultlib  -incr "+incdir+../../../../lab3_template.gen/sources_
 
 vcom -work xil_defaultlib  -93 \
 "../../../bd/design_1/ip/design_1_proc_sys_reset_1_0/sim/design_1_proc_sys_reset_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_led_controller_0_0/sim/design_1_led_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_balance_controller_0_0/sim/design_1_balance_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_led_level_controller_0_0/sim/design_1_led_level_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_volume_controller_0_0/sim/design_1_volume_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_LFO_0_0/sim/design_1_LFO_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_moving_average_filte_0_0/sim/design_1_moving_average_filte_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_effect_selector_0_0/sim/design_1_effect_selector_0_0.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \
