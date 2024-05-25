@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue May 14 00:55:44 2024
+| Date         : Sat May 25 18:57:41 2024
 | Host         : 7R74KS3-A081 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -176,7 +176,7 @@ Table of Contents
 | design_1_clk_wiz_0_1               |    1 |
 | design_1_balance_controller_0_0    |    1 |
 | design_1_axis_dual_i2s_0_0         |    1 |
-| design_1_axis_broadcaster_0_0      |    1 |
+| design_1_axis_broadcaster_0_1      |    1 |
 | design_1_axi4stream_spi_master_0_0 |    1 |
 | design_1_LFO_0_0                   |    1 |
 +------------------------------------+------+

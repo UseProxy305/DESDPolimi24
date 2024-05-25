@@ -119,7 +119,7 @@ BEGIN
       VOLUME_WIDTH => 10,
       VOLUME_STEP_2 => 6,
       HIGHER_BOUND => 8388607,
-      LOWER_BOUND => -21
+      LOWER_BOUND => -8388608
     )
     PORT MAP (
       aclk => aclk,

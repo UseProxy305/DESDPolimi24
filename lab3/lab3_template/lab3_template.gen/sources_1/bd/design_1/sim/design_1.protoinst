@@ -42,7 +42,7 @@
 						"TVALID": { "actual": "s_axis_tvalid"}
 					}
 				},
-				"/axis_broadcaster_0/M00_AXIS": {
+				"/axis_broadcaster_1/M00_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "aclk"},
@@ -53,7 +53,7 @@
 						"TVALID": { "actual": "m_axis_tvalid[0:0]"}
 					}
 				},
-				"/axis_broadcaster_0/M01_AXIS": {
+				"/axis_broadcaster_1/M01_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "aclk"},
@@ -64,7 +64,7 @@
 						"TVALID": { "actual": "m_axis_tvalid[1:1]"}
 					}
 				},
-				"/axis_broadcaster_0/S_AXIS": {
+				"/axis_broadcaster_1/S_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "aclk"},

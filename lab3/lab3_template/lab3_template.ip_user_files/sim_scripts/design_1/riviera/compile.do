@@ -52,31 +52,31 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_digilent_jstk2_0_0/sim/design_1_digilent_jstk2_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_edge_detector_toggle_0_0/sim/design_1_edge_detector_toggle_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_edge_detector_toggle_1_0/sim/design_1_edge_detector_toggle_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_1_0/sim/design_1_proc_sys_reset_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_effect_selector_0_0/sim/design_1_effect_selector_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_balance_controller_0_0/sim/design_1_balance_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_volume_controller_0_0/sim/design_1_volume_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_LFO_0_0/sim/design_1_LFO_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_led_controller_0_0/sim/design_1_led_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_led_level_controller_0_0/sim/design_1_led_level_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_moving_average_filte_0_0/sim/design_1_moving_average_filte_0_0.vhd" \
 
 vlog -work axis_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
 "../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
-"../../../bd/design_1/ip/design_1_axis_broadcaster_0_0/hdl/tdata_design_1_axis_broadcaster_0_0.v" \
-"../../../bd/design_1/ip/design_1_axis_broadcaster_0_0/hdl/tuser_design_1_axis_broadcaster_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_broadcaster_0_1/hdl/tdata_design_1_axis_broadcaster_0_1.v" \
+"../../../bd/design_1/ip/design_1_axis_broadcaster_0_1/hdl/tuser_design_1_axis_broadcaster_0_1.v" \
 
 vlog -work axis_broadcaster_v1_1_21  -v2k5 "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
 "../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/30ef/hdl/axis_broadcaster_v1_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../lab3_template.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
-"../../../bd/design_1/ip/design_1_axis_broadcaster_0_0/hdl/top_design_1_axis_broadcaster_0_0.v" \
-"../../../bd/design_1/ip/design_1_axis_broadcaster_0_0/sim/design_1_axis_broadcaster_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_broadcaster_0_1/hdl/top_design_1_axis_broadcaster_0_1.v" \
+"../../../bd/design_1/ip/design_1_axis_broadcaster_0_1/sim/design_1_axis_broadcaster_0_1.v" \
 
 vcom -work xil_defaultlib -93 \
-"../../../bd/design_1/ip/design_1_proc_sys_reset_1_0/sim/design_1_proc_sys_reset_1_0.vhd" \
-"../../../bd/design_1/ip/design_1_led_controller_0_0/sim/design_1_led_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_balance_controller_0_0/sim/design_1_balance_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_led_level_controller_0_0/sim/design_1_led_level_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_volume_controller_0_0/sim/design_1_volume_controller_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_LFO_0_0/sim/design_1_LFO_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_moving_average_filte_0_0/sim/design_1_moving_average_filte_0_0.vhd" \
-"../../../bd/design_1/ip/design_1_effect_selector_0_0/sim/design_1_effect_selector_0_0.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \

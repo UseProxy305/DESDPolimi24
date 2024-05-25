@@ -36,24 +36,21 @@ end led_level_controller;
 architecture Behavioral of led_level_controller is
 
 constant DELAY_CYCLES		: integer := ( refresh_time_ms / clock_period_ns ) * 1_000_000;
-signal delay_counter        : integer range 0 to ( DELAY_CYCLES / 2 ) - 1;
+signal delay_counter        : integer;
 signal slow_clk             : std_logic := '0';
 
-signal data_left            : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
-signal data_right           : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
-signal temp_sum             : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
+signal left_data            : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
+signal right_data           : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
+
+signal average_sum          : std_logic_vector (CHANNEL_LENGTH-1 downto 0) := (others => '0');
+signal average_sum_int      : integer := 0;
+
 
 begin
 
 s_axis_tready <= '1' ;
 
-    with s_axis_tlast select data_left <=
-        s_axis_tdata when '0',
-        data_left    when '1';
-        
-    with s_axis_tlast select data_right <=
-        data_right   when '0',
-        s_axis_tdata when '1';
+average_sum_int <= (to_integer(signed(left_data)) + to_integer(signed(right_data))) / 2 ;
 
 
 process (aclk)
@@ -61,7 +58,19 @@ begin
 
     if rising_edge(aclk) then
     
-        if delay_counter < (DELAY_CYCLES / 2) then
+        if s_axis_tlast = '1' then
+        
+            left_data <= s_axis_tdata;
+        
+        elsif s_axis_tlast = '0' then
+        
+            right_data <= s_axis_tdata;
+        
+        end if;
+        
+        
+    
+        if delay_counter < (DELAY_CYCLES) then
         
             delay_counter <= delay_counter + 1;
         
@@ -83,6 +92,7 @@ begin
 
     if rising_edge(slow_clk) then
          
+         led <= std_logic_vector(shift_right(to_unsigned(average_sum_int, CHANNEL_LENGTH),8));                
     
     end if;
 

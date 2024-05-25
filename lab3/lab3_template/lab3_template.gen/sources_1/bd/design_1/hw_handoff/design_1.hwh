@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May 14 00:50:39 2024" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 25 18:56:03 2024" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -435,7 +435,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="21" FULLNAME="/axis_broadcaster_0" HWVERSION="1.1" INSTANCE="axis_broadcaster_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_broadcaster" VLNV="xilinx.com:ip:axis_broadcaster:1.1">
+    <MODULE COREREVISION="21" FULLNAME="/axis_broadcaster_1" HWVERSION="1.1" INSTANCE="axis_broadcaster_1" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_broadcaster" VLNV="xilinx.com:ip:axis_broadcaster:1.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_broadcaster;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -496,7 +496,7 @@
         <PARAMETER NAME="M14_TUSER_REMAP" VALUE="1'b0"/>
         <PARAMETER NAME="M15_TUSER_REMAP" VALUE="1'b0"/>
         <PARAMETER NAME="M16_TUSER_REMAP" VALUE="1'b0"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_axis_broadcaster_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axis_broadcaster_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -510,56 +510,56 @@
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mute_controller_0" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mute_controller_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tdata">
+        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mute_controller_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mute_controller_0" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="m_axis_tvalid" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tvalid"/>
-          </CONNECTIONS>
+        <PORT DIR="O" LEFT="1" NAME="m_axis_tvalid" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="m_axis_tready" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tready"/>
+            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axis_tready" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="m_axis_tlast" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axis_tlast" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -585,7 +585,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axis_broadcaster_0_M00_AXIS" NAME="M00_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_broadcaster_1_M00_AXIS" NAME="M00_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -606,7 +606,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axis_broadcaster_0_M01_AXIS" NAME="M01_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_broadcaster_1_M01_AXIS" NAME="M01_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -656,24 +656,24 @@
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tdata">
+        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tready"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_dual_i2s_0_m_axis_tdata">
@@ -759,7 +759,7 @@
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axis_broadcaster_0_M00_AXIS" NAME="s_axis" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_broadcaster_1_M01_AXIS" NAME="s_axis" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -1487,17 +1487,17 @@
             <CONNECTION INSTANCE="debouncer_0" PORT="clk"/>
             <CONNECTION INSTANCE="edge_detector_toggle_0" PORT="clk"/>
             <CONNECTION INSTANCE="edge_detector_toggle_1" PORT="clk"/>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="aclk"/>
             <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="aclk"/>
             <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aclk"/>
             <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aclk"/>
             <CONNECTION INSTANCE="effect_selector_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="LFO_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aclk"/>
             <CONNECTION INSTANCE="balance_controller_0" PORT="aclk"/>
             <CONNECTION INSTANCE="volume_controller_0" PORT="aclk"/>
-            <CONNECTION INSTANCE="LFO_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="aclk"/>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="aclk"/>
             <CONNECTION INSTANCE="mute_controller_0" PORT="aclk"/>
-            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="22596153" DIR="O" NAME="clk_out2" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
@@ -1847,29 +1847,29 @@
             <CONNECTION INSTANCE="External_Ports" PORT="LED"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tdata">
+        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_0_m_axis_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_1_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="m_axis_tready"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="axis_broadcaster_0_M01_AXIS" NAME="s_axis" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_broadcaster_1_M00_AXIS" NAME="s_axis" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -2040,24 +2040,24 @@
             <CONNECTION INSTANCE="LFO_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="s_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tdata">
+        <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="s_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="s_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_0_s_axis_tready">
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axis_broadcaster_1_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="s_axis_tready"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="mute" SIGIS="undef" SIGNAME="edge_detector_toggle_0_output_signal">
@@ -2160,17 +2160,17 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="debouncer_0" PORT="reset"/>
-            <CONNECTION INSTANCE="axis_broadcaster_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="axis_dual_i2s_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="axi4stream_spi_master_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="digilent_jstk2_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="effect_selector_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="LFO_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="balance_controller_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="volume_controller_0" PORT="aresetn"/>
-            <CONNECTION INSTANCE="LFO_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="axis_broadcaster_1" PORT="aresetn"/>
             <CONNECTION INSTANCE="led_level_controller_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="mute_controller_0" PORT="aresetn"/>
-            <CONNECTION INSTANCE="moving_average_filte_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2232,7 +2232,7 @@
         <PARAMETER NAME="VOLUME_WIDTH" VALUE="10"/>
         <PARAMETER NAME="VOLUME_STEP_2" VALUE="6"/>
         <PARAMETER NAME="HIGHER_BOUND" VALUE="8388607"/>
-        <PARAMETER NAME="LOWER_BOUND" VALUE="-21"/>
+        <PARAMETER NAME="LOWER_BOUND" VALUE="-8388608"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_volume_controller_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>

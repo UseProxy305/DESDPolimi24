@@ -1,87 +1,87 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.740928",
-   "Default View_TopLeft":"902,-935",
+   "Default View_ScaleFactor":"0.740929",
+   "Default View_TopLeft":"2107,-783",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port SPI_M_0 -pg 1 -lvl 12 -x 2950 -y -840 -defaultsOSRD
+preplace port SPI_M_0 -pg 1 -lvl 13 -x 3230 -y -840 -defaultsOSRD
 preplace port reset -pg 1 -lvl 0 -x -580 -y -590 -defaultsOSRD
 preplace port sys_clock -pg 1 -lvl 0 -x -580 -y -470 -defaultsOSRD
-preplace port tx_mclk_0 -pg 1 -lvl 12 -x 2950 -y -320 -defaultsOSRD
-preplace port tx_lrck_0 -pg 1 -lvl 12 -x 2950 -y -300 -defaultsOSRD
-preplace port tx_sclk_0 -pg 1 -lvl 12 -x 2950 -y -280 -defaultsOSRD
-preplace port tx_sdout_0 -pg 1 -lvl 12 -x 2950 -y -260 -defaultsOSRD
-preplace port rx_mclk_0 -pg 1 -lvl 12 -x 2950 -y -240 -defaultsOSRD
-preplace port rx_lrck_0 -pg 1 -lvl 12 -x 2950 -y -220 -defaultsOSRD
-preplace port rx_sclk_0 -pg 1 -lvl 12 -x 2950 -y -200 -defaultsOSRD
+preplace port tx_mclk_0 -pg 1 -lvl 13 -x 3230 -y -320 -defaultsOSRD
+preplace port tx_lrck_0 -pg 1 -lvl 13 -x 3230 -y -300 -defaultsOSRD
+preplace port tx_sclk_0 -pg 1 -lvl 13 -x 3230 -y -280 -defaultsOSRD
+preplace port tx_sdout_0 -pg 1 -lvl 13 -x 3230 -y -260 -defaultsOSRD
+preplace port rx_mclk_0 -pg 1 -lvl 13 -x 3230 -y -240 -defaultsOSRD
+preplace port rx_lrck_0 -pg 1 -lvl 13 -x 3230 -y -220 -defaultsOSRD
+preplace port rx_sclk_0 -pg 1 -lvl 13 -x 3230 -y -200 -defaultsOSRD
 preplace port lfo_enable -pg 1 -lvl 0 -x -580 -y -370 -defaultsOSRD
 preplace port effect -pg 1 -lvl 0 -x -580 -y -400 -defaultsOSRD
 preplace port rx_sdin_0 -pg 1 -lvl 0 -x -580 -y -340 -defaultsOSRD
-preplace portBus LED -pg 1 -lvl 12 -x 2950 -y -580 -defaultsOSRD
-preplace inst axi4stream_spi_master_0 -pg 1 -lvl 11 -x 2810 -y -830 -defaultsOSRD
-preplace inst axis_dual_i2s_0 -pg 1 -lvl 11 -x 2810 -y -270 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 13 -x 3230 -y -580 -defaultsOSRD
+preplace inst axi4stream_spi_master_0 -pg 1 -lvl 11 -x 2780 -y -830 -defaultsOSRD
+preplace inst axis_dual_i2s_0 -pg 1 -lvl 11 -x 2780 -y -270 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x -160 -y -570 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -450 -y -480 -defaultsOSRD
 preplace inst debouncer_0 -pg 1 -lvl 4 -x 500 -y -460 -defaultsOSRD
-preplace inst digilent_jstk2_0 -pg 1 -lvl 10 -x 2440 -y -820 -defaultsOSRD
+preplace inst digilent_jstk2_0 -pg 1 -lvl 10 -x 2420 -y -820 -defaultsOSRD
 preplace inst edge_detector_toggle_0 -pg 1 -lvl 3 -x 180 -y -730 -defaultsOSRD
 preplace inst edge_detector_toggle_1 -pg 1 -lvl 4 -x 500 -y -240 -defaultsOSRD
-preplace inst axis_broadcaster_0 -pg 1 -lvl 10 -x 2440 -y -430 -defaultsOSRD
-preplace inst proc_sys_reset_1 -pg 1 -lvl 10 -x 2440 -y -170 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 10 -x 2420 -y -170 -defaultsOSRD
 preplace inst effect_selector_0 -pg 1 -lvl 5 -x 870 -y -470 -defaultsOSRD
+preplace inst LFO_0 -pg 1 -lvl 8 -x 1800 -y -410 -defaultsOSRD
+preplace inst led_controller_0 -pg 1 -lvl 4 -x 500 -y -920 -defaultsOSRD
+preplace inst moving_average_filte_0 -pg 1 -lvl 5 -x 870 -y -240 -defaultsOSRD
 preplace inst balance_controller_0 -pg 1 -lvl 6 -x 1210 -y -330 -defaultsOSRD
 preplace inst volume_controller_0 -pg 1 -lvl 7 -x 1500 -y -310 -defaultsOSRD
-preplace inst LFO_0 -pg 1 -lvl 8 -x 1790 -y -410 -defaultsOSRD
-preplace inst led_controller_0 -pg 1 -lvl 4 -x 500 -y -920 -defaultsOSRD
-preplace inst led_level_controller_0 -pg 1 -lvl 11 -x 2810 -y -580 -defaultsOSRD
+preplace inst axis_broadcaster_1 -pg 1 -lvl 10 -x 2420 -y -450 -defaultsOSRD
+preplace inst led_level_controller_0 -pg 1 -lvl 12 -x 3090 -y -590 -defaultsOSRD
 preplace inst mute_controller_0 -pg 1 -lvl 9 -x 2080 -y -430 -defaultsOSRD
-preplace inst moving_average_filte_0 -pg 1 -lvl 5 -x 870 -y -240 -defaultsOSRD
 preplace netloc reset_1 1 0 10 -560J -590 -350 -670 10 -640 N -640 N -640 N -640 N -640 N -640 N -640 2200
 preplace netloc sys_clock_1 1 0 1 NJ -470
-preplace netloc clk_wiz_0_locked 1 1 9 -350 -330 N -330 N -330 630 -130 N -130 N -130 N -130 N -130 N
-preplace netloc clk_wiz_0_clk_out1 1 1 10 -360 -680 20 -630 330 -320 670 -340 1050 -240 1340 -430 1640 -520 1930 -530 2220 -700 2670
+preplace netloc clk_wiz_0_locked 1 1 9 -350 -470 20 -540 N -540 640 -130 N -130 N -130 N -130 N -130 N
+preplace netloc clk_wiz_0_clk_out1 1 1 11 -360 -680 20 -630 330 -350 660 -350 1040 -240 1340 -430 1650 -520 1940 -530 2220 -700 2640 -590 N
 preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 30 -550 310
-preplace netloc edge_detector_toggle_0_output_signal 1 3 6 310 -660 N -660 N -660 N -660 N -660 1910
-preplace netloc edge_detector_toggle_1_output_signal 1 3 2 340 -360 640
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 9 NJ -530 320 -380 680 -330 1010 -230 1370 -410 1650 -510 1940 -520 2230 -680 2680
-preplace netloc debouncer_0_debounced 1 4 1 660 -470n
-preplace netloc effect_selector_0_balance 1 5 1 1040 -470n
-preplace netloc effect_selector_0_volume 1 5 2 NJ -490 1350
-preplace netloc led_level_controller_0_led 1 11 1 N -580
-preplace netloc axis_dual_i2s_0_tx_mclk 1 11 1 N -320
-preplace netloc axis_dual_i2s_0_tx_lrck 1 11 1 N -300
-preplace netloc axis_dual_i2s_0_tx_sclk 1 11 1 N -280
-preplace netloc axis_dual_i2s_0_tx_sdout 1 11 1 N -260
-preplace netloc axis_dual_i2s_0_rx_mclk 1 11 1 N -240
-preplace netloc axis_dual_i2s_0_rx_lrck 1 11 1 N -220
-preplace netloc axis_dual_i2s_0_rx_sclk 1 11 1 N -200
-preplace netloc digilent_jstk2_0_jstk_x 1 4 7 690 -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 2640
-preplace netloc digilent_jstk2_0_jstk_y 1 4 7 700 -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 2630
+preplace netloc edge_detector_toggle_0_output_signal 1 3 6 310 -660 N -660 N -660 N -660 N -660 1920
+preplace netloc edge_detector_toggle_1_output_signal 1 3 2 340 -360 630
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 10 NJ -530 320 -380 670 -330 1000 -210 1350 -210 1640 -510 1950 -520 2230 -680 2650 -570 N
+preplace netloc debouncer_0_debounced 1 4 1 650 -470n
+preplace netloc effect_selector_0_balance 1 5 1 1060 -470n
+preplace netloc effect_selector_0_volume 1 5 2 1050J -230 1360
+preplace netloc led_level_controller_0_led 1 12 1 3200 -590n
+preplace netloc axis_dual_i2s_0_tx_mclk 1 11 2 N -320 N
+preplace netloc axis_dual_i2s_0_tx_lrck 1 11 2 N -300 N
+preplace netloc axis_dual_i2s_0_tx_sclk 1 11 2 N -280 N
+preplace netloc axis_dual_i2s_0_tx_sdout 1 11 2 N -260 N
+preplace netloc axis_dual_i2s_0_rx_mclk 1 11 2 N -240 N
+preplace netloc axis_dual_i2s_0_rx_lrck 1 11 2 N -220 N
+preplace netloc axis_dual_i2s_0_rx_sclk 1 11 2 N -200 N
+preplace netloc digilent_jstk2_0_jstk_x 1 4 7 680 -60 NJ -60 NJ -60 NJ -60 NJ -60 NJ -60 2620
+preplace netloc digilent_jstk2_0_jstk_y 1 4 7 690 -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 2610
 preplace netloc effect_selector_0_jstk_y_lfo 1 5 3 NJ -450 NJ -450 1620
 preplace netloc led_controller_0_led_r 1 4 6 NJ -940 NJ -940 NJ -940 NJ -940 NJ -940 2240
 preplace netloc led_controller_0_led_g 1 4 6 NJ -920 NJ -920 NJ -920 NJ -920 NJ -920 2210
 preplace netloc led_controller_0_led_b 1 4 6 NJ -900 NJ -900 NJ -900 NJ -900 NJ -900 2200
-preplace netloc digilent_jstk2_0_btn_jstk 1 3 8 340 -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 2620
-preplace netloc digilent_jstk2_0_btn_trigger 1 2 9 40 -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 2610
-preplace netloc lfo_enable_0_1 1 0 8 NJ -370 NJ -370 NJ -370 NJ -370 NJ -370 1020J -210 NJ -210 1640J
-preplace netloc input_signal_0_1 1 0 4 NJ -400 -360J -440 NJ -440 NJ
-preplace netloc clk_wiz_0_clk_out2 1 1 10 -360J -470 20J -540 NJ -540 650J -150 1040J -220 NJ -220 NJ -220 NJ -220 2230J -280 2660
-preplace netloc rx_sdin_0_1 1 0 11 NJ -340 NJ -340 NJ -340 340J -350 NJ -350 1000J -200 NJ -200 1650J -270 NJ -270 NJ -270 2660J
-preplace netloc proc_sys_reset_1_peripheral_aresetn 1 10 1 2690 -280n
-preplace netloc digilent_jstk2_0_m_axis 1 10 1 2640 -860n
-preplace netloc axis_broadcaster_0_M01_AXIS 1 10 1 2650 -600n
-preplace netloc axis_dual_i2s_0_m_axis 1 4 8 710 -360 1000J -540 NJ -540 NJ -540 NJ -540 NJ -540 2660J -500 2920
-preplace netloc axi4stream_spi_master_0_M_AXIS 1 9 3 2250 -710 NJ -710 2920
-preplace netloc axi4stream_spi_master_0_SPI_M 1 11 1 N -840
-preplace netloc LFO_0_m_axis 1 8 1 1920 -460n
-preplace netloc balance_controller_0_m_axis 1 6 1 1360 -340n
+preplace netloc digilent_jstk2_0_btn_jstk 1 3 8 340 -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 NJ -70 2600
+preplace netloc digilent_jstk2_0_btn_trigger 1 2 9 40 -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 NJ -650 2590
+preplace netloc lfo_enable_0_1 1 0 8 NJ -370 NJ -370 NJ -370 NJ -370 NJ -370 1020J -220 NJ -220 1650J
+preplace netloc input_signal_0_1 1 0 4 NJ -400 -350J -440 NJ -440 NJ
+preplace netloc clk_wiz_0_clk_out2 1 1 10 -360J -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 2230J -280 2630
+preplace netloc rx_sdin_0_1 1 0 11 NJ -340 NJ -340 NJ -340 NJ -340 NJ -340 1010J -200 NJ -200 1660J -270 NJ -270 NJ -270 2630J
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 10 1 2660 -280n
+preplace netloc mute_controller_0_m_axis 1 9 1 2210 -470n
+preplace netloc axi4stream_spi_master_0_M_AXIS 1 9 3 2250 -710 NJ -710 2890
 preplace netloc moving_average_filte_0_m_axis 1 5 1 1030 -360n
+preplace netloc axi4stream_spi_master_0_SPI_M 1 11 2 N -840 N
+preplace netloc balance_controller_0_m_axis 1 6 1 1360 -340n
+preplace netloc LFO_0_m_axis 1 8 1 1930 -460n
+preplace netloc digilent_jstk2_0_m_axis 1 10 1 2620 -860n
 preplace netloc volume_controller_0_m_axis 1 7 1 1630 -450n
-preplace netloc mute_controller_0_m_axis 1 9 1 2210 -450n
-preplace netloc axis_broadcaster_0_M00_AXIS 1 10 1 2660 -440n
-levelinfo -pg 1 -580 -450 -160 180 500 870 1210 1500 1790 2080 2440 2810 2950
-pagesize -pg 1 -db -bbox -sgen -700 -1250 3070 160
+preplace netloc axis_broadcaster_1_M00_AXIS 1 10 2 2630 -610 N
+preplace netloc axis_broadcaster_1_M01_AXIS 1 10 1 2630 -440n
+preplace netloc axis_dual_i2s_0_m_axis 1 4 8 700 -360 1000J -540 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 2890
+levelinfo -pg 1 -580 -450 -160 180 500 870 1210 1500 1800 2080 2420 2780 3090 3230
+pagesize -pg 1 -db -bbox -sgen -700 -1250 3350 160
 "
 }
 {

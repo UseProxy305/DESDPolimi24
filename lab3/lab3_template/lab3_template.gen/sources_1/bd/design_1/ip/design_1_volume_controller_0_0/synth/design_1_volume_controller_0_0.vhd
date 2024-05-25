@@ -99,7 +99,7 @@ ARCHITECTURE design_1_volume_controller_0_0_arch OF design_1_volume_controller_0
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_volume_controller_0_0_arch : ARCHITECTURE IS "design_1_volume_controller_0_0,volume_controller,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_volume_controller_0_0_arch: ARCHITECTURE IS "design_1_volume_controller_0_0,volume_controller,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=volume_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,TDATA_WIDTH=24,VOLUME_WIDTH=10,VOLUME_STEP_2=6,HIGHER_BOUND=8388607,LOWER_BOUND=-21}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_volume_controller_0_0_arch: ARCHITECTURE IS "design_1_volume_controller_0_0,volume_controller,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=volume_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,TDATA_WIDTH=24,VOLUME_WIDTH=10,VOLUME_STEP_2=6,HIGHER_BOUND=8388607,LOWER_BOUND=-8388608}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_volume_controller_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -125,7 +125,7 @@ BEGIN
       VOLUME_WIDTH => 10,
       VOLUME_STEP_2 => 6,
       HIGHER_BOUND => 8388607,
-      LOWER_BOUND => -21
+      LOWER_BOUND => -8388608
     )
     PORT MAP (
       aclk => aclk,
